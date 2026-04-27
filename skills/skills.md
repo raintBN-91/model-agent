@@ -170,7 +170,7 @@
 
 | Agent 名称                             | 类型         | 链接                                     | 验证（skills-eval）       |
 | ------------------------------------ | ---------- | -------------------------------------- | --------------------- |
-| Archived                             | Deployment | ./archived                             | 未报告                   |
+| Archived                             | Deployment | ./archived                             | FAIL (too simple)        |
 | ascend-inference-repos-copilot       | Deployment | ./ascend-inference-repos-copilot       | PASS                  |
 | ascend-npu-driver-install            | Deployment | ./ascend-npu-driver-install            | PASS                  |
 | Ascend_Model_Verifier                | Deployment | ./ascend_model_verifier                | FAIL（document_parse）  |
@@ -187,7 +187,7 @@
 | vllm-ascend-performance-optimization | Deployment | ./vllm-ascend-performance-optimization | PASS                  |
 
 
-**这一组里**：PASS 12 / FAIL 2 / 报告里没出现的 1。
+**这一组里**：PASS 12 / FAIL 3。
 
 ## 模型适配
 

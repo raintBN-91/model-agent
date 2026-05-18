@@ -356,7 +356,7 @@ model-agent/
 | model-series-vendor-detector   | Unknown    | 适用于model-series-vendor-detector相关任务的分析、实施与问题处理场景。   | [链接](https://gitcode.com/MoFixGo/search-agent/-/blob/main/skill/model-series-vendor-detector/SKILL.md)                                | 昇腾模型生态团队             | -                                                        |
 | msverl-daily-regression-triage | Unknown    | 适用于msverl-daily-regression-triage相关任务的分析、实施与问题处理场景。 | [链接](https://gitcode.com/Ascend/agent-skills/-/blob/main/skills/msverl-daily-regression-triage/SKILL.md)                              | Ascend/agent-skills仓 | -                                                        |
 | uv-torch-adaptation            | Adaptation | 适用于uv-torch-adaptation相关任务的分析、实施与问题处理场景。            | [链接](https://gitcode.com/AI4Science/SLAI-AscendBridge/-/blob/main/.cursor/skills/uv-torch-adaptation/SKILL.md)                        | 昇腾模型生态团队             | -                                                        |
-| vllm-ascend-model-adapter      | Adaptation | 适用于vllm-ascend-model-adapter相关任务的分析、实施与问题处理场景。      | [链接](https://gitcode.com/MoFixGo/adapt-agent/-/blob/main/vllm-ascend-model-adapter/SKILL.md)                                          | 小巧灵团队（来源于vLLM-ascend仓）             | [样例](./skills/examples/vllm-ascend-model-adapter使用指南.md) |
+| vllm-ascend-model-adapter      | Adaptation | 适用于vllm-ascend-model-adapter相关任务的分析、实施与问题处理场景。      | [链接](https://github.com/vllm-project/vllm-ascend/blob/main/.agents/skills/vllm-ascend-model-adapter/SKILL.md)                                          | 小巧灵团队（来源于vLLM-ascend仓）             | [样例](./skills/examples/vllm-ascend-model-adapter使用指南.md) |
 
 
 #### 文档生成

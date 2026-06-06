@@ -1,0 +1,11 @@
+{
+  "model": "${MODEL_NAME}",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, are you working?"
+    }
+  ],
+  "max_tokens": 50,
+  "temperature": 0.1
+}

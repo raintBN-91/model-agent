@@ -1,0 +1,35 @@
+{
+  "name": "offline_throughput",
+  "description": "离线批量吞吐测试，衡量高并发批处理场景下的最大吞吐能力",
+  "applicable_versions": [
+    "0.4.x",
+    "0.5.x",
+    "0.6.x"
+  ],
+  "parameters": {
+    "model": "${MODEL_PATH}",
+    "dataset": "sharegpt",
+    "max_model_len": 4096,
+    "tensor_parallel_size": "${TP_SIZE:-1}",
+    "device": "npu"
+  },
+  "version_specific_args": {
+    "0.4.x": {
+      "script": "python -m vllm.benchmarks.benchmark_throughput",
+      "extra_args": ["--num-batches", "1000"]
+    },
+    "0.5.x": {
+      "script": "vllm bench throughput",
+      "extra_args": ["--num-batches", "1000"]
+    },
+    "0.6.x": {
+      "script": "vllm bench throughput",
+      "extra_args": ["--num-prompts", "1000"]
+    }
+  },
+  "metrics": [
+    "request_throughput",
+    "token_throughput"
+  ],
+  "expected_duration": "5-15 minutes"
+}

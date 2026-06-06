@@ -1,0 +1,12 @@
+--- a/onnx2torch/node_converters/batch_norm.py
++++ b/onnx2torch/node_converters/batch_norm.py
+@@ -53,6 +53,9 @@ def _(node: OnnxNode, graph: OnnxGraph) -> OperationConverterResult:
+         input_value_info = graph.value_info[node.input_values[0]]
+         input_shape = get_shape_from_value_info(input_value_info)
+         spatial_rank = len(input_shape) - 2
++        # Fallback for CV models where shape info may be incomplete in ONNX
++        if spatial_rank < 0:
++            spatial_rank = 2
+         try:
+            bn_class = _BN_CLASS_FROM_SPATIAL_RANK[spatial_rank]
+         except KeyError as exc:

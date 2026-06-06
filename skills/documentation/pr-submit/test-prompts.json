@@ -1,0 +1,52 @@
+[
+  {
+    "prompt": "How to submit a PR to Ascend/model-agent?",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "intent"
+  },
+  {
+    "prompt": "Create a merge request for model-agent skill",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "usage"
+  },
+  {
+    "prompt": "Fix CLA check failure on my merge request",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "troubleshooting"
+  },
+  {
+    "prompt": "Configure fork remote for model-agent",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "setup"
+  },
+  {
+    "prompt": "Create cross-repo MR on GitCode",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "usage"
+  },
+  {
+    "prompt": "Fix commit author email for CLA signing",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "troubleshooting"
+  },
+  {
+    "prompt": "Reset commit author for multiple commits",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "usage"
+  },
+  {
+    "prompt": "Push to fork repository with token auth",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "setup"
+  },
+  {
+    "prompt": "MR API returned 422 error",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "troubleshooting"
+  },
+  {
+    "prompt": "Git force push rejected by branch protection",
+    "expected_skill": "model-agent-pr-submit",
+    "category": "troubleshooting"
+  }
+]

@@ -118,7 +118,7 @@ model-agent/
 │   ├── optimization/              # 性能优化（69）
 │   ├── verification/              # 质量验证（51）
 │   ├── deployment/                # 模型部署（15）
-│   ├── adaptation/                # 模型适配（14）
+│   ├── adaptation/                # 模型适配（15）
 │   ├── documentation/             # 文档生成（10）
 │   ├── quantization/              # 模型量化（2）
 │   └── search/                    # 知识检索（1）
@@ -161,11 +161,11 @@ model-agent/
 | 性能优化   | 69      | 算子/推理性能分析、瓶颈定位、优化落地 |
 | 质量验证   | 51      | 精度验证、代码评审、测试生成、问题排查 |
 | 模型部署   | 15      | 部署流程、环境配置、运行验证      |
-| 模型适配   | 14      | 框架迁移、版本兼容、适配改造      |
+| 模型适配   | 15      | 框架迁移、版本兼容、适配改造      |
 | 文档生成   | 10      | 文档规范、测试报告、知识沉淀      |
 | 模型量化   | 2       | 量化相关流程与实践           |
 | 知识检索   | 1       | 文档检索与知识查询           |
-| **合计** | **162** | —                   |
+| **合计** | **163** | —                   |
 
 
 **与评测系统打个配合**（可选）：写完或改版 `SKILL.md` 后，可用 `[ascend-skills-eval](./ascend-skills-eval/README.md)` 做一次评测体检（九维打分、改进建议、报告与成果卡 PNG），优化skills。
@@ -346,6 +346,7 @@ model-agent/
 | adapter-check-principle        | Adaptation | 适用于adapter-check-principle相关任务的分析、实施与问题处理场景。        | [链接](https://gitcode.com/MoFixGo/search-agent/-/blob/main/skill/adapter-check-principle/SKILL.md)                                     | 昇腾模型生态团队             | -                                                        |
 | ascend-model-verification      | Adaptation | 适用于ascend-model-verification相关任务的分析、实施与问题处理场景。      | [链接](https://gitcode.com/MoFixGo/verify-agent/-/blob/main/ascend-model-verification/SKILL.md)                                         | 昇腾模型生态团队             | [样例](./skills/examples/ascend-model-verification使用指南.md) |
 | boltz2                         | Adaptation | 适用于boltz2相关任务的分析、实施与问题处理场景。                         | [链接](https://gitcode.com/AI4Science/AscendSkills/-/blob/main/models/boltz2/SKILL.md)                                                  | 昇腾模型生态团队             | -                                                        |
+| cv-ascend-adapt                | Adaptation | 适用于CV模型适配昇腾NPU，包括训练、ONNX和OM导出、推理一致性验证与问题排查等能力。 | [链接](https://ai.gitcode.com/Ascend-SACT/ascend-adapt-skills/blob/main/cv-ascend-adapt/SKILL.md)                                   | 小巧灵突击队                |                                                          |
 | generator                      | Adaptation | 适用于generator相关任务的分析、实施与问题处理场景。                      | [链接](https://gitcode.com/AI4Science/AscendSkills/-/blob/main/models/generator/SKILL.md)                                               | 昇腾模型生态团队             | -                                                        |
 | hardware-check-principle       | Adaptation | 适用于hardware-check-principle相关任务的分析、实施与问题处理场景。       | [链接](https://gitcode.com/MoFixGo/search-agent/-/blob/main/skill/hardware-check-principle/SKILL.md)                                    | 昇腾模型生态团队             | -                                                        |
 | megatron-change-analyzer       | Adaptation | 适用于megatron-change-analyzer相关任务的分析、实施与问题处理场景。       | [链接](https://gitcode.com/Ascend/agent-skills/-/blob/main/skills/megatron-change-analyzer/SKILL.md)                                    | Ascend/agent-skills仓 | -                                                        |

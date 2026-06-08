@@ -18,21 +18,21 @@
 
 | 场景                  | Skills 数量 | 占比       |
 | ------------------- | --------- | -------- |
-| [模型适配](#模型适配)       | 14        | 8.6%    |
-| [模型部署](#模型部署)       | 10        | 6.2%    |
+| [模型适配](#模型适配)       | 15        | 9.2%    |
+| [模型部署](#模型部署)       | 10        | 6.1%    |
 | [文档生成](#文档生成)       | 6        | 3.7%    |
-| [性能优化](#性能优化)       | 58        | 35.8%    |
+| [性能优化](#性能优化)       | 58        | 35.6%    |
 | [模型量化](#模型量化)       | 2        | 1.2%    |
 | [知识检索](#知识检索)       | 1        | 0.6%    |
-| [质量验证](#质量验证)       | 47        | 29.0%    |
-| [通用工具](#通用工具)       | 18        | 11.1%    |
+| [质量验证](#质量验证)       | 47        | 28.8%    |
+| [通用工具](#通用工具)       | 18        | 11.0%    |
 | [其他/归档](#其他/归档)       | 6        | 3.7%    |
-| **合计**              | **162**   | **100%** |
+| **合计**              | **163**   | **100%** |
 
 
 ## 模型适配
 
-共 **14** 个 skill。
+共 **15** 个 skill。
 
 
 | Agent 名称                                 | 类型           | 链接                                         | 验证（skills-eval）       |
@@ -41,6 +41,7 @@
 | ascend-model-verification                  | Adaptation    | ./ascend/adaptation/ascend-model-verification | PASS                  |
 | ai-for-science-boltz2                      | Adaptation    | ./ascend/adaptation/boltz2                   | PASS                  |
 | ai-for-science-generator                   | Adaptation    | ./ascend/adaptation/generator                | PASS                  |
+| cv-ascend-adapt                            | Adaptation    | ./ascend/adaptation/cv-ascend-adapt          | PASS                  |
 | hardware-check-principle                   | Adaptation    | ./ascend/adaptation/hardware-check-principle | PASS                  |
 | megatron-change-analyzer                   | Adaptation    | ./ascend/adaptation/megatron-change-analyzer | PASS                  |
 | megatron-impact-mapper                     | Adaptation    | ./ascend/adaptation/megatron-impact-mapper   | PASS                  |

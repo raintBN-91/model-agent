@@ -91,13 +91,13 @@ AtomCode
 
 ```bash
 # 注册 marketplace（首次）
-`/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin`
+/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin
 
 # 安装 model-agent插件
-`/plugin install ascend-model-agent-plugin@ascend-model-agent-plugin`
+/plugin install ascend-model-agent-plugin@ascend-model-agent-plugin
 
 # 安装完成后，建议用以下命令确认状态：
-`/plugin list`
+/plugin list
 ```
 
 ### 手动添加skills

@@ -1,0 +1,31 @@
+{
+  "model": "amazon/chronos-2",
+  "hardware": "Ascend 910 NPU",
+  "verified_date": "2026-05-20",
+  "environment": {
+    "CANN": "8.5.1",
+    "torch": "2.9.0+cpu",
+    "torch_npu": "2.9.0.post1+gitee7ba04",
+    "chronos_forecasting": "2.2.2",
+    "python": "3.11.14"
+  },
+  "accuracy": {
+    "max_rel_error_pct": 0.0926,
+    "requirement_pct": 1.0,
+    "status": "PASS"
+  },
+  "performance": {
+    "cpu_avg_ms": 226.8,
+    "npu_fp32_avg_ms": 23.6,
+    "npu_fp16_avg_ms": 28.0,
+    "speedup_vs_cpu": 9.6,
+    "peak_throughput_items_s": 2457,
+    "peak_batch_size": 128
+  },
+  "known_issues": [
+    "FP16/BF16 precision FAIL (>1% requirement)",
+    "torch.compile unsupported (isnan GE conversion not implemented)",
+    "torch.jit.trace unsupported (dynamic control flow)",
+    "Multi-NPU no benefit vs single-NPU batching"
+  ]
+}

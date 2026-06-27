@@ -1,0 +1,32 @@
+{
+  "name": "online_serving",
+  "description": "在线服务压测，模拟真实生产环境的并发请求负载",
+  "applicable_versions": [
+    "0.5.x",
+    "0.6.x"
+  ],
+  "prerequisite": "vLLM serve 必须已在运行，服务端口默认可访问",
+  "parameters": {
+    "model": "${MODEL_NAME}",
+    "dataset": "sharegpt",
+    "num_prompts": 1000,
+    "endpoint": "/v1/completions"
+  },
+  "version_specific_args": {
+    "0.5.x": {
+      "script": "python -m vllm.benchmarks.benchmark_serving",
+      "extra_args": ["--request-rate", "10"]
+    },
+    "0.6.x": {
+      "script": "vllm bench serve",
+      "extra_args": ["--request-rate", "10"]
+    }
+  },
+  "metrics": [
+    "request_throughput",
+    "token_throughput",
+    "ttft_p50_ms",
+    "tpot_p50_ms"
+  ],
+  "expected_duration": "5-20 minutes"
+}

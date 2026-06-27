@@ -1,0 +1,6 @@
+{
+  "model": "${MODEL_NAME}",
+  "prompt": "The capital of France is",
+  "max_tokens": 20,
+  "temperature": 0.1
+}

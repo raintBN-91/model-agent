@@ -1,0 +1,29 @@
+{
+  "model": "${MODEL_NAME}",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What's the weather in Beijing?"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weather",
+        "description": "Get current weather information for a location",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string",
+              "description": "City name"
+            }
+          },
+          "required": ["location"]
+        }
+      }
+    }
+  ],
+  "max_tokens": 100
+}

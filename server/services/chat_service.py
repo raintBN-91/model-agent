@@ -526,7 +526,7 @@ async def _execute_workflow_with_context(
         if dimensions:
             enriched_input += "\n[已确认上下文]\n" + "\n".join(f"{k}: {v}" for k, v in dimensions.items())
 
-        plan = planner.plan(enriched_input)
+        plan = await planner.aplan(enriched_input)
 
         if not plan.steps:
             yield _build_sse_chunk(chunk_id, model, DeltaContent(

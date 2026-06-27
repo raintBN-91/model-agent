@@ -129,6 +129,11 @@
       "description": "Publish and manage model artifacts and skills on GitCode platform",
       "category": "documentation",
       "score": 93.0
+    },
+    "small_model_adapt": {
+      "description": "PTA pipeline: small model adaptation agent for traditional CV/NLP/multimodal models using torch_npu/PyTorch (no vllm/vllm-ascend). Triggers when user mentions torch_npu or explicitly states PyTorch/torch-based adaptation. Orchestrates PTA skills for NPU migration of non-LLM models.",
+      "category": "pta",
+      "score": 96.0
     }
   },
   "tier2": {
@@ -1218,11 +1223,6 @@
       "description": "运行MindSpeed-LLM项目的测试用例。当需要运行测试用例、扫描项目代码覆盖率时调用此技能",
       "category": "documentation",
       "score": 62.2
-    },
-    "small_model_adapt": {
-      "description": "NPU 适配验证工具包——将任意 PyTorch/CV/音频/视频模型迁移到 Ascend NPU 并验证兼容性。当用户要求\"把模型跑到 NPU 上\"、\"NPU 适配\"、\"验证 NPU 兼容性\"、\"批量验证模型\"、模型在 NPU 上报错需要排查修复时使用此 skill。",
-      "category": "adaptation",
-      "score": 61.8
     },
     "perf-analyzer": {
       "description": "分析 PyPTO 算子的性能指标。当需要分析PyPTO算子的性能指标，从性能数据文件中提取关键指标，计算性能评级，或提供性能瓶颈分析和优化建议时使用此技能。",

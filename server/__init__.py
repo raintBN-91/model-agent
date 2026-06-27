@@ -9,6 +9,4 @@ Routes:
     /render-card      — scorecard rendering
 """
 
-from server.main import create_app
-
-__all__ = ["create_app"]
+__all__ = []

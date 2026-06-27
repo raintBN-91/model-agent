@@ -107,6 +107,54 @@ def _chunk_text(text: str, max_chunk_size: int = 80) -> list[str]:
     return chunks
 
 
+_SKILLS_DIR = Path(__file__).resolve().parents[1] / "skills"
+
+
+def _find_skill_md(skill_name: str) -> Path | None:
+    """Find the SKILL.md file for a given skill name.
+
+    Searches by directory name pattern: skills/*/skill_name/SKILL.md
+    Falls back to scanning all SKILL.md frontmatter for matching name.
+    """
+    if not _SKILLS_DIR.is_dir():
+        return None
+    # Fast path: search by directory name
+    candidates = list(_SKILLS_DIR.rglob(f"*/{skill_name}/SKILL.md"))
+    if candidates:
+        return candidates[0]
+    # Slow path: scan frontmatter (first-run only, cached in registry)
+    for skill_md in _SKILLS_DIR.rglob("SKILL.md"):
+        try:
+            text = skill_md.read_text(encoding="utf-8", errors="ignore")
+            if text.startswith("---"):
+                end = text.find("---", 3)
+                if end != -1:
+                    front = text[3:end]
+                    for line in front.splitlines():
+                        if line.strip().startswith("name:") and skill_name in line:
+                            return skill_md
+        except Exception:
+            continue
+    return None
+
+
+def _load_skill_content(skill_name: str) -> str | None:
+    """Load SKILL.md content for a skill, stripping YAML frontmatter."""
+    skill_md = _find_skill_md(skill_name)
+    if not skill_md:
+        return None
+    try:
+        text = skill_md.read_text(encoding="utf-8", errors="ignore")
+        # Strip YAML frontmatter
+        if text.startswith("---"):
+            end = text.find("---", 3)
+            if end != -1:
+                text = text[end + 3:].strip()
+        return text
+    except Exception:
+        return None
+
+
 def _resolve_skill_name(skill_name: str) -> str | None:
     if skill_name in _SKILL_REGISTRY:
         return skill_name
@@ -116,7 +164,23 @@ def _resolve_skill_name(skill_name: str) -> str | None:
 
 
 def _build_full_prompt(skill_name: str, prompt: str) -> str:
-    return f"请使用 {skill_name} skill 来完成以下任务：\n\n{prompt}{_DEFAULT_DOWNLOAD_PATH_HINT}"
+    """Build a prompt that includes the skill definition for the model to follow."""
+    skill_content = _load_skill_content(skill_name)
+    if skill_content:
+        return (
+            f"你是一个名为 {skill_name} 的 AI 助手。请严格按照以下指令完成任务：\n\n"
+            f"## {skill_name} Skill 指令\n\n"
+            f"{skill_content}\n\n"
+            f"---\n\n"
+            f"## 用户任务\n\n"
+            f"{prompt}{_DEFAULT_DOWNLOAD_PATH_HINT}"
+        )
+    else:
+        return (
+            f"请作为 {skill_name} 助手来完成以下任务。"
+            f"你需要运用你的知识和工具来完成任务：\n\n"
+            f"{prompt}{_DEFAULT_DOWNLOAD_PATH_HINT}"
+        )
 
 
 def _format_history_as_context(messages: list[Any], max_turns: int = 10, max_chars: int = 4000) -> str:
@@ -185,7 +249,7 @@ def _collect_claude_output(messages: list[Any]) -> str:
                         thinking = getattr(block, "thinking", "")
                         thinking = _filter_warnings(thinking)
                         if thinking:
-                            parts.append(f"> 🤔 **思考**：{thinking}")
+                            parts.append(f"> **思考**：{thinking}")
                     elif block_type == "ToolUseBlock":
                         tool_name = getattr(block, "name", "Unknown")
                         tool_input = getattr(block, "input", {})
@@ -193,7 +257,7 @@ def _collect_claude_output(messages: list[Any]) -> str:
                             if isinstance(tool_input, dict):
                                 questions = tool_input.get("questions", tool_input.get("question", []))
                                 if isinstance(questions, list) and questions:
-                                    q_parts = ["📋 **需要补充以下信息**："]
+                                    q_parts = ["**需要补充以下信息**："]
                                     for i, q in enumerate(questions):
                                         if isinstance(q, dict):
                                             q_text = q.get("question", str(q))
@@ -203,9 +267,9 @@ def _collect_claude_output(messages: list[Any]) -> str:
                                             q_parts.append(f"{i+1}. {q}")
                                     parts.append("\n".join(q_parts))
                                 elif isinstance(questions, str):
-                                    parts.append(f"📋 **需要补充信息**: {questions}")
+                                    parts.append(f"**需要补充信息**: {questions}")
                             continue
-                        tool_info = f"🛠️ **使用工具**：`{tool_name}`"
+                        tool_info = f"**使用工具**：`{tool_name}`"
                         cmd = tool_input.get("command", "") if isinstance(tool_input, dict) else ""
                         if cmd:
                             tool_info += f"\n```bash\n{cmd}\n```"
@@ -255,18 +319,27 @@ async def _invoke_claude_skill_async(skill_name: str, prompt: str) -> str:
         full_prompt = prompt
 
     try:
+        # The project's mcp/ directory shadows the pip-installed mcp package
+        import sys as _sys
+        _cwd = os.getcwd()
+        _cwd_in_path = _cwd in _sys.path
+        if _cwd_in_path:
+            _sys.path.remove(_cwd)
+
         from claude_agent_sdk import ClaudeAgentOptions, query as claude_query
 
-        claude_settings = _load_claude_settings()
-        env_config = claude_settings.get("env", {})
-        model = env_config.get("ANTHROPIC_MODEL")
+        if _cwd_in_path:
+            _sys.path.insert(0, _cwd)
+
+        creds = _resolve_sdk_credentials()
 
         options_kwargs: dict[str, Any] = {
             "allowed_tools": _DEFAULT_ALLOWED_TOOLS,
             "permission_mode": settings.claude_permission_mode,
         }
-        if model:
-            options_kwargs["model"] = model
+        if creds.get("ANTHROPIC_MODEL"):
+            options_kwargs["model"] = creds["ANTHROPIC_MODEL"]
+        options_kwargs["env"] = creds
 
         options = ClaudeAgentOptions(**options_kwargs)
         messages: list[Any] = []
@@ -286,15 +359,10 @@ async def _invoke_claude_skill_async(skill_name: str, prompt: str) -> str:
     # ── 降级：使用 claude CLI（npm） ─────────────────────────────────
     claude_cli = _find_claude_cli()
     if claude_cli:
-        claude_settings = _load_claude_settings()
-        env = claude_settings.get("env", {})
-
         # 子进程 env 从当前环境继承，确保 PATH 等正确
         subprocess_env = os.environ.copy()
+        subprocess_env.update(creds)
         subprocess_env.update({
-            "ANTHROPIC_BASE_URL": env.get("ANTHROPIC_BASE_URL", ""),
-            "ANTHROPIC_AUTH_TOKEN": env.get("ANTHROPIC_AUTH_TOKEN", ""),
-            "ANTHROPIC_MODEL": env.get("ANTHROPIC_MODEL", ""),
             "CLAUDE_CODE_SIMPLE": "1",
             "HOME": str(Path.home()),
         })
@@ -365,129 +433,156 @@ async def invoke_claude_skill(skill_name: str, prompt: str) -> str:
         return f"[claude-code] 调用失败：{type(e).__name__}: {e}"
 
 
-async def _stream_claude_skill_async(skill_name: str, prompt: str):
-    """流式调用 Claude Skill，逐条 yield 处理后的文本片段。
+def _resolve_sdk_credentials() -> dict[str, str]:
+    """Resolve API credentials with same priority as _resolve_anthropic_config().
 
-    优先使用 Python SDK（claude-agent-sdk），不可用时降级到 claude CLI。
+    Priority: server settings > ~/.claude/settings.json > system env vars.
+    Returns dict with env vars the Claude CLI actually reads (ANTHROPIC_API_KEY,
+    ANTHROPIC_BASE_URL, ANTHROPIC_MODEL).
     """
+    claude_settings = _load_claude_settings()
+    claude_env = claude_settings.get("env", {})
+
+    api_key = (
+        settings.anthropic_auth_token
+        or claude_env.get("ANTHROPIC_AUTH_TOKEN")
+        or os.getenv("ANTHROPIC_AUTH_TOKEN")
+        or ""
+    )
+    base_url = (
+        settings.anthropic_base_url
+        or claude_env.get("ANTHROPIC_BASE_URL")
+        or os.getenv("ANTHROPIC_BASE_URL")
+        or ""
+    )
+    model = (
+        settings.anthropic_model
+        or claude_env.get("ANTHROPIC_MODEL")
+        or os.getenv("ANTHROPIC_MODEL")
+        or None
+    )
+    result: dict[str, str] = {}
+    # Claude CLI reads ANTHROPIC_API_KEY from environment for authentication
+    if api_key:
+        result["ANTHROPIC_API_KEY"] = api_key
+    if base_url:
+        result["ANTHROPIC_BASE_URL"] = base_url
+    if model:
+        result["ANTHROPIC_MODEL"] = model
+    return result
+
+
+async def _stream_claude_skill_async(skill_name: str, prompt: str):
+    """Stream Claude Skill output, yielding text chunks."""
     if skill_name:
         full_prompt = _build_full_prompt(skill_name, prompt)
     else:
         full_prompt = prompt
 
+    creds = _resolve_sdk_credentials()
+
+    # Use Python SDK
     try:
+        # The project's mcp/ directory shadows the pip-installed mcp package
+        # needed by claude_agent_sdk. Temporarily remove cwd from sys.path.
+        import sys as _sys
+        _cwd = os.getcwd()
+        _cwd_in_path = _cwd in _sys.path
+        if _cwd_in_path:
+            _sys.path.remove(_cwd)
+
         from claude_agent_sdk import ClaudeAgentOptions, query as claude_query
 
-        settings_dict = _load_claude_settings()
-        env_config = settings_dict.get("env", {})
-        model = env_config.get("ANTHROPIC_MODEL")
+        # Restore sys.path
+        if _cwd_in_path:
+            _sys.path.insert(0, _cwd)
 
         options_kwargs: dict[str, Any] = {
             "allowed_tools": _DEFAULT_ALLOWED_TOOLS,
             "permission_mode": settings.claude_permission_mode,
         }
-        if model:
-            options_kwargs["model"] = model
+        if creds.get("ANTHROPIC_MODEL"):
+            options_kwargs["model"] = creds["ANTHROPIC_MODEL"]
+        # Pass credentials via env to override ~/.claude/settings.json defaults
+        options_kwargs["env"] = creds
 
         options = ClaudeAgentOptions(**options_kwargs)
 
-        try:
-            async for message in _aiter_with_timeout(
-                claude_query(prompt=full_prompt, options=options),
-                _CLAUDE_SKILL_TIMEOUT,
-            ):
-                msg_type = type(message).__name__
+        async for message in claude_query(prompt=full_prompt, options=options):
+            msg_type = type(message).__name__
 
-                if msg_type == "ResultMessage":
-                    result_text = getattr(message, "result", "")
-                    result_text = _filter_warnings(result_text)
-                    if result_text:
-                        yield "\n\n**最终结果**：\n"
-                        for chunk in _chunk_text(result_text):
-                            yield chunk
+            if msg_type == "SystemMessage":
+                continue
 
-                elif msg_type == "AssistantMessage":
-                    content = getattr(message, "content", [])
-                    if content and isinstance(content, list):
-                        for block in content:
-                            block_type = type(block).__name__
-                            if block_type == "ThinkingBlock":
-                                thinking = getattr(block, "thinking", "")
-                                thinking = _filter_warnings(thinking)
-                                if thinking:
-                                    yield "\n\n> 🤔 **思考**："
-                                    for chunk in _chunk_text(thinking):
-                                        yield chunk
-                            elif block_type == "ToolUseBlock":
-                                tool_name = getattr(block, "name", "Unknown")
-                                tool_input = getattr(block, "input", {})
-                                if tool_name == "AskUserQuestion":
-                                    if isinstance(tool_input, dict):
-                                        questions = tool_input.get("questions", tool_input.get("question", []))
-                                        if isinstance(questions, list) and questions:
-                                            yield "\n\n📋 **需要补充以下信息**：\n"
-                                            for i, q in enumerate(questions):
-                                                if isinstance(q, dict):
-                                                    q_text = q.get("question", str(q))
-                                                    q_header = q.get("header", f"问题 {i+1}")
-                                                    yield f"\n{i+1}. **{q_header}**: {q_text}\n"
-                                                else:
-                                                    yield f"\n{i+1}. {q}\n"
-                                        elif isinstance(questions, str):
-                                            yield f"\n\n📋 **需要补充信息**: {questions}\n"
-                                    continue
-                                tool_info = f"\n\n🛠️ **使用工具**：`{tool_name}`"
-                                cmd = tool_input.get("command", "") if isinstance(tool_input, dict) else ""
-                                if cmd:
-                                    tool_info += f"\n```bash\n{cmd}\n```"
-                                yield tool_info
-                                if tool_name in ("Bash", "Read", "Glob", "Grep"):
-                                    yield "\n\n⏳ **命令执行中，请稍候...**"
-                            elif block_type == "TextBlock":
-                                text = getattr(block, "text", "")
-                                text = _filter_warnings(text)
-                                if text:
-                                    for chunk in _chunk_text(text):
-                                        yield chunk
+            if msg_type == "ResultMessage":
+                result_text = getattr(message, "result", "")
+                result_text = _filter_warnings(result_text)
+                if result_text:
+                    for chunk in _chunk_text(result_text):
+                        yield chunk
 
-                elif msg_type == "UserMessage":
-                    tool_result = getattr(message, "tool_use_result", None)
-                    if tool_result and isinstance(tool_result, dict):
-                        stdout = tool_result.get("stdout", "")
-                        stderr = tool_result.get("stderr", "")
-                        stdout = _filter_warnings(stdout)
-                        stderr = _filter_warnings(stderr)
-                        if stdout or stderr:
-                            output_text = "\n\n"
-                            if stdout:
-                                output_text += f"**标准输出**：\n```\n{stdout}\n```"
-                            if stderr:
-                                output_text += f"\n**错误输出**：\n```\n{stderr}\n```"
-                            yield output_text
-                    elif tool_result and isinstance(tool_result, str):
-                        tool_result = _filter_warnings(tool_result)
-                        if tool_result:
-                            yield "\n\n```\n"
-                            for chunk in _chunk_text(tool_result):
-                                yield chunk
-                            yield "\n```"
-        except asyncio.TimeoutError:
-            yield f"\n\n[claude-code] 调用超时（>{_CLAUDE_SKILL_TIMEOUT}s）"
+            elif msg_type == "AssistantMessage":
+                content = getattr(message, "content", [])
+                if content and isinstance(content, list):
+                    for block in content:
+                        block_type = type(block).__name__
+                        if block_type == "ThinkingBlock":
+                            thinking = getattr(block, "thinking", "")
+                            thinking = _filter_warnings(thinking)
+                            if thinking:
+                                yield "\n> **Thinking:** "
+                                yield thinking
+                        elif block_type == "ToolUseBlock":
+                            tool_name = getattr(block, "name", "Unknown")
+                            tool_input = getattr(block, "input", {})
+                            if tool_name == "AskUserQuestion":
+                                yield f"\n> **Q:** {tool_input}"
+                                continue
+                            tool_info = f"\n> **Tool:** `{tool_name}`\n"
+                            cmd = tool_input.get("command", "") if isinstance(tool_input, dict) else ""
+                            if cmd:
+                                tool_info += f"> ```\n> {cmd}\n> ```\n"
+                            yield tool_info
+                        elif block_type == "TextBlock":
+                            text = getattr(block, "text", "")
+                            text = _filter_warnings(text)
+                            if text:
+                                for chunk in _chunk_text(text):
+                                    yield chunk
+
+            elif msg_type == "UserMessage":
+                tool_result = getattr(message, "tool_use_result", None)
+                if tool_result and isinstance(tool_result, dict):
+                    stdout = tool_result.get("stdout", "")
+                    stderr = tool_result.get("stderr", "")
+                    if stdout:
+                        yield f"\n```\n{_filter_warnings(stdout)}\n```\n"
+                    if stderr:
+                        yield f"\n```\n{_filter_warnings(stderr)}\n```\n"
+                elif tool_result and isinstance(tool_result, str):
+                    yield f"\n```\n{_filter_warnings(tool_result)}\n```\n"
+
+            elif msg_type == "StreamEvent":
+                delta = getattr(message, "delta", None)
+                if delta and isinstance(delta, dict):
+                    text = delta.get("text", "")
+                    if text:
+                        yield str(text)
+
         return
-    except ModuleNotFoundError:
-        pass  # 降级到 CLI
+    except ModuleNotFoundError as e:
+        yield f"\n[DEBUG] ModuleNotFoundError: {e}\n"
+        pass
+    except Exception as e:
+        yield f"\n[SDK error: {type(e).__name__}: {e}]\n"
+        return
 
-    # ── 降级：使用 claude CLI（npm） ─────────────────────────────────
+    # Fallback: use claude CLI
     claude_cli = _find_claude_cli()
     if claude_cli:
-        claude_settings = _load_claude_settings()
-        env = claude_settings.get("env", {})
-
         subprocess_env = os.environ.copy()
+        subprocess_env.update(creds)
         subprocess_env.update({
-            "ANTHROPIC_BASE_URL": env.get("ANTHROPIC_BASE_URL", ""),
-            "ANTHROPIC_AUTH_TOKEN": env.get("ANTHROPIC_AUTH_TOKEN", ""),
-            "ANTHROPIC_MODEL": env.get("ANTHROPIC_MODEL", ""),
             "CLAUDE_CODE_SIMPLE": "1",
             "HOME": str(Path.home()),
         })
@@ -506,7 +601,6 @@ async def _stream_claude_skill_async(skill_name: str, prompt: str):
 
         assert proc.stdout is not None
 
-        cli_buffer: list[str] = []
         try:
             while True:
                 line = await asyncio.wait_for(proc.stdout.readline(), timeout=_CLAUDE_SKILL_TIMEOUT)
@@ -514,26 +608,23 @@ async def _stream_claude_skill_async(skill_name: str, prompt: str):
                     break
                 text = line.decode("utf-8", errors="replace").rstrip("\n")
                 if text:
-                    cli_buffer.append(text)
+                    for chunk in _chunk_text(text):
+                        yield chunk
+                        await asyncio.sleep(0)
         except asyncio.TimeoutError:
             proc.kill()
-            yield f"\n\n[claude-code] CLI 调用超时（>{_CLAUDE_SKILL_TIMEOUT}s）"
+            yield f"\n[claude-code] CLI timeout (>{_CLAUDE_SKILL_TIMEOUT}s)"
             return
 
         await proc.wait()
-        if proc.returncode == 0 and cli_buffer:
-            for text in cli_buffer:
-                for chunk in _chunk_text(text):
-                    yield chunk
-                    await asyncio.sleep(0)
-            return
-        elif proc.returncode != 0:
+        if proc.returncode != 0:
             stderr_output = (await proc.stderr.read()).decode("utf-8", errors="replace") if proc.stderr else ""
             if stderr_output:
-                yield f"\n\n[claude-code] CLI 退出码 {proc.returncode}：{stderr_output[:500]}"
+                yield f"\n[claude-code] CLI exit {proc.returncode}: {stderr_output[:500]}"
             return
+        return
 
-    yield "[claude-code] 环境未安装 claude-agent-sdk 且找不到 claude CLI，请执行 `pip install claude-agent-sdk`。"
+    yield "[claude-code] No SDK and no CLI available."
 
 
 async def stream_claude_skill(skill_name: str, prompt: str):

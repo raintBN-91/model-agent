@@ -199,6 +199,18 @@ async def _execute_claude_skill(
 ) -> str:
     """调用 Claude Code Skill。"""
     prompt = ctx.render_prompt(step.prompt_template)
+
+    # 立即发送启动反馈，避免 Claude Code 初始化期间用户看不到任何输出
+    if progress_callback:
+        try:
+            await progress_callback({
+                "event": "step_output",
+                "step": step.name,
+                "chunk": "\n> Claude Code 正在初始化 Skill 环境，请稍候...\n",
+            })
+        except Exception:
+            pass
+
     return await _call_claude_skill(step.skill_name or "", prompt, step.params,
                                     progress_callback=progress_callback, step_name=step.name)
 
@@ -211,7 +223,7 @@ async def _execute_llm_tool(
 ) -> str:
     """调用 LangChain Tool。"""
     prompt = ctx.render_prompt(step.prompt_template)
-    return await _call_llm_tool(step.skill_name or "", prompt, step.params)
+    return await _call_llm_tool(step.skill_name or "", prompt, step.params, progress_callback=progress_callback)
 
 
 async def _execute_custom(
@@ -279,7 +291,8 @@ async def _call_skill_or_tool(
         )
     elif step.type == StepType.LLM_TOOL:
         return await _call_llm_tool(
-            step.skill_name or "", step.prompt_template, step.params
+            step.skill_name or "", step.prompt_template, step.params,
+            progress_callback=progress_callback,
         )
     elif step.type == StepType.VERIFY:
         return await _call_claude_skill(
@@ -302,7 +315,11 @@ async def _call_claude_skill(
     progress_callback: Any = None,
     step_name: str = "",
 ) -> str:
-    """调用 Claude Code Skill（流式收集结果，支持实时推送）。"""
+    """调用 Claude Code Skill（流式收集结果，支持实时推送）。
+
+    采用与 /verify 命令相同的简单 async for 迭代模式，
+    确保流式输出行为一致。心跳改为独立后台任务发送。
+    """
     import logging
     _logger = logging.getLogger(__name__)
     try:
@@ -312,11 +329,34 @@ async def _call_claude_skill(
 
     chunks: list[str] = []
     _logger.info(f"[workflow] Calling skill: {skill_name or 'default'}, prompt_len={len(prompt)}")
+
+    # 独立心跳任务：每 8 秒发送一次进度提示
+    _heartbeat_active = True
+
+    async def _send_heartbeats():
+        count = 0
+        while _heartbeat_active:
+            await asyncio.sleep(8)
+            if not _heartbeat_active:
+                break
+            count += 1
+            if progress_callback:
+                try:
+                    await progress_callback({
+                        "event": "step_output",
+                        "step": step_name or skill_name,
+                        "chunk": f"\n> Claude Code 正在执行中...（已等待 {count * 8}s）\n",
+                    })
+                except Exception:
+                    pass
+
+    heartbeat_task = asyncio.ensure_future(_send_heartbeats())
+
     try:
+        # 使用与 /verify 相同的简单 async for 迭代模式
         async for chunk in stream_claude_skill(skill_name, prompt):
             if chunk:
                 chunks.append(chunk)
-                # 实时推送流式输出
                 if progress_callback:
                     try:
                         await progress_callback({
@@ -331,6 +371,13 @@ async def _call_claude_skill(
     except Exception as e:
         _logger.error(f"[workflow] Skill call failed: {type(e).__name__}: {e}")
         return f"[workflow] Skill 调用失败: {type(e).__name__}: {e}"
+    finally:
+        _heartbeat_active = False
+        heartbeat_task.cancel()
+        try:
+            await heartbeat_task
+        except asyncio.CancelledError:
+            pass
 
     result = "".join(chunks) if chunks else "(无输出)"
     _logger.info(f"[workflow] Skill done: {skill_name}, total_chunks={len(chunks)}, result_len={len(result)}")
@@ -341,8 +388,9 @@ async def _call_llm_tool(
     tool_name: str,
     prompt: str,
     params: dict[str, Any] | None = None,
+    progress_callback: Any = None,
 ) -> str:
-    """调用 LangChain Tool。"""
+    """调用 LangChain Tool。未找到 tool 时返回 prompt 本身（用于简单输出任务）。"""
     try:
         from engine.registry import get_all_tools
         tools = get_all_tools()
@@ -353,6 +401,7 @@ async def _call_llm_tool(
                     kwargs.update(params)
                 result = await t.ainvoke(kwargs)
                 return str(result)
-        return f"[workflow] 未找到 tool: {tool_name}"
+        # Tool 不存在时，将 prompt 作为直接输出返回（适用于简单输出/问候等任务）
+        return prompt
     except Exception as e:
         return f"[workflow] Tool 调用失败: {type(e).__name__}: {e}"

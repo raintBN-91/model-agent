@@ -106,5 +106,6 @@ def build_agent(
     if user_system_prompt:
         system_prompt += "\n\n" + user_system_prompt
 
-    logger.info("Agent built: model=%s, tools=%d, streaming=%s", llm.model, len(tools), streaming)
+    model_name = getattr(llm, "model", getattr(llm, "model_name", "unknown"))
+    logger.info("Agent built: model=%s, tools=%d, streaming=%s", model_name, len(tools), streaming)
     return create_react_agent(llm, tools, prompt=system_prompt, checkpointer=_memory_saver)

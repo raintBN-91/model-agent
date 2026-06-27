@@ -1,5 +1,5 @@
 from __future__ import annotations
-"""LLM 构建工厂 — Anthropic Claude。"""
+"""LLM 构建工厂 — Anthropic Claude / Kimi。"""
 
 
 import asyncio
@@ -51,100 +51,87 @@ def retry_llm_call(max_retries: int = 3, base_delay: float = 1.0):
     return decorator
 
 
-def _load_claude_sdk_env() -> dict[str, Any]:	 
-    """读取 Claude SDK 配置文件 ~/.claude/settings.json 中的 env 配置。"""	 
-    settings_path = Path.home() / ".claude" / "settings.json"	 
-    if settings_path.exists():	 
-        try: 
-            data = json.loads(settings_path.read_text(encoding="utf-8")) 
-            return data.get("env", {}) 
-        except Exception: 
-            pass 
-    return {} 
- 
- 
- 
- 
-def _resolve_anthropic_config() -> tuple[str, str | None, str | None]:	 
-    """解析 Anthropic 配置，优先级：环境变量 > Claude SDK 配置 > 系统环境变量。	 
+def _load_claude_sdk_env() -> dict[str, Any]:
+    """读取 Claude SDK 配置文件 ~/.claude/settings.json 中的 env 配置。"""
+    settings_path = Path.home() / ".claude" / "settings.json"
+    if settings_path.exists():
+        try:
+            data = json.loads(settings_path.read_text(encoding="utf-8"))
+            return data.get("env", {})
+        except Exception:
+            pass
+    return {}
 
 
-    当前环境使用 ANTHROPIC_AUTH_TOKEN 作为认证凭证。 
+def _resolve_anthropic_config() -> tuple[str, str | None, str | None]:
+    """解析 Anthropic 配置，优先级：环境变量 > Claude SDK 配置 > 系统环境变量。
+
+    当前环境使用 ANTHROPIC_AUTH_TOKEN 作为认证凭证。
+
+    Returns:
+        (api_key, base_url, model)
+    """
+    claude_env = _load_claude_sdk_env()
+
+    api_key = (
+        settings.anthropic_auth_token
+        or claude_env.get("ANTHROPIC_AUTH_TOKEN")
+        or os.getenv("ANTHROPIC_AUTH_TOKEN")
+        or ""
+    )
+    base_url = (
+        settings.anthropic_base_url
+        or claude_env.get("ANTHROPIC_BASE_URL")
+        or os.getenv("ANTHROPIC_BASE_URL")
+        or None
+    )
+    model = (
+        settings.anthropic_model
+        or claude_env.get("ANTHROPIC_MODEL")
+        or os.getenv("ANTHROPIC_MODEL")
+        or None
+    )
+    return api_key, base_url, model
 
 
-    Returns: 
-        (api_key, base_url, model) 
-    """ 
-    claude_env = _load_claude_sdk_env() 
+def get_llm_model_name() -> str:
+    """返回当前实际使用的 LLM 模型名。"""
+    _, _, model = _resolve_anthropic_config()
+    return model or "claude-3-5-sonnet-20241022"
 
 
-    api_key = ( 
-        settings.anthropic_auth_token 
-        or claude_env.get("ANTHROPIC_AUTH_TOKEN") 
-        or os.getenv("ANTHROPIC_AUTH_TOKEN") 
-        or "" 
-    ) 
-    base_url = ( 
-        settings.anthropic_base_url 
-        or claude_env.get("ANTHROPIC_BASE_URL") 
-        or os.getenv("ANTHROPIC_BASE_URL") 
-        or None 
-    ) 
-    model = ( 
-        settings.anthropic_model 
-        or claude_env.get("ANTHROPIC_MODEL") 
-        or os.getenv("ANTHROPIC_MODEL") 
-        or None 
-    ) 
-    return api_key, base_url, model 
- 
- 
- 
- 
-def get_llm_model_name() -> str: 
-    """返回当前实际使用的 LLM 模型名。""" 
-    _, _, model = _resolve_anthropic_config() 
-    return model or "claude-3-5-sonnet-20241022" 
- 
- 
- 
- 
-def extract_text_content(content: str | list[Any]) -> str: 
-    """从 LangChain Message content 中提取文本。 
+def extract_text_content(content: str | list[Any]) -> str:
+    """从 LangChain Message content 中提取文本。
+
+    ChatAnthropic 返回的 content 是内容块列表，如
+    ``[{"type": "text", "text": "..."}]``，需要提取拼接。
+    """
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts: list[str] = []
+        for block in content:
+            if isinstance(block, dict) and block.get("type") == "text":
+                parts.append(block.get("text", ""))
+        return "".join(parts)
+    return ""
 
 
-    ChatAnthropic 返回的 content 是内容块列表，如 
-    ``[{"type": "text", "text": "..."}]``，需要提取拼接。 
-    """ 
-    if isinstance(content, str): 
-        return content 
-    if isinstance(content, list): 
-        parts: list[str] = [] 
-        for block in content: 
-            if isinstance(block, dict) and block.get("type") == "text": 
-                parts.append(block.get("text", "")) 
-        return "".join(parts) 
-    return "" 
- 
- 
- 
- 
-def build_llm(*, streaming: bool = False) -> ChatAnthropic: 
-    """从配置构建 ChatAnthropic 实例，配置与 Claude SDK 共用。""" 
-    api_key, base_url, model = _resolve_anthropic_config() 
-    if not api_key:	 
-        raise LLMAuthError(	 
-            "请配置 ANTHROPIC_AUTH_TOKEN（环境变量、.env 或 ~/.claude/settings.json）" 
-        ) 
+def build_llm(*, streaming: bool = False) -> ChatAnthropic:
+    """从配置构建 ChatAnthropic 实例，配置与 Claude SDK 共用。"""
+    api_key, base_url, model = _resolve_anthropic_config()
+    if not api_key:
+        raise LLMAuthError(
+            "请配置 ANTHROPIC_AUTH_TOKEN（环境变量、.env 或 ~/.claude/settings.json）"
+        )
 
-
-    kwargs: dict[str, Any] = {	 
-        "model": model or "claude-3-5-sonnet-20241022",	 
-        "anthropic_api_key": api_key,	 
-        "streaming": streaming,	 
-    } 
-    if base_url: 
-        kwargs["anthropic_api_url"] = base_url 
+    kwargs: dict[str, Any] = {
+        "model": model or "claude-3-5-sonnet-20241022",
+        "anthropic_api_key": api_key,
+        "streaming": streaming,
+    }
+    if base_url:
+        kwargs["anthropic_api_url"] = base_url
 
     kwargs["default_headers"] = {"Authorization": f"Bearer {api_key}"}
     return ChatAnthropic(**kwargs)

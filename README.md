@@ -2,7 +2,7 @@
 
 # 昇腾 Model Agent
 
-**昇腾模型全流程Agent** · 搜索 · 验证 · 适配 · 部署 · 量化 · 优化 · 文档 与 workflow全流程编排
+**昇腾模型全流程Agent** · 376 Skills · 搜索 · 验证 · 适配 · 部署 · 量化 · 优化 · 文档 与全流程编排
 
 **[🌐 全景平台](https://ai.gitcode.com/ascend-model-ecosystem)** · **[📇 Skills 导航](skills/skills.md)** · **[⚡ Ascend Skills Eval评测](./ascend-skills-eval/README.md)** · **[💬 GitCode 仓库](https://gitcode.com/Ascend/model-agent)**
 
@@ -21,6 +21,7 @@
 - [快速开始](#快速开始)
 - [仓库结构](#仓库结构)
 - [Skills 技能库](#skills-技能库)
+- [Release Notes](#-release-notes--v100)
 - [使用建议](#使用建议)
 - [贡献方式](#贡献方式)
 
@@ -44,6 +45,8 @@
 
 ## 🔥 最新动态
 
+- **2026-06-27** — Skills 目录重构：整合 ascend/contribution 重复分类，归档为 11 个清晰目录，总计 376 个 SKILL.md；新增 `small_model_adapt` 为 Tier1 PTA Pipeline 智能体，专用于传统CV/NLP/多模态模型的 torch_npu 适配
+- **2026-06-26** — Agent 技能加载修复：SKILL.md 内容直接注入模型 prompt，verify/adapt/optimizer agent 均可正常工作
 - **2026-06-15** — 支持持久化存储容器磁盘，能够帮你在容器中记录七天的执行历史
 - **2026-06-15** — 支持云体验入口，能够通过hidevlab体验model agent镜像，更多算力体验
 - **2026-06-07** — msAgent上线，支持Profiling数据自动分析！
@@ -117,42 +120,39 @@ mv model-agent/skills/* ~/.claude/skills/
 
 ```text
 model-agent/
-├── apps/
-│   ├── api-gateway/
-│   └── console/
-├── skills/
-│   ├── skills.md                  # 7 大分类导航与统计
-│   ├── examples/                  # 跨分类使用样例（新增）
-│   ├── optimization/              # 性能优化（69）
-│   ├── verification/              # 质量验证（51）
-│   ├── deployment/                # 模型部署（15）
-│   ├── adaptation/                # 模型适配（15）
-│   ├── documentation/             # 文档生成（10）
+├── engine/                        # 核心引擎：工作流编排、技能注册、Claude 工具
+│   ├── experience/                # 经验积累与知识沉淀
+│   ├── skills/                    # 技能注册与 Tier 分级管理
+│   └── workflow/                  # 工作流执行引擎
+├── server/                        # FastAPI 服务端（端口 18003）
+│   ├── api/                       # API 路由（chat、config、system、eval）
+│   ├── middleware/                 # 中间件（错误处理）
+│   ├── models/                    # 数据模型
+│   └── services/                  # 业务服务
+├── commands/                      # 命令注册（/verify、/claude、/pta 等斜杠命令）
+├── agents/                        # Agent 模块（ms_agent）
+├── mcp_servers/                   # MCP 服务器（cannbot、ms_agent，共 144 工具）
+├── skills/                        # 技能库（11 分类、376 SKILL.md）
+│   ├── skills.md                  # 分类导航与统计
+│   ├── tiers.json                 # Tier1(27) / Tier2(121) / Tier3(148) 三级注册
+│   ├── adaptation/                # 模型适配（30）
+│   ├── common/                    # 通用工具（23）
+│   ├── deployment/                # 模型部署（136）
+│   ├── documentation/             # 文档生成（14）
+│   ├── examples/                  # 跨分类使用案例
+│   ├── optimization/              # 性能优化（91）
+│   ├── other/                     # 其他（6）
+│   ├── pta/                       # PTA Pipeline 智能体（6）
 │   ├── quantization/              # 模型量化（2）
-│   └── search/                    # 知识检索（1）
-├── ascend-skills-eval/           # SKILL 结构评测工具（FastAPI Web、粘贴/单仓/批量、报告与 PNG 成果卡）
-├── core/
-│   ├── intent-router/
-│   ├── orchestrator/
-│   ├── policy-engine/
-│   └── telemetry/
-├── workflows/
-│   ├── training/
-│   ├── inference/
-│   ├── recommendation/
-│   └── industry-templates/
-├── adapters/
-│   ├── ascend/
-│   ├── llm-providers/
-│   └── vector-db/
-├── governance/
-│   ├── auth/
-│   ├── audit/
-│   └── safety/
-└── tests/
-    ├── contract/
-    ├── e2e/
-    └── benchmark/
+│   ├── search/                    # 知识检索（1）
+│   └── verification/              # 质量验证（67）
+├── ascend-skills-eval/            # Skills 结构评测工具（九维打分、报告与成果卡）
+├── docker/                        # Docker 构建配置（A2/A3）
+├── docs/                          # 文档与图片资源
+├── industry-agent/                # 行业 Agent（金融）
+├── Release_notes/                 # 版本发布说明（中/英）
+├── scripts/                       # 实用脚本（评测、同步）
+└── tests/                         # 测试（api、core、workflow、hermes）
 ```
 
 ---
@@ -161,19 +161,23 @@ model-agent/
 
 按场景把可复用 Skill 归好类，方便从任务反查该用哪份 `SKILL.md`。更细条目、原始链接与样例见 `skills/skills.md` 与下方各表。
 
-当前仓库 Skills 已按场景完成分类整理（详见 `skills/skills.md`）：
+Skill 注册采用三级 Tier 体系（`skills/tiers.json`）：Tier1 核心智能体（27）、Tier2 扩展技能（121）、Tier3 长尾技能（148），共计 296 个注册 Skill。实际 `skills/` 目录包含 376 个 SKILL.md 文件，覆盖 11 个分类：
 
 
-| 场景     | 数量      | 说明                  |
-| ------ | ------- | ------------------- |
-| 性能优化   | 69      | 算子/推理性能分析、瓶颈定位、优化落地 |
-| 质量验证   | 51      | 精度验证、代码评审、测试生成、问题排查 |
-| 模型部署   | 15      | 部署流程、环境配置、运行验证      |
-| 模型适配   | 15      | 框架迁移、版本兼容、适配改造      |
-| 文档生成   | 10      | 文档规范、测试报告、知识沉淀      |
-| 模型量化   | 2       | 量化相关流程与实践           |
-| 知识检索   | 1       | 文档检索与知识查询           |
-| **合计** | **163** | —                   |
+| 场景       | SKILL.md | 说明                             |
+| -------- | ------- | ------------------------------ |
+| 模型部署     | 136     | 部署流程、环境配置、运行验证、模型发布           |
+| 性能优化     | 91      | 算子/推理性能分析、瓶颈定位、优化落地            |
+| 质量验证     | 67      | 精度验证、代码评审、测试生成、问题排查            |
+| 模型适配     | 30      | 框架迁移、版本兼容、适配改造                 |
+| 通用工具     | 23      | 代码理解、测试编写、Issue 处理等通用能力        |
+| 文档生成     | 14      | 文档规范、测试报告、知识沉淀                 |
+| PTA 智能体  | 6       | PTA Pipeline：适配、验证、优化、量化核心智能体   |
+| 其他       | 6       | 归档、Megatron 等特殊用途               |
+| 模型量化     | 2       | 量化相关流程与实践                      |
+| 知识检索     | 1       | 文档检索与知识查询                      |
+| 使用案例     | —       | 跨分类 Skill 使用示例（examples/ 目录）    |
+| **合计**   | **376** | —                              |
 
 
 **与评测系统打个配合**（可选）：写完或改版 `SKILL.md` 后，可用 `[ascend-skills-eval](./ascend-skills-eval/README.md)` 做一次评测体检（九维打分、改进建议、报告与成果卡 PNG），优化skills。
@@ -188,7 +192,7 @@ model-agent/
 
 ### 全量 Skills 清单
 
-以下按 `skills/skills.md` 的 7 个分类呈现：
+以下按 `skills/skills.md` 的主要分类呈现（完整 Tier 注册清单见 `skills/tiers.json`，含 296 个 Skill）：
 
 #### 性能优化
 
@@ -405,7 +409,8 @@ model-agent/
 ### 重点技能方向示例
 
 - **模型推理优化**：`model-infer-optimize`、`model-infer-kvcache`、`model-infer-multi-stream`
-- **模型适配迁移**：`model-migration`、`uv-torch-adaptation`、`vllm-ascend-model-adapter`
+- **模型适配迁移**：`adapt-agent`、`small_model_adapt`（torch_npu 小模型）、`vllm-ascend-model-adapter`
+- **PTA Pipeline 智能体**：`adapt-agent`、`verify-agent`、`optimizer-agent`、`quantify-agent`、`small_model_adapt`
 - **算子/内核调优**：`triton-operator-performance-optim`、`tilelang-op-developer`、`pypto-op-perf-tune`
 - **质量保障**：`ascendc-operator-precision-eval`、`pytest-writer`、`skill-auditor`
 
@@ -413,9 +418,41 @@ model-agent/
 
 ## 🛠 使用建议
 
-- 首先根据任务场景在 `skills/skills.md` 中定位对应分类
+- 首先根据任务场景在 `skills/skills.md` 中定位对应分类（11 大分类，376 个 SKILL.md）
+- 或查阅 `skills/tiers.json` 按 Tier 等级（Tier1 核心 / Tier2 扩展 / Tier3 长尾）快速定位
 - 再进入目标 Skill 目录阅读 `SKILL.md` 的输入、输出与约束
+- PTA Pipeline 场景：使用 `/verify`、`/claude adapt-agent` 等斜杠命令一键触发
+- torch_npu / PyTorch 原生适配场景：触发 `small_model_adapt`（Tier1），自动调用 pta/ 下对应 Skill
 - 多阶段任务建议串联多个 Skill（例如：适配 → 验证 → 优化 → 文档）
+
+---
+
+## 📋 Release Notes — v1.0.0
+
+完整发布说明见 [`Release_notes/RELEASE_NOTES_v1.0.0_CN.md`](Release_notes/RELEASE_NOTES_v1.0.0_CN.md) 和 [`RELEASE_NOTES_v1.0.0.md`](Release_notes/RELEASE_NOTES_v1.0.0.md)（英文）。
+
+### 核心亮点
+
+- **动态工作流引擎**：以基于 DAG 的 `DynamicPlanner` + `WorkflowExecutor` 替代原有的静态意图解析器，支持 LLM 生成计划、并行步骤执行、重试逻辑、检查点恢复及实时 SSE 进度推送。
+- **Hermes 自演进引擎**：新增经验子系统，持久化适配记忆、技能和洞察，使框架能够从历史执行中学习并主动建议优化方案。
+- **MCP 集成**：支持模型上下文协议，内置 Cannbot 和 MS Agent 两个 MCP Server，提供生命周期管理及工作流引擎集成。
+- **PTA Agent**：新增专用 PyTorch-Ascend Agent（`/pta`），支持基于 `thread_id` 的多轮对话记忆，专为 `torch_npu` 开发场景设计。
+- **Anthropic Claude 原生接入**：将 LLM 提供商切换为 Anthropic Claude，并通过新增的 `/v1/chat/config` 端点支持运行时配置热更新。
+- **Skills 重构**：376 个 SKILL.md 整合为 11 个清晰分类目录，Tier 三级注册体系（Tier1 核心 27 / Tier2 扩展 121 / Tier3 长尾 148）。
+
+### 新增命令
+
+| 命令 | 触发方式 | 说明 |
+|---------|---------|-------------|
+| `/claude` | 用户 / LLM / 自动 | 调用 Claude Code 技能 |
+| `/verify` | 用户 / LLM / 自动 | 模型部署验证 |
+| `/adapt` | 用户 / LLM / 自动 | 模型适配至 Ascend NPU |
+| `/optimize` | 用户 / LLM / 自动 | vLLM-Ascend 性能优化 |
+| `/quantify` | 用户 / LLM / 自动 | 模型量化 |
+| `/pta` | 用户 / LLM / 自动 | PyTorch-Ascend Agent（新增） |
+| `/experience` | 仅用户 | Hermes 引擎内省（新增） |
+| `/learn` | 仅用户 | 存储适配经验（新增） |
+| `/workflow` | 用户 / LLM / 自动 | 动态工作流编排（重写） |
 
 ---
 
@@ -423,9 +460,9 @@ model-agent/
 
 欢迎提交新 Skill 或改进现有 Skill。建议在提交前：
 
-- 保持目录结构与命名风格一致
+- 保持目录结构与命名风格一致（Skill 放在对应分类子目录：adaptation/deployment/optimization/verification 等）
 - 在 `SKILL.md` 中明确边界、步骤与输出格式
-- 同步更新 `skills/skills.md` 的分类导航
+- 同步更新 `skills/tiers.json`（选择合适的 Tier 与 score）和 `skills/skills.md` 的分类导航
 
 对于使用过程中的经验、问题反馈欢迎提交 [Issue](https://gitcode.com/Ascend/model-agent/issues),也欢迎加入微信群交流
 

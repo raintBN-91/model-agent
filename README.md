@@ -2,7 +2,7 @@
 
 # 昇腾 Model Agent
 
-**昇腾模型全流程Agent** · 376 Skills · 搜索 · 验证 · 适配 · 部署 · 量化 · 优化 · 文档 与全流程编排
+**昇腾模型全流程Agent** ·  搜索 · 验证 · 适配 · 部署 · 量化 · 优化 · 文档 与全流程编排
 
 **[🌐 全景平台](https://ai.gitcode.com/ascend-model-ecosystem)** · **[📇 Skills 导航](skills/skills.md)** · **[⚡ Ascend Skills Eval评测](./ascend-skills-eval/README.md)** · **[💬 GitCode 仓库](https://gitcode.com/Ascend/model-agent)**
 
@@ -45,7 +45,8 @@
 
 ## 🔥 最新动态
 
-- **2026-06-30** — **v1.0.0-rc1 正式上线！** 重大架构升级：动态工作流引擎、Hermes 自演进经验引擎、MCP 集成、PTA Agent、Anthropic Claude 原生接入；Skills 重构为 11 分类 376 个 SKILL.md，Tier 三级注册体系。详见 [`Release_notes/`](Release_notes/RELEASE_NOTES_v1.0.0_CN.md)
+- **2026-06-27** — **v1.0.0-rc1 正式上线！** 重大架构升级：动态工作流引擎、Hermes 自演进经验引擎、MCP 集成、PTA Agent、Anthropic Claude 原生接入；支持离线、容器内部署。详见 [`v1.0.0-rc1分支`](https://gitcode.com/Ascend/model-agent/tree/v1.0.0-rc1)
+- **2026-06-18** — **model-agent新版本内测！** 活动内容详见 [`重磅更新 | Model-Agent 新版本内测正式启动！`](https://mp.weixin.qq.com/s/2ElE7kFR_d0rB2KaVxm9Og)
 - **2026-06-15** — 支持持久化存储容器磁盘，能够帮你在容器中记录七天的执行历史
 - **2026-06-15** — 支持云体验入口，能够通过hidevlab体验model agent镜像，更多算力体验
 - **2026-06-07** — msAgent上线，支持Profiling数据自动分析！
@@ -77,7 +78,7 @@ Claude Code
 
 ```bash
 # 注册 marketplace（首次）
-/plugin marketplace add holyorevil/ascend-model-agent-plugin
+/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin.git
 # 安装 model-agent插件
 /plugin install ascend-model-agent-plugin@ascend-model-agent-plugin
 
@@ -119,39 +120,39 @@ mv model-agent/skills/* ~/.claude/skills/
 
 ```text
 model-agent/
-├── engine/                        # 核心引擎：工作流编排、技能注册、Claude 工具
-│   ├── experience/                # 经验积累与知识沉淀
-│   ├── skills/                    # 技能注册与 Tier 分级管理
-│   └── workflow/                  # 工作流执行引擎
-├── server/                        # FastAPI 服务端（端口 18003）
-│   ├── api/                       # API 路由（chat、config、system、eval）
-│   ├── middleware/                 # 中间件（错误处理）
-│   ├── models/                    # 数据模型
-│   └── services/                  # 业务服务
-├── commands/                      # 命令注册（/verify、/claude、/pta 等斜杠命令）
-├── agents/                        # Agent 模块（ms_agent）
-├── mcp_servers/                   # MCP 服务器（cannbot、ms_agent，共 144 工具）
-├── skills/                        # 技能库（11 分类、376 SKILL.md）
-│   ├── skills.md                  # 分类导航与统计
-│   ├── tiers.json                 # Tier1(27) / Tier2(121) / Tier3(148) 三级注册
-│   ├── adaptation/                # 模型适配（30）
-│   ├── common/                    # 通用工具（23）
-│   ├── deployment/                # 模型部署（136）
-│   ├── documentation/             # 文档生成（14）
-│   ├── examples/                  # 跨分类使用案例
-│   ├── optimization/              # 性能优化（91）
-│   ├── other/                     # 其他（6）
-│   ├── pta/                       # PTA Pipeline 智能体（6）
-│   ├── quantization/              # 模型量化（2）
-│   ├── search/                    # 知识检索（1）
-│   └── verification/              # 质量验证（67）
-├── ascend-skills-eval/            # Skills 结构评测工具（九维打分、报告与成果卡）
-├── docker/                        # Docker 构建配置（A2/A3）
-├── docs/                          # 文档与图片资源
-├── industry-agent/                # 行业 Agent（金融）
-├── Release_notes/                 # 版本发布说明（中/英）
-├── scripts/                       # 实用脚本（评测、同步）
-└── tests/                         # 测试（api、core、workflow、hermes）
+├── engine/                      # 核心引擎：工作流编排、技能注册、Claude 工具
+│   ├── experience/              # 经验积累与知识沉淀
+│   ├── skills/                  # 技能注册与 Tier 分级管理
+│   └── workflow/                # 工作流执行引擎
+├── server/                      # FastAPI 服务端（端口 18003）
+│   ├── api/                     # API 路由（chat、config、system、eval）
+│   ├── middleware/               # 中间件（错误处理）
+│   ├── models/                  # 数据模型
+│   └── services/                # 业务服务
+├── commands/                    # 命令注册（/verify、/claude、/pta 等斜杠命令）
+├── agents/                      # Agent 模块（ms_agent）
+├── mcp_servers/                 # MCP 服务器（cannbot、ms_agent，共 144 工具）
+├── skills/                      # 技能库（11 分类、376 SKILL.md）
+│   ├── skills.md                # 分类导航与统计
+│   ├── tiers.json               # Tier1(27) / Tier2(121) / Tier3(148) 三级注册
+│   ├── adaptation/              # 模型适配（30）
+│   ├── common/                  # 通用工具（23）
+│   ├── deployment/              # 模型部署（136）
+│   ├── documentation/           # 文档生成（14）
+│   ├── examples/                # 跨分类使用案例
+│   ├── optimization/            # 性能优化（91）
+│   ├── other/                   # 其他（6）
+│   ├── pta/                     # PTA Pipeline 智能体（6）
+│   ├── quantization/            # 模型量化（2）
+│   ├── search/                  # 知识检索（1）
+│   └── verification/            # 质量验证（67）
+├── ascend-skills-eval/          # Skills 结构评测工具（九维打分、报告与成果卡）
+├── docker/                      # Docker 构建配置（A2/A3）
+├── docs/                        # 文档与图片资源
+├── industry-agent/              # 行业 Agent
+├── Release_notes/               # 版本发布说明（中/英）
+├── scripts/                     # 实用脚本（评测、同步）
+└── tests/                       # 测试（api、core、workflow、hermes）
 ```
 
 ---

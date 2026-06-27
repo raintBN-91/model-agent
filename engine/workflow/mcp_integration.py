@@ -1,3 +1,4 @@
+from __future__ import annotations
 """MCP (Model Context Protocol) 集成模块。
 
 管理到外部 MCP Server（CANNBot、ms-agent 等）的连接、工具发现和工具调用。
@@ -11,7 +12,6 @@
     result = await manager.call_tool("cannbot", "ascendc-op-develop", {"prompt": "..."})
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

@@ -1,9 +1,9 @@
+from __future__ import annotations
 """Layer D: MCP 调用优化。
 
 记录每次 MCP 调用的响应时间和成功率，智能选择最快/最可靠的服务器。
 """
 
-from __future__ import annotations
 
 from typing import Any
 

@@ -1,6 +1,6 @@
+from __future__ import annotations
 """PTA Agent 调用工具 — 支持基于 thread_id 的多轮对话记忆。"""
 
-from __future__ import annotations
 
 import asyncio
 import sys

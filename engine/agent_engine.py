@@ -1,6 +1,6 @@
+from __future__ import annotations
 """LangChain Agent 构建。"""
 
-from __future__ import annotations
 
 import logging
 from pathlib import Path

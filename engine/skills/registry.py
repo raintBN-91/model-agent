@@ -1,3 +1,4 @@
+from __future__ import annotations
 """SkillRegistry — 三级技能注册表。
 
 职责:
@@ -12,7 +13,6 @@
   Tier 3 (长尾) — 不进 prompt，/skill-search 检索
 """
 
-from __future__ import annotations
 
 import json
 import re

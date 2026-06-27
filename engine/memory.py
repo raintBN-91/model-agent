@@ -1,6 +1,6 @@
+from __future__ import annotations
 """MemorySaver 封装 — 避免循环导入。"""
 
-from __future__ import annotations
 
 from typing import Any
 

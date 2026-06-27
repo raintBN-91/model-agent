@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Brainstorming Session — LLM 驱动的多轮意图澄清。
 
 在 DynamicPlanner 规划工作流之前，通过多轮对话明确用户需求。
@@ -30,7 +31,6 @@
   COMPLETED
 """
 
-from __future__ import annotations
 
 import json
 import re

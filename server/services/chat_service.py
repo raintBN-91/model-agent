@@ -1,6 +1,6 @@
+from __future__ import annotations
 """对话服务 — OpenAI 格式 ↔ LangChain 转换 + 命令分发。"""
 
-from __future__ import annotations
 
 import asyncio
 import json

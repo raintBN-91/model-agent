@@ -1,10 +1,10 @@
+from __future__ import annotations
 """Claude Code 历史记录对话轮次提炼模块。
 
 将 Claude Code JSONL 原始消息流提炼成结构化的"一轮对话"（turn），
 包含用户问题、助手最终回答、思考过程、工具调用及结果。
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any

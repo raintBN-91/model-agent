@@ -1,6 +1,6 @@
+from __future__ import annotations
 """FastAPI 入口。"""
 
-from __future__ import annotations
 
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager

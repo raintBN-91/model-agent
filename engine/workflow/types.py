@@ -1,6 +1,6 @@
+from __future__ import annotations
 """Dynamic Workflow — 数据类型定义。"""
 
-from __future__ import annotations
 
 import uuid
 from dataclasses import dataclass, field

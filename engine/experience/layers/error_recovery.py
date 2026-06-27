@@ -1,9 +1,9 @@
+from __future__ import annotations
 """Layer B: 错误恢复模式学习。
 
 记录失败模式 + 恢复策略，下次遇到相同错误时自动建议恢复方案。
 """
 
-from __future__ import annotations
 
 from typing import Any
 

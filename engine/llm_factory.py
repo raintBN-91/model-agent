@@ -1,6 +1,6 @@
+from __future__ import annotations
 """LLM 构建工厂 — Anthropic Claude。"""
 
-from __future__ import annotations
 
 import asyncio
 import json

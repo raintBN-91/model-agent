@@ -1,9 +1,9 @@
+from __future__ import annotations
 """Workflow Planner — 意图解析与工作流计划生成器。
 
 从自然语言 Prompt 中提取意图，输出结构化工作流计划，并映射到可执行的 Skill。
 """
 
-from __future__ import annotations
 
 import json
 import re

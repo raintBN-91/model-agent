@@ -1,6 +1,6 @@
+from __future__ import annotations
 """OpenAI 兼容的数据模型。"""
 
-from __future__ import annotations
 
 from typing import Literal
 

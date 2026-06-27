@@ -1,5 +1,5 @@
-"""Skill evaluation API — integrated from ascend-skills-eval web-service."""
 from __future__ import annotations
+"""Skill evaluation API — integrated from ascend-skills-eval web-service."""
 
 import base64
 import json

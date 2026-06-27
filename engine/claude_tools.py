@@ -1,6 +1,6 @@
+from __future__ import annotations
 """claude-code / Claude Skill 调用工具模块。"""
 
-from __future__ import annotations
 
 import asyncio
 import json

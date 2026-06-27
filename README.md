@@ -45,8 +45,7 @@
 
 ## 🔥 最新动态
 
-- **2026-06-27** — Skills 目录重构：整合 ascend/contribution 重复分类，归档为 11 个清晰目录，总计 376 个 SKILL.md；新增 `small_model_adapt` 为 Tier1 PTA Pipeline 智能体，专用于传统CV/NLP/多模态模型的 torch_npu 适配
-- **2026-06-26** — Agent 技能加载修复：SKILL.md 内容直接注入模型 prompt，verify/adapt/optimizer agent 均可正常工作
+- **2026-06-30** — **v1.0.0-rc1 正式上线！** 重大架构升级：动态工作流引擎、Hermes 自演进经验引擎、MCP 集成、PTA Agent、Anthropic Claude 原生接入；Skills 重构为 11 分类 376 个 SKILL.md，Tier 三级注册体系。详见 [`Release_notes/`](Release_notes/RELEASE_NOTES_v1.0.0_CN.md)
 - **2026-06-15** — 支持持久化存储容器磁盘，能够帮你在容器中记录七天的执行历史
 - **2026-06-15** — 支持云体验入口，能够通过hidevlab体验model agent镜像，更多算力体验
 - **2026-06-07** — msAgent上线，支持Profiling数据自动分析！

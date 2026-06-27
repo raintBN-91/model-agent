@@ -32,12 +32,12 @@
     },
     "ai4s-main": {
       "description": "AI for Science main orchestration skill for end-to-end model adaptation",
-      "category": "optimization",
+      "category": "adaptation",
       "score": 96.0
     },
     "ai4s-basic": {
       "description": "AI for Science basic model adaptation and profiling on Ascend NPU",
-      "category": "optimization",
+      "category": "adaptation",
       "score": 95.0
     },
     "ascend-ai4s-precision-alignment": {
@@ -62,22 +62,22 @@
     },
     "ai-for-science-boltzgen": {
       "description": "AI for Science: BoltzGen model verification and deployment on Ascend NPU",
-      "category": "verification",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-deepfri": {
       "description": "AI for Science: DeepFRI protein function prediction model on Ascend NPU",
-      "category": "verification",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-deepfri-tf-npu": {
       "description": "AI for Science: DeepFRI TensorFlow to NPU optimization and deployment",
-      "category": "optimization",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-diffsbdd": {
       "description": "AI for Science: DiffSBDD model verification and deployment on Ascend NPU",
-      "category": "optimization",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-generator": {
@@ -87,27 +87,27 @@
     },
     "ai-for-science-goedel-prover": {
       "description": "AI for Science: Goedel Prover model verification on Ascend NPU",
-      "category": "verification",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-oligoformer": {
       "description": "AI for Science: OligoFormer protein model verification on Ascend NPU",
-      "category": "verification",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-proteinbert": {
       "description": "AI for Science: ProteinBERT model adaptation and NPU deployment",
-      "category": "adaptation",
+      "category": "deployment",
       "score": 95.0
     },
     "ai-for-science-ascend-tf-community": {
       "description": "AI for Science: TensorFlow community model verification on Ascend NPU",
-      "category": "verification",
+      "category": "adaptation",
       "score": 95.0
     },
     "ai-for-science-tf-to-pytorch": {
       "description": "AI for Science: TensorFlow to PyTorch model conversion and verification on Ascend NPU",
-      "category": "deployment",
+      "category": "adaptation",
       "score": 95.0
     },
     "ascend-affinity-operator": {
@@ -132,7 +132,7 @@
     },
     "small_model_adapt": {
       "description": "PTA pipeline: small model adaptation agent for traditional CV/NLP/multimodal models using torch_npu/PyTorch (no vllm/vllm-ascend). Triggers when user mentions torch_npu or explicitly states PyTorch/torch-based adaptation. Orchestrates PTA skills for NPU migration of non-LLM models.",
-      "category": "pta",
+      "category": "adaptation",
       "score": 96.0
     }
   },
@@ -189,7 +189,7 @@
     },
     "\"ascendc-mssanitizer\"": {
       "description": "\"Ascend C 算子 mssanitizer 内存检测分析技能。用于检测和分析算子内存问题：非法内存访问、非法释放、内存泄漏、UB地址越界，生成问题报告。自动识别算子工程类型（ops算子仓用GE IR模式，自定义算子用Python模式）。触发关键词：mssanitizer、内存检测、内存泄漏、非法访问、illegal free、内存错误。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 97.5
     },
     "dino-vits8-npu": {
@@ -244,7 +244,7 @@
     },
     "generative-recommendation-verification": {
       "description": "|",
-      "category": "optimization",
+      "category": "other",
       "score": 97.1
     },
     "swin-transformer-npu": {
@@ -454,7 +454,7 @@
     },
     "pypto-op-develop": {
       "description": "\"当需要编写 PyPTO 算子实现时使用此 skill。基于需求规格、设计方案和参考实现，生成完整可运行的 PyPTO 算子实现与配套测试、文档。Triggers: 实现算子、写 kernel、编写实现、写 impl、算子编码、开始编码、code the op、写 test、生成测试、写实现代码、op develop、kernel 实现。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 94.0
     },
     "reader-lm-npu-deploy": {
@@ -549,7 +549,7 @@
     },
     "ascendc-operator-precision-eval": {
       "description": "\"AscendC算子精度评估。对已编译安装的算子生成全面的精度测试用例集（≥30例），运行并生成精度验证报告。关键词：精度测试、precision evaluation、精度报告、accuracy、误差分析。执行完成后 MUST 在当前对话中展示总览、失败摘要与关键发现，不得仅附报告路径。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 92.2
     },
     "cosyvoice-npu-deploy": {
@@ -594,7 +594,7 @@
     },
     "tilelang-review": {
       "description": "检查代码格式是否符合 CI 规则。适用于 TileLang NPU kernel 开发时的代码规范检查和格式化。自动检测并安装缺失工具（ruff、clang-format），先运行检查生成报告，使用醒目方式询问用户后，仅在用户同意时执行修复。工作流程：检测环境→自动安装缺失工具→运行检查→生成报告→醒目询问→用户确认→执行修复。使用此技能当：用户要求\"格式检查\"、\"格式化代码\"、\"代码格式化\"、\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 91.2
     },
     "winclip-ascend": {
@@ -654,7 +654,7 @@
     },
     "ascend-model-verification": {
       "description": "昇腾模型适配验证 (Ascend Model Adaptation Verification) - 自动化验证华为昇腾设备上 vLLM-Ascend 模型部署、精度与性能的一站式工具。当用户提及在昇腾 NPU (Atlas 800 A2/A3) 上部署大语言模型、验证模型精度、运行性能基准测试、生成验证报告、或需要一键式模型适配验证时，使用此 Skill。它封装了完整验证流水线：环境检查、模型服务",
-      "category": "adaptation",
+      "category": "verification",
       "score": 89.5
     },
     "ascendc-registry-invoke-to-direct-invoke": {
@@ -679,7 +679,7 @@
     },
     "ascendc-operator-dev": {
       "description": "\"AscendC算子端到端开发编排器。当用户需要开发新算子、实现自定义算子、或完成从需求到测试的完整流程时使用。关键词：算子开发、operator development、端到端、完整流程、工作流编排、新建算子。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 87.8
     },
     "esm2-npu-deploy": {
@@ -689,7 +689,7 @@
     },
     "ascendc-operator-project-init": {
       "description": "\"初始化 AscendC 算子工程并创建可编译的算子骨架。触发场景：(1) 用户要求创建新算子；(2) 关键词：ascendc算子、新建算子、算子目录、算子初始化；(3) 需要基于 ascend-kernel 模板快速落地。本 skill 不只建目录，还输出“可继续开发”的标准文件与检查清单。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 87.2
     },
     "npu-adapt": {
@@ -714,7 +714,7 @@
     },
     "model-infer-parallel-impl": {
       "description": "基于 PyTorch 框架的昇腾 NPU 模型推理并行切分实施技能。根据已确认的 parallel_config，实施模型代码的并行化改造，包括并行线性层替换、MoE 并行模式适配、通信组创建、Embedding/LMHead 并行、YAML 配置生成和权重转换。触发场景：model-infer-parallel-analysis 完成后需要实施改造、现有模型需要支持新的并行配置。",
-      "category": "verification",
+      "category": "optimization",
       "score": 85.8
     },
     "tilelang-vector-ascend-ops-migration": {
@@ -729,7 +729,7 @@
     },
     "ascend-model-migration": {
       "description": "Ascend NPU model migration suite. Invoke when user wants to migrate/train models on Ascend NPU, setup environment, or deploy models from open-source repositories.",
-      "category": "deployment",
+      "category": "adaptation",
       "score": 85.3
     },
     "awesome-llm-model": {
@@ -751,7 +751,7 @@
     },
     "ascendc-st-design": {
       "description": "Ascend C 算子系统测试（ST）设计技能。基于 aclnn 接口文档，完成算子参数定义、测试因子提取、约束关系分析、测试用例生成（L0/L1）的完整流程。当需要以下任务时使用此技能：设计算子测试用例、生成ST用例。",
-      "category": "verification",
+      "category": "optimization",
       "score": 84.8
     },
     "mixed-precision-optimizer": {
@@ -776,12 +776,12 @@
     },
     "ascendc-operator-compile-debug": {
       "description": "编译安装 AscendC 算子并执行精度测试。TRIGGER when: 算子代码生成完成后需要编译验证、安装 whl 包、运行精度测试，或编译/测试失败需要排查。关键词：build.sh、编译、安装、whl、pytest、精度测试、编译错误、NPU 测试。",
-      "category": "verification",
+      "category": "optimization",
       "score": 83.5
     },
     "pypto-golden-generate": {
       "description": "\"当需要生成 golden 参考实现时使用此 skill。基于算子规格信息，生成纯 PyTorch golden 参考实现 `{op}_golden.py`，导出 `{op}_golden()` 函数，作为精度验证基准。Triggers: 生成 golden、生成参考实现、写 golden 函数、golden script、golden reference、reference implementa",
-      "category": "verification",
+      "category": "optimization",
       "score": 83.2
     },
     "model-infer-kvcache": {
@@ -811,7 +811,7 @@
     },
     "triton-operator-env-config": {
       "description": "在 Ascend 昇腾平台上校验并构建triton算子开发所需环境,包括CANN、Python/torch/torch_npu/triton-ascend依赖和PATH环境变量等设置。当用户需要配置triton算子开发环境、检查CANN/torch/triton-ascend安装、验证环境是否可用时使用。",
-      "category": "verification",
+      "category": "optimization",
       "score": 82.2
     },
     "memory-optimizer": {
@@ -846,7 +846,7 @@
     },
     "ascendc-operator-precision-debug": {
       "description": "\"AscendC 算子精度问题调试与根因定位。当算子精度测试失败（allclose 不通过、结果偏差、输出全零/NaN 等）时使用。流程：误差分布分析 → 代码易错点审查 → 实验隔离 → printf/DumpTensor 插桩 → 修复验证。关键词：精度调试、精度问题、结果不一致、误差定位、allclose 失败、输出偏差、NaN、全零、precision debug。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 80.7
     },
     "ascendc-operator-code-gen": {
@@ -856,7 +856,7 @@
     },
     "ascendc-precision-debug": {
       "description": "Ascend C 算子精度调试技能，提供精度问题诊断和解决方法。触发：输出异常（全为0、随机值、未初始化）、精度验证失败（rtol/atol 不达标）、FP16 精度差于预期、Cast 后数据错误、需要排查流水线同步（EnQue/DeQue）或 DataCopy 对齐问题。",
-      "category": "verification",
+      "category": "optimization",
       "score": 80.5
     },
     "adapter-check-principle": {
@@ -886,7 +886,7 @@
     },
     "issue_autoreply": {
       "description": "",
-      "category": "verification",
+      "category": "common",
       "score": 78.7
     },
     "unittest-writer": {
@@ -961,7 +961,7 @@
     },
     "ascendc-operator-doc-gen": {
       "description": "为AscendC算子生成PyTorch风格的接口文档（README.md）。触发场景：编译调试通过后需要生成接口文档，或用户提到\"生成算子文档\"、\"创建README\"、\"文档化算子\"、\"帮我写文档\"（算子上下文）、\"算子文档\"时使用。",
-      "category": "verification",
+      "category": "optimization",
       "score": 76.2
     },
     "pypto-intent-understand": {
@@ -996,7 +996,7 @@
     },
     "\"cann-operator-env-config\"": {
       "description": "\"提供昇腾NPU的CANN安装指导。当用户需要安装CANN、配置昇腾环境或解决安装问题时调用。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 74.4
     },
     "ascendc-operator-design": {
@@ -1011,7 +1011,7 @@
     },
     "pypto-op-design": {
       "description": "\"当需要设计 PyPTO 算子实现方案时使用此 skill。基于算子规格与相关上下文，生成 DESIGN.md（含 API 映射、Tiling 策略、Loop 结构）。Triggers: 生成设计方案、生成 design、设计这个算子、写 DESIGN.md、算子设计、API 映射、Tiling 策略、tiling strategy、Loop 结构、数据切分、怎么切分数据、怎么做 tiling、设",
-      "category": "verification",
+      "category": "optimization",
       "score": 73.3
     },
     "ascend-vllm-env-config": {
@@ -1041,7 +1041,7 @@
     },
     "ascend_model_verifier": {
       "description": "",
-      "category": "deployment",
+      "category": "verification",
       "score": 71.6
     },
     "tune-swimlane": {
@@ -1056,7 +1056,7 @@
     },
     "tilelang-op-design": {
       "description": "\"根据算子需求生成 TileLang-Ascend 算子设计文档（design.md）。涵盖编程模式选型（Developer/Expert/混合）、API 映射、内存层级规划、Tiling 策略、循环结构、同步策略、验证方案等。触发：设计算子、生成 design.md、算子方案设计、新算子开发、算子实现方案。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 71.1
     },
     "gitcode-repo-bootstrap": {
@@ -1076,12 +1076,12 @@
     },
     "vllm-ascend-performance-optimization": {
       "description": "vLLM-Ascend performance tuning advisor for optimizing inference throughput and latency on Huawei Ascend hardware. Use when users want to optimize vLLM deployment on Ascend NPUs, improve model inferenc",
-      "category": "deployment",
+      "category": "optimization",
       "score": 70.6
     },
     "ascendc-operator-testcase-gen": {
       "description": "完成AscendC算子验证用例生成 - 帮助用户完成testcase设计。当用户提到用例设计、泛化用例生成、算子标杆、UT用例、精度用例、性能用例时，使用此skill。",
-      "category": "verification",
+      "category": "optimization",
       "score": 70.6
     },
     "yolov10-m-ascend-optimization": {
@@ -1106,7 +1106,7 @@
     },
     "ai-for-science-ai4s-basic": {
       "description": "AI for Science 通用昇腾 NPU 模型迁移 Skill，适用于将基于 PyTorch、TensorFlow、vLLM 等框架的 CUDA 项目迁移到华为 Ascend NPU，覆盖环境检查、代码分析、自动迁移、手动适配、分布式改造、第三方库替换、验证与专属 skill 沉淀全流程。",
-      "category": "optimization",
+      "category": "adaptation",
       "score": 69.3
     },
     "ascend-mmcv-install": {
@@ -1126,7 +1126,7 @@
     },
     "ops-simulator": {
       "description": "NPU 仿真器技能。提供 CANN Simulator 的使用指导，包括精度仿真、性能仿真、流水线分析。当需要在无 NPU 硬件环境下验证算子功能、分析性能瓶颈、定位精度问题时使用。",
-      "category": "verification",
+      "category": "optimization",
       "score": 68.6
     },
     "ascend-mmdet3d-install": {
@@ -1151,7 +1151,7 @@
     },
     "vLLM-ascend_FAQ_Generator": {
       "description": "为 vLLM-ascend 项目构建自动化工作流，处理已关闭的Issue并生成Debug FAQ。Use when users want to process closed issues from vLLM-ascend repository, generate debug FAQ, categorize issues, or analyze issue patterns.",
-      "category": "optimization",
+      "category": "other",
       "score": 67.5
     },
     "code-comprehension": {
@@ -1171,7 +1171,7 @@
     },
     "ascendc-env-check": {
       "description": "Ascend C 算子开发环境检查技能。用于：(1) 通过 npu-smi 查询 NPU 设备信息（设备列表、状态、资源使用），(2) 检查 CANN 环境配置（CANN Toolkit、Ops、自定义算子包），(3) 验证开发依赖是否完整。触发关键词：环境检查、NPU设备、npu-smi、CANN安装、设备查询、资源监控、检查CANN环境变量。",
-      "category": "verification",
+      "category": "optimization",
       "score": 64.8
     },
     "extract-vllm-backbone": {
@@ -1206,12 +1206,12 @@
     },
     "ascendc-whitebox-design": {
       "description": "Ascend C 算子白盒测试用例生成系统。分析算子源码提取参数维度，自动枚举参数组合，生成可执行的白盒测试用例。支持 low/medium/high 三档覆盖级别。触发场景：(1) \"为 X 算子生成白盒测试用例\" (2) \"算子白盒用例生成\" (3) \"generate whitebox test cases for operator\"。",
-      "category": "verification",
+      "category": "optimization",
       "score": 63.6
     },
     "pypto-precision-compare": {
       "description": "PyPTO 算子精度问题调试技能。提供两种精度对比方法：文件保存方法（使用 pypto.pass_verify_save 和 torch.save）和二分对比方法（使用检查点 tensor）。当需要调试 PyPTO 算子精度、定位精度差异来源、进行中间结果对比时使用此技能。",
-      "category": "verification",
+      "category": "optimization",
       "score": 63.2
     },
     "ascend-detectron2-install": {
@@ -1221,7 +1221,7 @@
     },
     "run-mindspeed-llm-test": {
       "description": "运行MindSpeed-LLM项目的测试用例。当需要运行测试用例、扫描项目代码覆盖率时调用此技能",
-      "category": "documentation",
+      "category": "other",
       "score": 62.2
     },
     "perf-analyzer": {
@@ -1251,7 +1251,7 @@
     },
     "triton-operator-code-gen": {
       "description": "根据 Ascend NPU 算子设计文档（或直接需求）生成 Triton kernel 代码。当用户需要实现 Triton 算子、将设计文档转为可执行代码时使用。核心产出：kernel 代码 + 基本正确性测试。关键词：Triton kernel、算子实现、代码生成、code generation。",
-      "category": "verification",
+      "category": "optimization",
       "score": 61.1
     },
     "coverage": {
@@ -1271,7 +1271,7 @@
     },
     "catlass-operator-code-gen": {
       "description": "根据CATLASS算子设计文档生成算子工程交付件",
-      "category": "verification",
+      "category": "optimization",
       "score": 59.1
     },
     "\"mindspeed-fsdp2-data-migration\"": {
@@ -1281,7 +1281,7 @@
     },
     "pypto-api-explore": {
       "description": "\"探索 PyPTO API，为算子开发提供 API 映射、约束检查和 Tiling 需求分析。当需要查找 PyPTO 是否支持某个操作、验证 API 约束、分析算子可行性时使用。Triggers: API 探索、查找 API、PyPTO 有没有 xxx、支持什么 dtype、约束是什么、tiling 怎么配、API 映射、可行性分析、这个算子能做吗。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 59.0
     },
     "megatron-commit-tracker": {
@@ -1296,7 +1296,7 @@
     },
     "ascendc-operator-code-review": {
       "description": "\"Ascend C 代码检视技能。基于假设检验方法论对代码进行安全规范检视。调用时必须明确提供：代码片段和检视规则描述。TRIGGER when: 用户要求代码检视、代码review、询问代码安全问题、检查编码规范、或需要检查特定代码问题（如内存泄漏、整数溢出、空指针等）。关键词：Ascend C、代码检视、代码review、安全规范、内存、指针、溢出、泄漏、编码规范。\"",
-      "category": "verification",
+      "category": "optimization",
       "score": 57.6
     },
     "triton-operator-performance-eval": {
@@ -1311,7 +1311,7 @@
     },
     "catlass-operator-design": {
       "description": "将用户基于CATLASS开发算子的需求转变为具体的设计文档",
-      "category": "verification",
+      "category": "optimization",
       "score": 56.3
     },
     "triton-operator-precision-eval": {
@@ -1456,7 +1456,7 @@
     },
     "ops-precision-standard": {
       "description": "算子精度标准。描述 Ascend C 算子各种 dtype 输出对应的精度比对标准（atol/rtol）。当需要（1）评估算子精度是否达标，（2）编写 ST 测试验证精度，（3）处理 FP16/FP32/BF16 等不同数据类型精度问题，（4）确认算子精度验收标准时触发。",
-      "category": "verification",
+      "category": "optimization",
       "score": 43.0
     },
     "yolov10-npu": {

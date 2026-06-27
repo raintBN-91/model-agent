@@ -19,3 +19,10 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# Code intelligence index
+.codegraph/
+
+# Experience data (runtime)
+.mofix/
+logs/

@@ -4,7 +4,7 @@
 
 **昇腾模型全流程Agent** ·  搜索 · 验证 · 适配 · 部署 · 量化 · 优化 · 文档 与全流程编排
 
-**[🌐 全景平台](https://ai.gitcode.com/ascend-model-ecosystem)** · **[⚡ Ascend Skills Eval评测](./ascend-skills-eval/README.md)** · **[💬 GitCode 仓库](https://gitcode.com/Ascend/model-agent)**
+**[🌐 全景平台](https://ai.gitcode.com/ascend-model-ecosystem)** · **[📇 Skills 导航](skills/skills.md)** · **[⚡ Ascend Skills Eval评测](./ascend-skills-eval/README.md)** · **[💬 GitCode 仓库](https://gitcode.com/Ascend/model-agent)**
 
 <br/>
 
@@ -133,6 +133,8 @@ model-agent/
 ├── agents/                      # Agent 模块（ms_agent）
 ├── mcp_servers/                 # MCP 服务器（cannbot、ms_agent，共 144 工具）
 ├── skills/                      # 技能库（11 分類、301 主 SKILL.md，含嵌套共 339）
+│   ├── skills.md                # 分类导航与统计
+│   ├── tiers.json               # Tier1(27) / Tier2(121) / Tier3(148) 三级注册
 │   ├── adaptation/              # 模型适配（30）
 │   ├── common/                  # 通用工具（23）
 │   ├── deployment/              # 模型部署（136）
@@ -157,7 +159,9 @@ model-agent/
 
 ## 🚀 Skills 技能库
 
-按场景把可复用 Skill 归好类，方便从任务反查该用哪份 `SKILL.md`。更细条目、原始链接与样例见下方各表。`skills/` 目录包含 301 个主 SKILL.md 文件（含子目录引用共 339 个），覆盖 11 个分类：
+按场景把可复用 Skill 归好类，方便从任务反查该用哪份 `SKILL.md`。更细条目、原始链接与样例见 `skills/skills.md` 与下方各表。
+
+Skill 注册采用三级 Tier 体系（`skills/tiers.json`）：Tier1 核心智能体（27）、Tier2 扩展技能（121）、Tier3 长尾技能（148），共计 296 个注册 Skill。实际 `skills/` 目录包含 301 个主 SKILL.md 文件（含子目录引用共 339 个），覆盖 11 个分类：
 
 
 | 场景       | SKILL.md | 说明                             |
@@ -181,14 +185,14 @@ model-agent/
 
 |                   | 说明                                                                   |
 | ----------------- | -------------------------------------------------------------------- |
-| 📇 **怎么找 Skill**  | 扫下方分类表 → 点开对应条目里的「Skill原始链接」或本地目录阅读 `SKILL.md` |
+| 📇 **怎么找 Skill**  | 先扫 `skills/skills.md` 与下方分类表 → 点开对应条目里的「Skill原始链接」或本地目录阅读 `SKILL.md` |
 | 📂 **怎么用进 Agent** | 通常只需拷贝目标 Skill 所属子目录到你的 Agent skills 路径；不一定要整桌 `skills/` 全集          |
 | ⚡ **怎么把文档写好**     | 参考各 Skill 的写法，再配合 `ascend-skills-eval` 做 frontmatter、工作流步骤、边界与检查点自检  |
 
 
 ### 全量 Skills 清单
 
-以下按主要分类呈现：
+以下按 `skills/skills.md` 的主要分类呈现（完整 Tier 注册清单见 `skills/tiers.json`，含 296 个 Skill）：
 
 #### 性能优化
 
@@ -414,8 +418,9 @@ model-agent/
 
 ## 🛠 使用建议
 
-- 根据任务场景在下方分类表中定位对应分类（11 大分类，301 个主 SKILL.md）
-- 进入目标 Skill 目录阅读 `SKILL.md` 的输入、输出与约束
+- 首先根据任务场景在 `skills/skills.md` 中定位对应分类（11 大分类，301 个主 SKILL.md）
+- 或查阅 `skills/tiers.json` 按 Tier 等级（Tier1 核心 / Tier2 扩展 / Tier3 长尾）快速定位
+- 再进入目标 Skill 目录阅读 `SKILL.md` 的输入、输出与约束
 - PTA Pipeline 场景：使用 `/verify`、`/claude adapt-agent` 等斜杠命令一键触发
 - torch_npu / PyTorch 原生适配场景：触发 `small_model_adapt`（Tier1），自动调用 pta/ 下对应 Skill
 - 多阶段任务建议串联多个 Skill（例如：适配 → 验证 → 优化 → 文档）
@@ -457,7 +462,7 @@ model-agent/
 
 - 保持目录结构与命名风格一致（Skill 放在对应分类子目录：adaptation/deployment/optimization/verification 等）
 - 在 `SKILL.md` 中明确边界、步骤与输出格式
-- 在对应分类目录下放置 Skill 并确保 `SKILL.md` 格式规范
+- 同步更新 `skills/tiers.json`（选择合适的 Tier 与 score）和 `skills/skills.md` 的分类导航
 
 对于使用过程中的经验、问题反馈欢迎提交 [Issue](https://gitcode.com/Ascend/model-agent/issues),也欢迎加入微信群交流
 

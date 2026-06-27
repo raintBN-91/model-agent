@@ -77,7 +77,7 @@
     },
     "ai-for-science-diffsbdd": {
       "description": "AI for Science: DiffSBDD model verification and deployment on Ascend NPU",
-      "category": "verification",
+      "category": "optimization",
       "score": 95.0
     },
     "ai-for-science-generator": {
@@ -107,7 +107,7 @@
     },
     "ai-for-science-tf-to-pytorch": {
       "description": "AI for Science: TensorFlow to PyTorch model conversion and verification on Ascend NPU",
-      "category": "verification",
+      "category": "deployment",
       "score": 95.0
     },
     "ascend-affinity-operator": {
@@ -159,7 +159,7 @@
     },
     "aimv2-adapt-npu": {
       "description": ">",
-      "category": "adaptation",
+      "category": "deployment",
       "score": 98.6
     },
     "phi-npu": {
@@ -239,7 +239,7 @@
     },
     "generative-recommendation-verification": {
       "description": "|",
-      "category": "verification",
+      "category": "optimization",
       "score": 97.1
     },
     "swin-transformer-npu": {
@@ -499,7 +499,7 @@
     },
     "timm-npu-adapt": {
       "description": "将 HuggingFace timm 视觉分类模型适配到华为昇腾 NPU 的一站式流程。支持推理精度验证、性能基准测试和完整部署。已验证 MobileNetV4、VOLO、ResNeXt、SE-ResNet、CaiT、XCiT 等 10 个视觉模型。",
-      "category": "adaptation",
+      "category": "deployment",
       "score": 93.4
     },
     "qwen-asr-npu-deploy": {
@@ -559,7 +559,7 @@
     },
     "npu-adapter-reviewer": {
       "description": "GPU代码到昇腾NPU适配审查专家。当用户需要将GPU上的代码（特别是深度学习、模型推理相关）迁移到华为昇腾NPU时，必须使用此skill进行全面审查。此skill能识别GPU到NPU迁移的堵点、编写适配脚本、生成验证方案，并输出完整的Markdown审查报告。触发场景包括：用户提到\"NPU适配\"、\"昇腾迁移\"、\"GPU转NPU\"、\"Ascend\"、\"CANN\"、\"模型迁移\"、\"算子适配\"等关键词",
-      "category": "adaptation",
+      "category": "optimization",
       "score": 92.0
     },
     "pypto-op-perf-tune": {
@@ -614,7 +614,7 @@
     },
     "efficientnet-npu-adapt": {
       "description": "将 PyTorch Vision 的 EfficientNet 系列图像分类模型（B0-B6）适配到华为昇腾 NPU 的一站式流程。支持模型推理、精度验证（CPU vs NPU）和性能基准测试。已验证 7 个模型，所有模型精度误差 < 0.005。",
-      "category": "adaptation",
+      "category": "deployment",
       "score": 90.4
     },
     "catlass-operator-dev": {
@@ -724,7 +724,7 @@
     },
     "ascend-model-migration": {
       "description": "Ascend NPU model migration suite. Invoke when user wants to migrate/train models on Ascend NPU, setup environment, or deploy models from open-source repositories.",
-      "category": "adaptation",
+      "category": "deployment",
       "score": 85.3
     },
     "awesome-llm-model": {
@@ -1031,7 +1031,7 @@
     },
     "npu-benchmark-guard": {
       "description": "Safely run vLLM bench latency and throughput benchmarks on Ascend NPU by cleaning up zombie processes, validating CLI arguments, waiting for ACL graph compilation, and parsing results. Use when the us",
-      "category": "deployment",
+      "category": "verification",
       "score": 72.1
     },
     "ascend_model_verifier": {
@@ -1071,7 +1071,7 @@
     },
     "vllm-ascend-performance-optimization": {
       "description": "vLLM-Ascend performance tuning advisor for optimizing inference throughput and latency on Huawei Ascend hardware. Use when users want to optimize vLLM deployment on Ascend NPUs, improve model inferenc",
-      "category": "optimization",
+      "category": "deployment",
       "score": 70.6
     },
     "ascendc-operator-testcase-gen": {
@@ -1081,7 +1081,7 @@
     },
     "yolov10-m-ascend-optimization": {
       "description": "YOLOv10-M NPU optimization skill for Atlas 800I A2 (Ascend 910B)",
-      "category": "optimization",
+      "category": "deployment",
       "score": 70.4
     },
     "ascend-delivery-pipeline": {
@@ -1156,7 +1156,7 @@
     },
     "power-load-forecast": {
       "description": "通过时序大模型对电力负荷进行推理预测，输出未来一天或多天的负荷预测结果。当用户要求推理明天的负荷预测结果、预测明天的负荷、或说\"帮我推一下明天的负荷预测\"时，应使用此技能。",
-      "category": "other",
+      "category": "optimization",
       "score": 67.2
     },
     "\"mindspeed-fsdp2-verification\"": {
@@ -1216,7 +1216,7 @@
     },
     "run-mindspeed-llm-test": {
       "description": "运行MindSpeed-LLM项目的测试用例。当需要运行测试用例、扫描项目代码覆盖率时调用此技能",
-      "category": "other",
+      "category": "documentation",
       "score": 62.2
     },
     "small_model_adapt": {

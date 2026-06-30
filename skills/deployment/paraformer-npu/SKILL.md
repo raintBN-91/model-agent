@@ -1,6 +1,6 @@
 ---
 name: paraformer-npu-deploy
-description: "FunASR Paraformer 三款中文语音识别模型 (ASR / ASR+VAD+Punc / ASR+VAD+Punc+SPK) 在昇腾 NPU 上的端到端部署、推理验证、精度对比与性能 Benchmark Skill。涵盖环境准备、依赖安装、NPU 适配（ASR 主模型移至 NPU，VAD..."
+description: "FunASR Paraformer 三款中文语音识别模型 (ASR / ASR+VAD+Punc / ASR+VAD+Punc+SPK) 在昇腾 NPU 上的端到端部署、推理验证、精度对比与性能 Benchmark Skill。涵盖环境准备、依赖安装、NPU 适配（ASR 主模型移至 NPU，VAD/Punc/SPK 子模型留在 CPU）、推理验证、精度对比（NPU vs CPU 100% 一致）、性能 Benchmark（1.8x-2.8x 加速比）的全流程。触发词：Paraformer NPU 部署、FunASR 昇腾、语音识别 NPU、昇腾 ASR 推理。"
 ---
 
 # FunASR Paraformer 昇腾 NPU 部署 Skill

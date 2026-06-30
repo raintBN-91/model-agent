@@ -1,8 +1,0 @@
-{
-  "config": "\u4f18\u5316\u7248\uff08--dtype auto --enable-chunked-prefill --gpu-memory-utilization 0.9\uff09",
-  "avg_latency_sec": 0.66,
-  "total_time_sec": 6.55,
-  "throughput_req_per_sec": 1.53,
-  "precision_result": "{\"id\":\"cmpl-ae297862fb4536e1\",\"object\":\"text_completion\",\"created\":1782587687,\"model\":\"./\",\"choices\":[{\"index\":0,\"text\":\" 4\",\"logprobs\":null,\"finish_reason\":\"stop\",\"stop_reason\":null,\"token_ids\":null,\"prompt_logprobs\":null,\"prompt_token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":13,\"total_tokens\":16,\"completion_tokens\":3,\"prompt_tokens_details\":null},\"kv_transfer_params\":null}",
-  "timestamp": "2026-06-28 03:14:54"
-}

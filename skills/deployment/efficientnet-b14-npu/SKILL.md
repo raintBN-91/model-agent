@@ -1,6 +1,6 @@
 ---
 name: efficientnet-b14-npu
-description: "EfficientNet 系列 68 个模型 (EfficientNetV2/Lite/B0-B8/CondConv/NoisyStudent/Test) 在昇腾 NPU 上的批量部署、推理、CPU/NPU 精度验证与 GitCode 模型仓库发布。适用于：昇腾部署、NPU 批量推理、精度验证、模型..."
+description: "EfficientNet 系列 68 个模型 (EfficientNetV2/Lite/B0-B8/CondConv/NoisyStudent/Test) 在昇腾 NPU 上的批量部署、推理、CPU/NPU 精度验证与 GitCode 模型仓库发布。适用于：昇腾部署、NPU 批量推理、精度验证、模型仓库发布。触发词：EfficientNet NPU 部署、EfficientNet 昇腾推理、EfficientNet 精度对比、npu-smi、batch 部署。"
 ---
 
 # EfficientNet Batch 14 昇腾 NPU 部署 Skill

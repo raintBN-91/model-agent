@@ -1,6 +1,6 @@
 ---
 name: vit-base-patch16-224-in21k-npu
-description: Google ViT-Base-Patch16-224-IN21K Vision Transformer 在昇腾 NPU 上的推理适配与部署 Skill。涵盖环境准备、ModelScope 权重下载、transfer_to_npu 自动迁移、CPU/NPU 精度对比验证、性能基准测试的全流程。当用户...
+description: Google ViT-Base-Patch16-224-IN21K Vision Transformer 在昇腾 NPU 上的推理适配与部署 Skill。涵盖环境准备、ModelScope 权重下载、transfer_to_npu 自动迁移、CPU/NPU 精度对比验证、性能基准测试的全流程。当用户提到 ViT 昇腾部署、Vit NPU 推理、视觉模型 NPU、google/vit-base-patch16-224-in21k 适配时触发。
 ---
 
 # ViT-Base-Patch16-224-IN21K 昇腾 NPU 部署 Skill

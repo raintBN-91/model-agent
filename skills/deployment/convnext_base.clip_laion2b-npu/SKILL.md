@@ -1,6 +1,6 @@
 ---
 name: convnext_base.clip_laion2b-npu
-description: "ConvNeXt Base (CLIP LAION-2B) 在昇腾 Ascend910B4 NPU 上的推理部署、CPU/NPU 精度验证与性能基准测试。适用于：昇腾部署、NPU 推理、精度验证、性能基准、模型评测。触发词：ConvNeXt CLIP NPU 部署、convnext_base.cli..."
+description: "ConvNeXt Base (CLIP LAION-2B) 在昇腾 Ascend910B4 NPU 上的推理部署、CPU/NPU 精度验证与性能基准测试。适用于：昇腾部署、NPU 推理、精度验证、性能基准、模型评测。触发词：ConvNeXt CLIP NPU 部署、convnext_base.clip_laion2b 昇腾推理、ConvNeXt 精度对比、npu-smi、ascend 部署、CLIP LAION-2B 推理、昇腾模型验证、timm convnext npu、safetensors 昇腾推理、CANN 部署指南。"
 ---
 
 # ConvNeXt Base (CLIP LAION-2B) 昇腾 NPU 部署 Skill

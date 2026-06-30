@@ -16,7 +16,7 @@ description: Triton 算子精度评估。与 PyTorch 参考实现对比，自动
 3. 在 NPU 上执行 Triton 算子和 Torch 参考实现
 4. 用 `test_common.validate_cmp()` 比对，生成精度报告
 
-**MANDATORY - READ ENTIRE FILE**：编写测试前，完整阅读 `test_common.py` (scripts/test_common.py)。
+**MANDATORY - READ ENTIRE FILE**：编写测试前，完整阅读 [`test_common.py`](references/test_common.py)。
 
 ## 误差阈值
 

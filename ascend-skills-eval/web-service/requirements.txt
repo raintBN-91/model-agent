@@ -1,4 +1,3 @@
-# Python >= 3.10 required (uses str | None union syntax and ThreadPoolExecutor.shutdown cancel_futures)
 fastapi>=0.115.0
 uvicorn[standard]>=0.30.0
 pydantic>=2.8.0

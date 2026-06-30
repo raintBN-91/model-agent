@@ -46,9 +46,7 @@ This skill provides procedural knowledge for configuring `uv` to handle PyTorch 
 ### Install uv
 
 ```bash
-# 安全建议：先下载再校验后执行
-# 原始：curl -LsSf https://astral.sh/uv/install.sh | sh
-# 推荐：curl -fsSL <URL> -o install.sh && sha256sum install.sh && bash install.sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ### Automation (~/.bashrc or ~/.zshrc)

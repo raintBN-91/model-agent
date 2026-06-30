@@ -239,7 +239,7 @@ python3 scripts/verify_deterministic.py
 | 异常场景 | 可能原因 | 处理方案 | 回滚操作 |
 |----------|----------|----------|----------|
 | `torch_npu` 导入失败 | CANN 环境未加载或 torch_npu 未安装 | `source /usr/local/Ascend/ascend-toolkit/set_env.sh` 后 `pip install torch_npu` | 回退到步骤 0，重新配置环境 |
-| 模型下载失败 | 网络不可达或 HF 镜像不可用 | 切换 `HF_ENDPOINT=https://hf-mirror.com`； `git lfs clone` | 检查网络连通性，重试步骤 3 |
+| 模型下载失败 | 网络不可达或 HF 镜像不可用 | 切换 `HF_ENDPOINT=https://hf-mirror.com`；若仍失败改用 `git lfs clone` | 检查网络连通性，重试步骤 3 |
 | NPU 显存不足 (OOM) | 文本过长超过 2048 tokens | 缩短输入文本至 200 tokens 以内；检查其他进程是否占用 NPU | `npu-smi info` 查看占用，释放后重试步骤 4 |
 | `neutts` pip 安装失败 | Python 版本不兼容或依赖冲突 | 确认 Python 3.9-3.13；使用 `pip install --upgrade neutts` | 回退到步骤 1，检查 Python 版本 |
 | 推理输出无声或异常 | espeak-ng 缺失导致音素化异常 | 脚本内置回退补丁，无需 espeak-ng；如仍需可 `apt-get install espeak-ng` | 重试推理，添加 `--debug` 参数 |

@@ -2,9 +2,6 @@
 name: ascendc-registry-invoke-to-direct-invoke
 description: 当用户想把自定义算子工程中的 kernel 模板改造成 `<<<>>>` kernel 直调形式，或从自定义算子工程中抽取某个 kernel 模板并转换成 `<<<>>>` 直调方式时使用。触发：用户提到"自定义算子转直调"、"从算子工程抽 kernel"、"kernel 模板改 `<<<>>>`"等。不适用于从零开发新算子
 ---
-> ⚠️ **文档长度警告**：本 SKILL.md 共 993 行，超过精简约定（800 行），建议后续拆分为多个子文档以降低加载成本。详见 #110。
-
-
 
 # AscendC 自定义算子转 `<<<>>>` kernel 直调改造
 

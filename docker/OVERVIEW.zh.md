@@ -38,8 +38,8 @@ Tag 遵循以下格式：
 ### ModelAgent 1.0
 | Tag | dockerfile | 镜像内容 |
 |-----|----------|----------|
-| `1.0-a2-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/Ascend/model-agent/blob/master/docker/1.0-a2-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
-| `1.0-a3-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/Ascend/model-agent/blob/master/docker/1.0-a3-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
+| `1.0-a2-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/gmq123/model-agent/blob/master/docker/1.0-a2-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
+| `1.0-a3-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/gmq123/model-agent/blob/master/docker/1.0-a3-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
 
 ---
 
@@ -77,7 +77,7 @@ docker run \
 
 ### 如何本地构建
 ```bash
-docker buildx build -t modelagent:1.0-a2-ubuntu22.04-py3.11 -f Dockerfile .
+docker buildx build -t modelagent:0.0-a2-ubuntu22.04-py3.11 -f Dockerfile .
 ```
 
 ### 如何二次开发

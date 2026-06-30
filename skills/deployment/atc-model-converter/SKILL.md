@@ -1,6 +1,6 @@
 ---
 name: atc-model-converter
-description: Complete toolkit for Huawei Ascend NPU model conversion and end-to-end inference adaptation. Workflow 1 auto-discovers input shapes and parameters fro...
+description: Complete toolkit for Huawei Ascend NPU model conversion and end-to-end inference adaptation. Workflow 1 auto-discovers input shapes and parameters from user source code. Workflow 2 exports PyTorch models to ONNX. Workflow 3 converts ONNX to .om via ATC with multi-CANN version support. Workflow 4 adapts the user's full inference pipeline (preprocessing + model + postprocessing) to run end-to-end on NPU. Workflow 5 verifies precision between ONNX and OM outputs. Workflow 6 generates a reproducible README. Supports any standard PyTorch/ONNX model. Use when converting, testing, or deploying models on Ascend AI processors.
 keywords:
     - ATC
     - inference

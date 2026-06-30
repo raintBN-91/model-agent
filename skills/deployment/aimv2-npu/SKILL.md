@@ -1,6 +1,6 @@
 ---
 name: aimv2-npu-deploy
-description: "AIMv2 (Apple Intelligence Foundation Model v2) 多模态视觉模型在昇腾 NPU 上的完整部署 Skill，覆盖 12 个变体（large/huge/1B/3B × 224/336/448）在全分辨率下的权重转换、FP16 推理、性能基准测试和精度验证。当用..."
+description: "AIMv2 (Apple Intelligence Foundation Model v2) 多模态视觉模型在昇腾 NPU 上的完整部署 Skill，覆盖 12 个变体（large/huge/1B/3B × 224/336/448）在全分辨率下的权重转换、FP16 推理、性能基准测试和精度验证。当用户提到 AIMv2 部署昇腾、Apple AIMv2 NPU 推理、aimv2 适配、视觉 embedding 模型 NPU 部署时触发。"
 ---
 
 # AIMv2 昇腾 NPU 部署与推理 Skill

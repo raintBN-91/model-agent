@@ -34,7 +34,7 @@ metadata:
 | 精度验证脚本 | UNet 单步精度与确定性测试 | `scripts/verify_accuracy.py` |
 | 性能基准脚本 | 多步数吞吐与显存测量 | `scripts/benchmark.py` |
 | 基准结果 | 性能实测数据 | `scripts/benchmark_results.json` |
-| 评估参考 | 评估框架引用 | `../../../ascend-skills-eval/skills/skills-eval/evals/` |
+| 评估参考 | 评估框架引用 | `references/ascend-skills-eval/evals.json` |
 | 配置模板 | 推理参数模板 | `templates/inference_config.yaml` |
 
 ## 执行流程
@@ -87,7 +87,7 @@ python3 -m pip install --dry-run setuptools 2>&1 | head -5
 
    检查点：确认 torch_npu、diffusers、transformers 等包安装成功。
 
-   异常处理：若 pip 超时，添加 `-i https://repo.huaweicloud.com/repository/pypi/simple/ `pip check` 诊断后逐个解决。
+   异常处理：若 pip 超时，添加 `-i https://repo.huaweicloud.com/repository/pypi/simple/`。若版本冲突，使用 `pip check` 诊断后逐个解决。
 
 ```bash
 pip install torch_npu diffusers transformers huggingface_hub accelerate safetensors numpy
@@ -155,7 +155,7 @@ for i in range(torch.npu.device_count()):
 
    检查点：成功下载约 15GB 权重，无网络错误。
 
-   异常处理：若 `snapshot_download` 失败，尝试 `HF_ENDPOINT=https://huggingface.co `./models/openjourney` 后重新下载。
+   异常处理：若 `snapshot_download` 失败，尝试 `HF_ENDPOINT=https://huggingface.co`。若磁盘空间不足，清理后重试。若下载中断，删除 `./models/openjourney` 后重新下载。
 
 ```bash
 HF_ENDPOINT=https://hf-mirror.com python3 -c "
@@ -394,8 +394,8 @@ print('Determinism: PASS')
 ## 参考文档
 
 - [model-agent 主仓库说明](https://gitcode.com/Ascend/model-agent)
-- [ascend-skills-eval 评估框架](../../../ascend-skills-eval/skills/skills-eval/evals/)
-- [NPU 基础验证参考](../../../ascend-skills-eval/skills/skills-eval/SKILL.md)
+- [ascend-skills-eval 评估框架](references/ascend-skills-eval/evals.json)
+- [NPU 基础验证参考](references/ascend-skills-eval/skills/skills-eval/SKILL.md)
 
 ## 性能基准参考
 

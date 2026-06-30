@@ -1,7 +1,0 @@
-torch==2.5.1
-torch_npu==2.5.1
-numpy==1.26.4
-pyyaml==6.0.1
-pandas==2.2.0
-scikit-learn==1.4.0
-h5py

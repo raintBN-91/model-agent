@@ -1,6 +1,6 @@
 ---
 name: swin-batch-npu
-description: Swin Transformer 系列在 昇腾 NPU 部署 — 集成 ModelScope 权重下载、CPU/NPU 推理、精度对比、README 文档生成、终端截图生成与 GitCode 模型仓库发布的统一部署 Skill。支持 19 个 Swin Transformer 变体（tiny/sma...
+description: Swin Transformer 系列在 昇腾 NPU 部署 — 集成 ModelScope 权重下载、CPU/NPU 推理、精度对比、README 文档生成、终端截图生成与 GitCode 模型仓库发布的统一部署 Skill。支持 19 个 Swin Transformer 变体（tiny/small/base/large，in1k/in22k/384分辨率）。在适配 Swin Transformer 系列模型时，必须触发此 Skill。
 ---
 
 # Swin Transformer Batch NPU Deployment Skill

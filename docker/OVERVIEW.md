@@ -1,6 +1,6 @@
 # ModelAgent
 
-> English | [中文](./OVERVIEW.zh.md)
+> English | [中文](./OVERVIEW.md.zh)
 
 ## Quick Reference
 
@@ -38,8 +38,8 @@ Tags follow the format below:
 ### ModelAgent 1.0
 | Tag | Image Address | Image Contents |
 |-----|----------|----------|
-| `1.0-a2-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/Ascend/model-agent/blob/master/docker/1.0-a2-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
-| `1.0-a3-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/Ascend/model-agent/blob/master/docker/1.0-a3-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
+| `1.0-a2-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/gmq123/model-agent/blob/master/docker/1.0-a2-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
+| `1.0-a3-ubuntu22.04-py3.11` | [dockerfile](https://gitcode.com/gmq123/model-agent/blob/master/docker/1.0-a3-ubuntu22.04-py3.11/Dockerfile) | modelagent/torch_npu 2.9 |
 
 ---
 
@@ -77,7 +77,7 @@ docker run \
 
 ### How to Build Locally
 ```bash
-docker buildx build -t modelagent:1.0-a2-ubuntu22.04-py3.11 -f Dockerfile .
+docker buildx build -t modelagent:0.0-a2-ubuntu22.04-py3.11 -f Dockerfile .
 ```
 
 ### How to Develop Further

@@ -1,4 +1,5 @@
 FROM quay.io/ascend/vllm-ascend:v0.18.0-a3
+LABEL maintainer="Ascend Model Agent Team"
 
 USER root
 

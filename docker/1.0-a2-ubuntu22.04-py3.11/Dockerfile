@@ -38,8 +38,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# 安装 Claude Code CLI
-RUN npm install -g @anthropic-ai/claude-code
+# 安装 AI CLI 工具：Claude Code + AtomCode（Atomgit AI 社区内测挑战赛主推工具，二者并存，用户可任选其一）
+# 锁定版本号保证构建可复现；合并为单层 RUN 以减少镜像层数与体积
+RUN npm install -g @anthropic-ai/claude-code @atomgit.com/atomcode@4.25.3 \
+    && npm cache clean --force
 
 RUN echo "创建 atomgit 用户与用户组..." && \
     groupadd -g 1000 -r atomgitgroup && \

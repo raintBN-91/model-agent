@@ -1,5 +1,5 @@
 ---
-name: ssh-dev-suite/debug
+name: debug
 description: 结构化远程服务器问题排查流程，支持上下文感知的环境检查和容器内调试
 ---
 

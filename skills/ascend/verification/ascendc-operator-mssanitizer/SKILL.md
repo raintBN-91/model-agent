@@ -1,5 +1,5 @@
 ---
-name: "ascendc-mssanitizer"
+name: ascendc-operator-mssanitizer
 description: "Ascend C 算子 mssanitizer 内存检测分析技能。用于检测和分析算子内存问题：非法内存访问、非法释放、内存泄漏、UB地址越界，生成问题报告。自动识别算子工程类型（ops算子仓用GE IR模式，自定义算子用Python模式）。触发关键词：mssanitizer、内存检测、内存泄漏、非法访问、illegal free、内存错误。"
 ---
 

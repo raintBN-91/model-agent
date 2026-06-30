@@ -1,5 +1,5 @@
 ---
-name: ops-easyasc-dsl
+name: skill
 description: Use this skill when working in the ops-easyasc-dsl repository to drive the easyasc DSL to AscendC workflow under agent/. Restore archived runtime, docs, and examples with agent/scripts/init.sh before tasks that need easyasc/, doc/, doc_cn/, or agent/example/, then route through agent/ROUTER.md for progressive disclosure.
 ---
 

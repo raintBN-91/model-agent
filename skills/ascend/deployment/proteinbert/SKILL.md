@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-proteinbert
+name: proteinbert
 description: ProteinBERT 昇腾 NPU 部署与迁移 Skill，适用于将 TensorFlow 或 Keras 版 ProteinBERT 转成基于 PyTorch 与 torch_npu 的实现，覆盖权重转换、embedding 提取、微调训练、注意力可视化和 GPU 与 NPU 精度验证。
 keywords:
   - ai-for-science

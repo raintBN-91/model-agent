@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-ascend-tf-community
+name: ascend-tf-community
 description: 昇腾 TensorFlow Community 迁移适配 Skill，适用于将基于 TensorFlow 2.x 的模型原生部署到华为 Ascend NPU，而不经过 TF 到 PyTorch 转换，覆盖 aarch64 源码编译 TF 2.6.5、tfplugin 安装、自动迁移工具使用、手动适配与精度验证。
 keywords:
   - ai-for-science

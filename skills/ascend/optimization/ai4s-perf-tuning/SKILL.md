@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-ai4s-perf-tuning
+name: ai4s-perf-tuning
 description: AI for Science 场景下的昇腾 NPU 通用性能调优 Skill，覆盖流水优化（TASK_QUEUE_ENABLE）、CPU 绑核优化（CPU_AFFINITY_CONF）、高性能内存库 tcmalloc 替换等调度与 OS 级调优手段，以及基于毕昇编译器的 Python / PyTorch / torch_npu 编译优化（LTO + PGO），适用于 PyTorch 训练或推理场景在 Ascend NPU 上的性能提升。
 keywords:
   - ai-for-science

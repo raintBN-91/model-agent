@@ -1,5 +1,5 @@
 ---
-name: ascend-model-migration
+name: drivingsdk-ascend-model-migration
 description: Ascend NPU model migration suite. Invoke when user wants to migrate/train models on Ascend NPU, setup environment, or deploy models from open-source repositories.
 ---
 

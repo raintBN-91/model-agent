@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-boltz2
+name: boltz2
 description: Boltz2 蛋白质结构预测模型的昇腾 NPU 迁移与复现 Skill，适用于在华为 Ascend 910、910B、910C 上准备权重、适配 Lightning 和 CUDA only kernel、完成 Boltz2 端到端结构预测推理，并沉淀可复现的环境与验证命令。
 keywords:
     - ai-for-science

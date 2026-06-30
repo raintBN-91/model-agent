@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-ai4s-profiling
+name: ai4s-profiling
 description: AI for Science 场景下的昇腾 NPU Profiling 采集与性能分析 Skill，用于在华为 Ascend NPU 上使用 torch_npu.profiler 采集 L0、L1、L2 级性能数据，分析训练或推理中的算子耗时、调用栈、内存与瓶颈，并指导后续调优。
 keywords:
   - ai-for-science

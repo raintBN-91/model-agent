@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-generator
+name: generator
 description: GENERator DNA 序列生成模型的昇腾 NPU 迁移 Skill，适用于将基于 HuggingFace Transformers 的 Causal LM 从 CUDA 迁移到华为 Ascend NPU，覆盖环境搭建、依赖安装、代码适配、多进程处理和 sequence recovery 验证。
 keywords:
   - ai-for-science

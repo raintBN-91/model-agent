@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-diffsbdd
+name: diffsbdd
 description: DiffSBDD 昇腾 NPU 迁移 Skill，适用于将基于等变扩散模型的结构化药物设计项目从 CUDA 迁移到华为 Ascend NPU，覆盖环境搭建、依赖安装、torch_scatter 源码编译、代码适配以及 de novo 推理验证。
 keywords:
   - ai-for-science

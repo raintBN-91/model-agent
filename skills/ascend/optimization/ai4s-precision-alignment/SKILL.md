@@ -1,5 +1,5 @@
 ---
-name: ascend-ai4s-precision-alignment
+name: ai4s-precision-alignment
 description: 面向昇腾 NPU 的 AI4S 模型精度对齐与问题定位。用于比较 GPU 与昇腾或官方基线与昇腾之间的训练 loss、推理输出和任务指标，梳理模型特定的对齐要求，并在精度不一致时采集和分析定向 dump 证据。使用本 skill 时必须先确认官方 README、官方示例或 benchmark 是否已给出基线；若官方未提供，必须先询问用户 GPU 基线来源，禁止默认使用 CPU 结果作为最终对齐基线。
 ---
 

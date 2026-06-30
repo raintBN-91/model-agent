@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-tf-to-pytorch
+name: tf-to-pytorch
 description: TensorFlow 或 Keras 模型改写到 PyTorch 的通用 Skill，适用于在华为 Ascend NPU 或其他依赖 PyTorch 生态的平台上完成层级映射、权重转换、逐层数值验证和端到端精度对比，尤其适合 ProteinBERT、DeepFRI 这类科学模型的跨框架迁移。
 keywords:
   - ai-for-science

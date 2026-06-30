@@ -1,5 +1,5 @@
 ---
-name: agent-profiling
+name: ascend-profiling
 description: 华为昇腾 NPU 性能分析（Profiling）工具使用指南。包含 L0/L1/L2 三级 profiling 采集代码模板、三种解析方案（CSV / SQLite cluster.db / Chrome trace JSON）、auto-tuning 闭环流程。触发词：profiling、性能分析、算子耗时、NPU 性能诊断、torch_npu profiler、cluster.db、auto-tuning。
 ---
 

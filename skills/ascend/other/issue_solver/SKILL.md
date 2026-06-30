@@ -1,5 +1,5 @@
 ---
-name: vLLM-ascend_FAQ_Generator
+name: issue_solver
 description: 为 vLLM-ascend 项目构建自动化工作流，处理已关闭的Issue并生成Debug FAQ。Use when users want to process closed issues from vLLM-ascend repository, generate debug FAQ, categorize issues, or analyze issue patterns.
 ---
 

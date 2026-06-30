@@ -1,5 +1,5 @@
 ---
-name: ssh-dev-suite/tunnel
+name: tunnel
 description: SSH通道管理，支持本地/远程端口转发、SOCKS代理、反向代理
 ---
 

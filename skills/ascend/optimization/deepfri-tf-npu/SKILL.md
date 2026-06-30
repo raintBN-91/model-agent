@@ -1,5 +1,5 @@
 ---
-name: ai-for-science-deepfri-tf-npu
+name: deepfri-tf-npu
 description: DeepFRI TensorFlow 原生昇腾 NPU 迁移 Skill，适用于不做 TF 到 PyTorch 转换、而是直接使用 TensorFlow 2.6.5 与 npu_device 在华为 Ascend 上运行 DeepFRI 的场景，覆盖源码编译、tfplugin 安装、代码适配、推理与 CPU 对比验证。
 keywords:
   - ai-for-science

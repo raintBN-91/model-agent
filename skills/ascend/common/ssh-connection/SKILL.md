@@ -1,5 +1,5 @@
 ---
-name: ssh-dev-suite
+name: ssh-connection
 description: SSH远程开发套件，连接管理、命令执行、文件传输、部署、隧道、调试
 ---
 

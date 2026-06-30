@@ -1,5 +1,5 @@
 ---
-name: esm2-npu-deploy
+name: esm2-npu
 description: >
   ESM-2 蛋白质语言模型在昇腾 NPU 上的完整部署与 FP32 推理优化 Skill。
   涵盖环境准备、依赖安装、transfer_to_npu 自动迁移、README 推理验证、

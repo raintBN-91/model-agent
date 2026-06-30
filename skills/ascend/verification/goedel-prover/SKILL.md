@@ -164,7 +164,9 @@ export PYTHONPATH=$(python -c "import torch_npu; import os; print(os.path.join(o
 
 下载 elan（Lean 版本管理器）：
 ```bash
-curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+# 安全建议：先下载再校验后执行
+# 原始：curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh
+# 推荐：curl -fsSL <URL> -o install.sh && sha256sum install.sh && bash install.sh -s -- -y --default-toolchain none
 ```
 
 手动安装 Lean 4 toolchain（如网络受限，可手动下载 `lean-4.9.0-rc1-linux_aarch64.tar.zst`）：

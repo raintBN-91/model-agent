@@ -107,7 +107,9 @@ clang-format --version
 ```bash
 # 检测并安装 ruff（使用独立二进制安装，安装到系统路径）
 if ! command -v ruff &>/dev/null; then
-    curl -LsSf https://astral.sh/ruff/install.sh | sh
+    # 安全建议：先下载再校验后执行
+# 原始：curl -LsSf https://astral.sh/ruff/install.sh | sh
+# 推荐：curl -fsSL <URL> -o install.sh && sha256sum install.sh && bash install.sh
 fi
 
 # 检测并安装 clang-format

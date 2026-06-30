@@ -1,3 +1,8 @@
+---
+name: tilelang-vector-ascend-ops-migration
+description: 指导 TileLang 算子从 GPU 迁移到华为昇腾 NPU，分析 GPU 实现并自动生成适配 NPU 硬件约束与 API 差异的算子代码
+---
+
 # TileLang GPU到NPU算子迁移 Skill
 
 ## 技能概述

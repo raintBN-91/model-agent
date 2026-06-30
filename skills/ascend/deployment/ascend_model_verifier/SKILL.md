@@ -1,3 +1,8 @@
+---
+name: ascend_model_verifier
+description: 自动发现、验证并归档开源大模型在昇腾 NPU 上的适配情况，基于多 Agent 协作架构构建可运行的昇腾模型生态知识库
+---
+
 # Ascend Model Verifier
 
 ## Skill Metadata

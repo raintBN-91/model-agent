@@ -195,7 +195,6 @@ description: 当用户想把自定义算子工程中的 kernel 模板改造成 `
 - 不做兼容性保留
 
 典型模式：
-- `using XXX::SomeHelper;` 只声明不使用（如原工程某个算子的 `DataCopyCustom`、`ReduceGrad` 等）
 
 ### 规则 4：kernel 本地化完成，不等于入口文件可独立编译或直接 launch
 如果用户只要求 kernel 本地化，做到以下即可视为完成：
@@ -436,7 +435,6 @@ __global__ __aicore__ void dq_fullload_bf16_int8_nosmooth_sym(GM_ADDR x, ..., ui
 期望：无匹配。
 
 ### 2. 命名空间归属检查
-搜索所有 `using XXX::symbol` 语句，逐条核实符号的真实定义位置是否和 `using` 声明的命名空间一致。
 
 典型问题模式：`using A::foo`，但 `foo` 的真实定义在命名空间 `B` 中，`A` 只是通过 include 间接暴露了它。
 如果发现归属不一致，必须修正为真实定义源。

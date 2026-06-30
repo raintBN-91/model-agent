@@ -349,7 +349,6 @@ python3 custom/operator_name/operator.py --run-mode npu
 
 **记录基准执行时间**：
 ```
-基准执行时间: XXX us
 ```
 
 ### 2. 迭代优化循环

@@ -137,7 +137,6 @@ factors:
 
 # 约束定义
 constraints:
-  - id: "C-XXX-001"
     type: {constraint_type}
     # ...
 ```

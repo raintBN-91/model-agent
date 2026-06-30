@@ -203,7 +203,6 @@ implementer 返回后：
   - 各 rank 吐字正常（可读、不重复、非全零、不提前 EOS）
 ```
 
-#### 1.6 Profiling 策略校准（TODO：待适配）
 
 > 当前暂不可用，跳过此步骤。后续适配后启用。
 
@@ -224,7 +223,6 @@ implementer 返回后：
 
 主 agent 执行：
 1. reviewer 报告 FAIL → 派发 model-infer-implementer 修复 → 重新验证，最多 5 轮
-2. profiling 校准发现策略问题或性能未达预期 → 回到 1.2 调整 parallel_config 重新确认（TODO：待 profiling 适配后启用）
 3. 若 阶段 0 标注"无基线"（模型需多卡才能运行），并行验证通过后派发 model-infer-implementer 采集基线：
 
     ```

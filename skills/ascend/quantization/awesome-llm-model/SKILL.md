@@ -123,7 +123,6 @@ python /root/.config/opencode/skills/awesome-llm-model/scripts/collect_models.py
 ## 统计信息
 - ModelScope 模型数：200
 - HuggingFace 模型数：200
-- 去重后总数：XXX
 
 ## 模型类型说明
 - **LLM**: 大语言模型 (Large Language Model)

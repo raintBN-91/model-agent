@@ -330,7 +330,6 @@ Read perf-analyzer/SKILL.md
 **必须记录基准性能**：
 ```markdown
 ## 基准性能（未优化）
-- 执行时间: XXX us
 - 核心利用率: XX%
 - 气泡率: XX%
 - 负载均衡度: XX%

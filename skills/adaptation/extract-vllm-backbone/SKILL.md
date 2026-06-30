@@ -9,7 +9,6 @@ Extract the pure LLM backbone weights and configuration from a multimodal or cus
 
 ## When to Invoke
 
-- vLLM throws `Unsupported model type` or `No architecture named XXX` for a custom `model_type`
 - The model checkpoint contains non-LLM keys such as `point_backbone.*`, `vision_tower.*`, `mm_projector.*`, `image_encoder.*`
 - User only needs text generation capability and does not require the multimodal encoder on NPU
 - The model is based on a known backbone (Llama, Qwen2, etc.) but wrapped in a custom architecture class

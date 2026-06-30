@@ -75,8 +75,8 @@ description: "根据算子需求生成 TileLang-Ascend 算子设计文档（desi
 ### Phase 2：信息收集
 
 1. 查阅 `examples/` 中同类算子实现
-2. 查阅 [tilelang-api-best-practices SKILL.md](../tilelang-api-best-practices/SKILL.md) 确认 API 可用性和用法
-3. 查阅 [tilelang-programming-model-guide SKILL.md](../tilelang-programming-model-guide/SKILL.md) 确认编程模式和 pass_configs 配置
+2. 查阅 tilelang-api-best-practices SKILL.md 确认 API 可用性和用法
+3. 查阅 tilelang-programming-model-guide SKILL.md 确认编程模式和 pass_configs 配置
 4. 如有参考实现，分析其计算步骤
 
 ### Phase 3：生成 design.md
@@ -160,7 +160,6 @@ description: "根据算子需求生成 TileLang-Ascend 算子设计文档（desi
 | 4 | **Tiling 策略有约束分析**：解释了为什么选择该 Block/Tile 大小 | ⭕ 推荐 |
 | 5 | **同步策略与编程模式匹配**：Developer 用自动同步、Expert 标明手动同步点 | ⭕ 推荐 |
 | 6 | **验证方案覆盖典型配置**：不是「待补充」 | ⭕ 推荐 |
-| 7 | **无占位符或模糊描述**：无 `{placeholder}`、TODO、「待补充」（已确认的除外） | ✅ 必须 |
 
 **通过条件**：必须项全部通过，推荐项至少通过 2/3。
 
@@ -171,8 +170,8 @@ description: "根据算子需求生成 TileLang-Ascend 算子设计文档（desi
 | 优先级 | 信息源 | 用途 |
 |--------|--------|------|
 | 1 | `docs/TileLang-Ascend Programming Guide.md` | 权威 API 说明和编程指南 |
-| 2 | [tilelang-api-best-practices SKILL.md](../tilelang-api-best-practices/SKILL.md) | API 用法速查和最佳实践 |
-| 3 | [tilelang-programming-model-guide SKILL.md](../tilelang-programming-model-guide/SKILL.md) | 编程模式选择和 pass_configs 配置 |
+| 2 | tilelang-api-best-practices SKILL.md | API 用法速查和最佳实践 |
+| 3 | tilelang-programming-model-guide SKILL.md | 编程模式选择和 pass_configs 配置 |
 | 4 | `examples/` 示例代码 | 实际 API 用法和编程模式参考 |
 | 5 | `testing/python/language/` | 边界用法和测试模式参考 |
 

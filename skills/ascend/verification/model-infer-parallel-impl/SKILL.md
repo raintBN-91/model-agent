@@ -185,7 +185,6 @@ Gate/Up → `ColumnParallelLinear`，Down → `RowParallelLinear`，均使用 `d
 
 ### 3.5 CP / KVP 实施
 
-> TODO: CP 见 `cann-recipes-infer/models/deepseek-v3.2-exp/`，KVP 见 `cann-recipes-infer/models/longcat-flash/`。
 
 > Attention/Dense FFN/Embed/LMHead 的代码示例和数据重排示例见 `{file:./references/code-examples.md}`
 

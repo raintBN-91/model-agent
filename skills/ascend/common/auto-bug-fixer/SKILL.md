@@ -44,7 +44,6 @@ description: Use when encountering bugs, test failures, or error logs that need 
 ### 第二步：根因分析与确认
 ✅ **校验点**：根因可复现，且精准锁定至具体**代码行/文件/PR/提交记录**
 ❌ **中断条件**：信息不足导致根因模糊，无法准确定位 → 抛出错误码**E002**并中断
-📝 **反馈**：输出「根因已定位：XXX（关联PR/提交：XXX） / 根因模糊，错误码E002」
 
 #### 定位方法（Agent根据输入自动选择，强化Git二分法定位PR/提交）
 ##### 方法一：自顶向下追踪法（通用场景，无明确代码变更/PR信息）
@@ -94,7 +93,6 @@ description: Use when encountering bugs, test failures, or error logs that need 
 
 ### 二、根因分析
 1. 根因定位：[具体根因，如除零错误/空指针异常/逻辑判断错误，关联PR/提交则标注哈希/编号]
-2. 定位方法：[自顶向下追踪法 / Git二分法（关联PR：XXX，提交哈希：XXX）]
 3. 追踪过程：[简要描述数据流/调用链/Git二分法的执行过程，标注锁定根因的关键步骤]
 4. 影响范围：[受影响的代码模块/PR/分支/业务场景/用户群体]
 

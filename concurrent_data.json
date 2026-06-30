@@ -1,0 +1,7 @@
+{
+  "total_requests": 50,
+  "total_time_sec": 7.28,
+  "throughput_req_per_sec": 6.87,
+  "avg_latency_sec": 0.73,
+  "timestamp": "2026-06-28 03:17:33"
+}

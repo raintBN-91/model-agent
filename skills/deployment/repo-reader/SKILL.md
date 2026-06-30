@@ -1,6 +1,6 @@
 ---
 name: repo-reader
-description: 从模型仓库链接读取 README 文档。当用户想要从模型仓库链接（如 https://ai.gitcode.com/Ascend-SACT/Qwen3.5-27B-A2-Vllm-Ascend）获取部署文档、使用说明或任何仓库内容时触发此 skill。使用此 skill 来获取仓库的 README、文档内容、部署命令等。
+description: 从模型仓库链接读取 README 文档。当用户想要从模型仓库链接（如 https://ai.gitcode.com/Ascend-SACT/Qwen3.5-27B-A2-Vllm-Ascend） skill。使用此 skill 来获取仓库的 README、文档内容、部署命令等。
 ---
 
 # Repo Reader

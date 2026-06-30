@@ -87,7 +87,7 @@ python3 -m pip install --dry-run setuptools 2>&1 | head -5
 
    检查点：确认 torch_npu、diffusers、transformers 等包安装成功。
 
-   异常处理：若 pip 超时，添加 `-i https://repo.huaweicloud.com/repository/pypi/simple/`。若版本冲突，使用 `pip check` 诊断后逐个解决。
+   异常处理：若 pip 超时，添加 `-i https://repo.huaweicloud.com/repository/pypi/simple/ `pip check` 诊断后逐个解决。
 
 ```bash
 pip install torch_npu diffusers transformers huggingface_hub accelerate safetensors numpy
@@ -155,7 +155,7 @@ for i in range(torch.npu.device_count()):
 
    检查点：成功下载约 15GB 权重，无网络错误。
 
-   异常处理：若 `snapshot_download` 失败，尝试 `HF_ENDPOINT=https://huggingface.co`。若磁盘空间不足，清理后重试。若下载中断，删除 `./models/openjourney` 后重新下载。
+   异常处理：若 `snapshot_download` 失败，尝试 `HF_ENDPOINT=https://huggingface.co `./models/openjourney` 后重新下载。
 
 ```bash
 HF_ENDPOINT=https://hf-mirror.com python3 -c "

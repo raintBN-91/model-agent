@@ -290,7 +290,7 @@ python3 scripts/evaluate.py
 | NPU 不可用 | `torch.npu.is_available()` 为 False | fallback 到 CPU 推理，标记 dry-run，禁止写入 NPU 通过结论 | 环境检查日志标记 `NPU_AVAILABLE=false` |
 | CANN 环境缺失 | `ASCEND_HOME`、`LD_LIBRARY_PATH` 或 `torch_npu` 缺失 | 提示加载 CANN 环境脚本 (`source set_env.sh`)，retry 一次环境检查 | 环境检查日志 |
 | 设备号错误 | `SetDevice failed, device id error` | 用 `torch.npu.device_count()` 确认可用设备 ID，建议设为 0 | 日志记录可用设备列表 |
-| 模型下载失败 | 无法访问 HuggingFace 或 ModelScope | retry 2 次，设置 `HF_ENDPOINT=https://hf-mirror.com`，切换 ModelScope 镜像 | 日志记录权重来源 |
+| 模型下载失败 | 无法访问 HuggingFace 或 ModelScope | retry 2 次，设置 `HF_ENDPOINT=https://hf-mirror.com ModelScope 镜像 | 日志记录权重来源 |
 | 权重加载异常 | `timm.create_model` 报错 | 打印错误堆栈，检查是否使用 `pretrained=True`，确认本地 checkpoint 存在 | 错误日志 |
 | NPU 显存 OOM | 推理抛出 OOM 异常 | 执行 `gc.collect()` 和 `torch.npu.empty_cache()` 释放资源后 retry | `evals.json` 记录 retry 次数 |
 | 精度不达标 | Cosine similarity <= 0.999 或 NMAE >= 1% | 记录精度偏差明细，标记 failed，不生成通过结论 | 精度表显示失败原因和偏差值 |

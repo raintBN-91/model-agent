@@ -25,7 +25,7 @@ Ask user for the following:
 4. Pre-trained weights path (if available)
 ```
 
-**重要**：DrivingSDK仓库地址为 `https://gitcode.com/Ascend/DrivingSDK`，包含所有必要的patch文件和训练脚本。
+**重要**：DrivingSDK仓库地址为 `https://gitcode.com/Ascend/DrivingSDK
 
 ## Workflow
 

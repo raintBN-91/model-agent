@@ -29,7 +29,7 @@
 
 ### FAQ Knowledge Base
 
-必须将【FAQ知识库】（https://gitcode.com/raintBN/vLLM_Ascend_FAQ）的内容作为只读参考资源集成到技能中。该仓库是基于历史已关闭Issue总结的调试指南，将作为首要的问题分析与解决方案参考来源。
+必须将【FAQ知识库】（https://gitcode.com/raintBN/vLLM_Ascend_FAQ）
 
 ## Directory Structure
 

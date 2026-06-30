@@ -2,9 +2,13 @@ from __future__ import annotations
 
 import base64
 import json
+import platform
 import re
+import signal
 import subprocess
 import tempfile
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 from datetime import datetime, timezone
 from pathlib import Path
@@ -91,6 +95,8 @@ DIMENSIONS: list[tuple[int, str, int]] = [
 
 
 def _has_frontmatter(text: str) -> bool:
+    # 归一化换行符，兼容 CRLF（Windows）与 LF（Unix）混写的 SKILL.md
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     return bool(re.search(r"(?s)\A---\n.*?\n---\n", text))
 
 
@@ -238,11 +244,12 @@ def _pick_repo_file(repo_dir: Path, skill_path: str | None) -> Path:
             return p
 
     for name in priority:
-        matches = list(repo_dir.rglob(name))
+        # 排序保证 rglob 结果在跨平台/文件系统下确定性可复现
+        matches = sorted(repo_dir.rglob(name), key=lambda p: str(p))
         if matches:
             return matches[0]
 
-    md_files = list(repo_dir.rglob("*.md"))
+    md_files = sorted(repo_dir.rglob("*.md"), key=lambda p: str(p))
     if md_files:
         return md_files[0]
     raise HTTPException(status_code=400, detail="仓库中未找到可评估的 markdown 文件")
@@ -264,7 +271,9 @@ def _evaluate_repo_internal(payload: RepoEvalRequest) -> dict[str, Any]:
         clone_cmd = ["git", "clone", "--depth", "1"]
         if payload.branch:
             clone_cmd.extend(["--branch", payload.branch])
-        clone_cmd.extend([repo_url, str(repo_dir)])
+        # "--" 分隔符位置：在所有选项之后、repository 之前（git clone 语法规范）
+        # 列表传参已免疫 shell 注入；-- 防御性编程避免 repo_url 被解析为选项
+        clone_cmd.extend(["--", repo_url, str(repo_dir)])
         proc = subprocess.run(clone_cmd, capture_output=True, text=True, timeout=120)
         if proc.returncode != 0:
             raise HTTPException(
@@ -298,7 +307,12 @@ def _evaluate_repo_internal(payload: RepoEvalRequest) -> dict[str, Any]:
             "improve-3": eval_result.suggestions[2],
             "dims": dims_for_card,
         }
-        render_result = render_card(RenderRequest(data=card_data, open_image=False))
+        # 渲染与评测解耦：渲染失败不应中断评测结果返回，card 置空即可
+        try:
+            render_result = render_card(RenderRequest(data=card_data, open_image=False))
+            render_dump = render_result.model_dump()
+        except HTTPException:
+            render_dump = None
         picked_rel = str(picked_file.relative_to(repo_dir))
         report_markdown = _build_report_markdown(
             eval_result,
@@ -310,7 +324,7 @@ def _evaluate_repo_internal(payload: RepoEvalRequest) -> dict[str, Any]:
         history_id = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S%f")
         return {
             "eval": eval_result.model_dump(),
-            "card": render_result.model_dump(),
+            "card": render_dump,
             "report_markdown": report_markdown,
             "picked_file": picked_rel,
             "repo_url": repo_url,
@@ -334,50 +348,92 @@ def eval_skill(payload: EvalRequest) -> EvalResponse:
     return evaluate_skill(payload.skill_markdown, payload.skill_name)
 
 
+def _kill_process_tree(proc: subprocess.Popen, popen_kwargs: dict[str, Any]) -> None:
+    """跨平台杀进程树。Windows 用 taskkill /T，Unix 用进程组信号。"""
+    if proc.poll() is not None:
+        return
+    try:
+        if platform.system() == "Windows":
+            subprocess.run(
+                ["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                capture_output=True, timeout=10,
+            )
+        else:
+            # start_new_session=True 时 pgid == pid，杀整个进程组
+            import os
+            os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+    except Exception:
+        try:
+            proc.kill()
+        except Exception:
+            pass
+
+
 @app.post("/render-card", response_model=RenderResponse)
 def render_card(payload: RenderRequest) -> RenderResponse:
     render_script = _render_script_path()
     if not render_script.exists():
         raise HTTPException(status_code=500, detail=f"找不到渲染脚本: {render_script}")
 
-    with tempfile.TemporaryDirectory(prefix="ascend-skills-eval-") as tmp_dir_str:
-        tmp_dir = Path(tmp_dir_str)
-        data_path = tmp_dir / "card-data.json"
-        png_path = tmp_dir / "result-card.png"
-        html_path = tmp_dir / "result-card.rendered.html"
-        data_path.write_text(json.dumps(payload.data, ensure_ascii=False), encoding="utf-8")
+    try:
+        with tempfile.TemporaryDirectory(prefix="ascend-skills-eval-") as tmp_dir_str:
+            tmp_dir = Path(tmp_dir_str)
+            data_path = tmp_dir / "card-data.json"
+            png_path = tmp_dir / "result-card.png"
+            html_path = tmp_dir / "result-card.rendered.html"
+            data_path.write_text(json.dumps(payload.data, ensure_ascii=False), encoding="utf-8")
 
-        cmd = [
-            "node",
-            str(render_script),
-            "--data",
-            str(data_path),
-            "--png",
-            str(png_path),
-            "--html",
-            str(html_path),
-        ]
-        if not payload.open_image:
-            cmd.append("--no-open")
+            cmd = [
+                "node",
+                str(render_script),
+                "--data",
+                str(data_path),
+                "--png",
+                str(png_path),
+                "--html",
+                str(html_path),
+            ]
+            if not payload.open_image:
+                cmd.append("--no-open")
 
-        proc = subprocess.run(cmd, capture_output=True, text=True)
-        if proc.returncode != 0:
-            raise HTTPException(
-                status_code=500,
-                detail={
-                    "message": "渲染失败",
-                    "stdout": proc.stdout.strip(),
-                    "stderr": proc.stderr.strip(),
-                },
+            # 用 Popen 以进程组方式启动，超时时可杀整个进程树（含 puppeteer/chromium 子进程）
+            popen_kwargs: dict[str, Any] = {"stdout": subprocess.PIPE, "stderr": subprocess.PIPE, "text": True}
+            if platform.system() == "Windows":
+                popen_kwargs["creationflags"] = subprocess.CREATE_NEW_PROCESS_GROUP
+            else:
+                popen_kwargs["start_new_session"] = True
+
+            proc = subprocess.Popen(cmd, **popen_kwargs)
+            try:
+                stdout, stderr = proc.communicate(timeout=30)
+            except subprocess.TimeoutExpired:
+                _kill_process_tree(proc, popen_kwargs)
+                raise HTTPException(
+                    status_code=504,
+                    detail={"message": "渲染脚本超时（>30s），进程树已终止", "data": payload.data},
+                )
+            if proc.returncode != 0:
+                raise HTTPException(
+                    status_code=500,
+                    detail={
+                        "message": "渲染失败",
+                        "stdout": (stdout or "").strip(),
+                        "stderr": (stderr or "").strip(),
+                    },
+                )
+            if not png_path.exists():
+                raise HTTPException(status_code=500, detail="渲染脚本执行成功但未生成 PNG。")
+
+            raw = png_path.read_bytes()
+            return RenderResponse(
+                image_base64=base64.b64encode(raw).decode("ascii"),
+                size_bytes=len(raw),
             )
-        if not png_path.exists():
-            raise HTTPException(status_code=500, detail="渲染脚本执行成功但未生成 PNG。")
-
-        raw = png_path.read_bytes()
-        return RenderResponse(
-            image_base64=base64.b64encode(raw).decode("ascii"),
-            size_bytes=len(raw),
-        )
+    except HTTPException:
+        raise
+    except (OSError, subprocess.SubprocessError) as exc:
+        # 仅捕获可预期的子进程/IO 异常，编程错误（KeyError/TypeError 等）应直接上抛暴露
+        raise HTTPException(status_code=500, detail=f"渲染异常: {exc}")
 
 
 @app.post("/evaluate-and-render")
@@ -411,18 +467,71 @@ def evaluate_repos(payload: BatchRepoEvalRequest) -> dict[str, Any]:
     results: list[dict[str, Any]] = []
     failed: list[dict[str, Any]] = []
 
-    for item in payload.items:
-        try:
-            result = _evaluate_repo_internal(item)
-            results.append(result)
-        except HTTPException as exc:
-            failed.append(
-                {
+    # 并发执行 clone+评估，max_workers=4 平衡 IO 与 CPU
+    # cache key 为 (repo_url, branch, skill_path) 三元组，避免同 URL 不同 branch 误命中
+    cache: dict[tuple[str, str | None, str | None], dict[str, Any]] = {}
+    cache_lock = threading.Lock()
+    # per-key 锁：只串行化同 key 的 clone（防 thundering herd），不同 key 仍真正并发
+    key_locks: dict[tuple, threading.Lock] = {}
+    key_locks_guard = threading.Lock()
+
+    def _get_key_lock(key: tuple) -> threading.Lock:
+        with key_locks_guard:
+            if key not in key_locks:
+                key_locks[key] = threading.Lock()
+            return key_locks[key]
+
+    def _handle(item: RepoEvalRequest) -> tuple[RepoEvalRequest, dict[str, Any] | None, dict[str, Any] | None]:
+        key = (item.repo_url, item.branch, item.skill_path)
+        # 先查 cache，命中直接返回（无锁读，dict 单次 get 在 GIL 下原子）
+        with cache_lock:
+            cached = cache.get(key)
+        if cached is not None:
+            return item, cached, None
+        # per-key 锁：同 key 串行化（防 thundering herd），不同 key 并发 clone
+        with _get_key_lock(key):
+            # 双重检查：可能在等锁期间已被其他线程写入
+            with cache_lock:
+                cached = cache.get(key)
+            if cached is not None:
+                return item, cached, None
+            try:
+                result = _evaluate_repo_internal(item)
+                with cache_lock:
+                    cache[key] = result
+                return item, result, None
+            except HTTPException as exc:
+                return item, None, {
                     "repo_url": item.repo_url,
                     "status_code": exc.status_code,
                     "detail": exc.detail,
                 }
-            )
+
+    pool = ThreadPoolExecutor(max_workers=4)
+    pending = {pool.submit(_handle, item): item for item in payload.items}
+    done: set = set()
+    try:
+        for fut in as_completed(pending, timeout=180):
+            done.add(fut)
+            item, ok, err = fut.result()
+            if ok is not None:
+                results.append(ok)
+            if err is not None:
+                failed.append(err)
+    except TimeoutError:
+        # 总超时：未完成任务的结果被丢弃（cancel() 仅对排队中的任务生效，
+        # 已在运行的 clone 仍会跑完但结果不会被收集）
+        for fut, item in pending.items():
+            if fut in done:
+                continue
+            fut.cancel()
+            failed.append({
+                "repo_url": item.repo_url,
+                "status_code": 504,
+                "detail": {"message": "批量评估总超时（>180s），结果已丢弃"},
+            })
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
 
     ranking = sorted(
         [

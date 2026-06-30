@@ -34,7 +34,7 @@ metadata:
 | 精度验证脚本 | UNet 单步精度与确定性测试 | `scripts/verify_accuracy.py` |
 | 性能基准脚本 | 多步数吞吐与显存测量 | `scripts/benchmark.py` |
 | 基准结果 | 性能实测数据 | `scripts/benchmark_results.json` |
-| 评估参考 | 评估框架引用 | `references/ascend-skills-eval/evals.json` |
+| 评估参考 | 评估框架引用 | `../../../ascend-skills-eval/skills/skills-eval/evals/` |
 | 配置模板 | 推理参数模板 | `templates/inference_config.yaml` |
 
 ## 执行流程
@@ -394,8 +394,8 @@ print('Determinism: PASS')
 ## 参考文档
 
 - [model-agent 主仓库说明](https://gitcode.com/Ascend/model-agent)
-- [ascend-skills-eval 评估框架](references/ascend-skills-eval/evals.json)
-- [NPU 基础验证参考](references/ascend-skills-eval/skills/skills-eval/SKILL.md)
+- [ascend-skills-eval 评估框架](../../../ascend-skills-eval/skills/skills-eval/evals/)
+- [NPU 基础验证参考](../../../ascend-skills-eval/skills/skills-eval/SKILL.md)
 
 ## 性能基准参考
 

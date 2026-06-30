@@ -428,7 +428,7 @@ Algorithm: Flash Attention (Forward)
 
 ### SPEC.md 模板
 
-模板文件位于: [templates/spec-template.md](templates/spec-template.md)
+模板文件位于: [templates/spec-template.md](references/templates/spec-template.md)
 
 使用时需替换以下占位符:
 - `{name}` — 算子名称

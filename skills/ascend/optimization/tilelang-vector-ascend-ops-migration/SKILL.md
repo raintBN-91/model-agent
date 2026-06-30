@@ -25,12 +25,12 @@ description: 指导 TileLang 算子从 GPU 迁移到华为昇腾 NPU，分析 GP
 
 ### 补充文档
 
-- **`references/debugging-guide.md`** - NPU算子调试指南
+- **`references/reference/debugging-guide.md`** - NPU算子调试指南
   - 精度问题、编译失败、运行时错误的调试方法
   - TVM IR、MLIR层的调试技巧
   - T.print打印调试、GDB调试
 
-- **`references/hardware-optimization.md`** - NPU硬件特性与性能优化
+- **`references/reference/hardware-optimization.md`** - NPU硬件特性与性能优化
   - 片上缓存容量限制（UB 192KB，L1 512KB）
   - 数据对齐要求详解
   - 存算并行与流水线优化
@@ -476,7 +476,7 @@ T.vmul(A_ub, B_ub, C_ub)
 
 ### 第三步：NPU硬件约束检查
 
-> 💡 **详细优化指南**：本节提供基本的硬件约束检查要点。更深入的性能优化策略（包括Tiling策略、存算并行、分核优化等）请参考 [`references/hardware-optimization.md`](references/hardware-optimization.md)
+> 💡 **详细优化指南**：本节提供基本的硬件约束检查要点。更深入的性能优化策略（包括Tiling策略、存算并行、分核优化等）请参考 [`references/reference/hardware-optimization.md`](references/reference/hardware-optimization.md)
 
 #### 3.1 UB内存限制（关键约束）
 
@@ -576,7 +576,7 @@ if __name__ == "__main__":
 
 ### 第五步：验证和测试
 
-> 💡 **调试指南**：如果测试失败或遇到编译/运行时错误，请参考 [`references/debugging-guide.md`](references/debugging-guide.md) 获取详细的调试方法。
+> 💡 **调试指南**：如果测试失败或遇到编译/运行时错误，请参考 [`references/reference/debugging-guide.md`](references/reference/debugging-guide.md) 获取详细的调试方法。
 
 生成代码后，执行以下命令测试：
 

@@ -21,10 +21,10 @@ description: 根据CATLASS算子设计文档生成算子工程交付件
 |------|-------------|---------|
 | 算子名 | 含 `catlass` 子串，snake_case 目录名与 CamelCase 类名一致 | 目录、OpDef、test_aclnn 命名一致 |
 | I/O 与 dtype | 输入输出 shape、dtype、format | OpDef 与 test_aclnn tensor 一致 |
-| 核心组件 | ArchTag、BlockMmad、BlockEpilogue、BlockScheduler、Kernel 类型 | op_kernel 与 [custom-epilogue.md](references/custom-epilogue.md) 一致 |
+| 核心组件 | ArchTag、BlockMmad、BlockEpilogue、BlockScheduler、Kernel 类型 | op_kernel 与 [custom-epilogue.md](references/op_kernel/custom-epilogue.md) 一致 |
 | 参考 example | 指定的 catlass example 路径与选型理由 | 实现与选型一致（非整份粘贴） |
 | TilingKey | 各分支对应 dtype/转置等 | Host `SetTilingKey` 与 `TILING_KEY_IS` 一一对应 |
-| Workspace | 固定写法 | 见 [kernel-rules.md](references/kernel-rules.md) |
+| Workspace | 固定写法 | 见 [kernel-rules.md](references/op_kernel/kernel-rules.md) |
 
 ---
 
@@ -77,11 +77,11 @@ description: 根据CATLASS算子设计文档生成算子工程交付件
 
 ### Step 5：写 op_kernel
 
-按 [kernel-rules.md](references/kernel-rules.md)：`GET_TILING_DATA`、`TILING_KEY_IS`、Device 调用、`#define K_MAX_SHAPE_DIM 0`、勿 `#include` tiling.h
+按 [kernel-rules.md](references/op_kernel/kernel-rules.md)：`GET_TILING_DATA`、`TILING_KEY_IS`、Device 调用、`#define K_MAX_SHAPE_DIM 0`、勿 `#include` tiling.h
 
 ### Step 6：写 test_aclnn
 
-按 [example-rules.md](references/example-rules.md) 覆盖 `examples/test_aclnn_<op_name>.cpp`
+按 [example-rules.md](references/example/example-rules.md) 覆盖 `examples/test_aclnn_<op_name>.cpp`
 
 ### Step 7：验证
 
@@ -104,12 +104,12 @@ description: 根据CATLASS算子设计文档生成算子工程交付件
 |------|------|
 | [compile-options.md](references/compile-options.md) | 编译选项配置 |
 | [code-structure.md](references/code-structure.md) | 目录树、文件职责索引 |
-| [example-rules.md](references/example-rules.md) | test_aclnn 写法 |
-| [tiling-rules.md](references/tiling-rules.md) | tiling.h / tiling.cpp |
-| [def-rules.md](references/def-rules.md) | def.cpp |
-| [infershape-rules.md](references/infershape-rules.md) | infershape.cpp |
-| [kernel-rules.md](references/kernel-rules.md) | Catlass 依赖与 Device 调用 |
-| [custom-epilogue.md](references/custom-epilogue.md) | 自定义 Tile Epilogue |
+| [example-rules.md](references/example/example-rules.md) | test_aclnn 写法 |
+| [tiling-rules.md](references/op_host/tiling-rules.md) | tiling.h / tiling.cpp |
+| [def-rules.md](references/op_host/def-rules.md) | def.cpp |
+| [infershape-rules.md](references/op_host/infershape-rules.md) | infershape.cpp |
+| [kernel-rules.md](references/op_kernel/kernel-rules.md) | Catlass 依赖与 Device 调用 |
+| [custom-epilogue.md](references/op_kernel/custom-epilogue.md) | 自定义 Tile Epilogue |
 
 ---
 

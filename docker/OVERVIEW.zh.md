@@ -77,7 +77,7 @@ docker run \
 
 ### 如何本地构建
 ```bash
-docker buildx build -t modelagent:0.0-a2-ubuntu22.04-py3.11 -f Dockerfile .
+docker buildx build -t modelagent:1.0-a2-ubuntu22.04-py3.11 -f Dockerfile .
 ```
 
 ### 如何二次开发

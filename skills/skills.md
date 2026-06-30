@@ -46,7 +46,7 @@
 | megatron-change-analyzer                   | Adaptation    | ./ascend/adaptation/megatron-change-analyzer | PASS                  |
 | megatron-impact-mapper                     | Adaptation    | ./ascend/adaptation/megatron-impact-mapper   | PASS                  |
 | megatron-migration-generator               | Adaptation    | ./ascend/adaptation/megatron-migration-generator | PASS                  |
-| "mindspeed-fsdp2-migration-main"           | Adaptation    | ./ascend/adaptation/mindspeed-fsdp2-migration-main | PASS                  |
+| mindspeed-fsdp2-migration-main           | Adaptation    | ./ascend/adaptation/mindspeed-fsdp2-migration-main | PASS                  |
 | model-migration                            | Adaptation    | ./ascend/adaptation/model-migration          | PASS                  |
 | model-series-vendor-detector               | Adaptation    | ./ascend/adaptation/model-series-vendor-detector | PASS                  |
 | msverl-daily-regression-triage             | Adaptation    | ./ascend/adaptation/msverl-daily-regression-triage | PASS                  |
@@ -197,7 +197,7 @@
 | ascendc-operator-compile-debug             | Verification  | ./ascend/verification/ascendc-operator-compile-debug | PASS                  |
 | ascendc-operator-dev                       | Verification  | ./ascend/verification/ascendc-operator-dev   | PASS                  |
 | ascendc-operator-doc-gen                   | Verification  | ./ascend/verification/ascendc-operator-doc-gen | PASS                  |
-| "ascendc-mssanitizer"                      | Verification  | ./ascend/verification/ascendc-operator-mssanitizer | PASS                  |
+| ascendc-mssanitizer                      | Verification  | ./ascend/verification/ascendc-operator-mssanitizer | PASS                  |
 | ascendc-operator-precision-debug           | Verification  | ./ascend/verification/ascendc-operator-precision-debug | PASS                  |
 | ascendc-operator-precision-eval            | Verification  | ./ascend/verification/ascendc-operator-precision-eval | PASS                  |
 | ascendc-operator-project-init              | Verification  | ./ascend/verification/ascendc-operator-project-init | PASS                  |
@@ -206,7 +206,7 @@
 | ascendc-st-design                          | Verification  | ./ascend/verification/ascendc-st-design      | PASS                  |
 | ascendc-whitebox-design                    | Verification  | ./ascend/verification/ascendc-whitebox-design | PASS                  |
 | ai-for-science-boltzgen                    | Verification  | ./ascend/verification/boltzgen               | PASS                  |
-| "cann-operator-env-config"                 | Verification  | ./ascend/verification/cann-operator-env-config | PASS                  |
+| cann-operator-env-config                 | Verification  | ./ascend/verification/cann-operator-env-config | PASS                  |
 | catlass-operator-code-gen                  | Verification  | ./ascend/verification/catlass-operator-code-gen | PASS                  |
 | catlass-operator-design                    | Verification  | ./ascend/verification/catlass-operator-design | PASS                  |
 | ai-for-science-deepfri                     | Verification  | ./ascend/verification/deepfri                | PASS                  |
@@ -214,10 +214,10 @@
 | ai-for-science-goedel-prover               | Verification  | ./ascend/verification/goedel-prover          | PASS                  |
 | hccl-test                                  | Verification  | ./ascend/verification/hccl-test              | PASS                  |
 | issue_autoreply                            | Verification  | ./ascend/verification/issue_autoreply        | PASS                  |
-| "mindspeed-fsdp2-config-migration"         | Verification  | ./ascend/verification/mindspeed-fsdp2-config-migration | PASS                  |
-| "mindspeed-fsdp2-data-migration"           | Verification  | ./ascend/verification/mindspeed-fsdp2-data-migration | PASS                  |
-| "mindspeed-fsdp2-model-migration"          | Verification  | ./ascend/verification/mindspeed-fsdp2-model-migration | PASS                  |
-| "mindspeed-fsdp2-verification"             | Verification  | ./ascend/verification/mindspeed-fsdp2-verification | PASS                  |
+| mindspeed-fsdp2-config-migration         | Verification  | ./ascend/verification/mindspeed-fsdp2-config-migration | PASS                  |
+| mindspeed-fsdp2-data-migration           | Verification  | ./ascend/verification/mindspeed-fsdp2-data-migration | PASS                  |
+| mindspeed-fsdp2-model-migration          | Verification  | ./ascend/verification/mindspeed-fsdp2-model-migration | PASS                  |
+| mindspeed-fsdp2-verification             | Verification  | ./ascend/verification/mindspeed-fsdp2-verification | PASS                  |
 | ascend-mmcv-install                        | Verification  | ./ascend/verification/mmcv                   | PASS                  |
 | ascend-mmdet-install                       | Verification  | ./ascend/verification/mmdet                  | PASS                  |
 | ascend-mmdet3d-install                     | Verification  | ./ascend/verification/mmdet3d                | PASS                  |

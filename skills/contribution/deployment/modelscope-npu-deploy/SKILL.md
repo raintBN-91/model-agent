@@ -11,6 +11,9 @@ metadata:
   category: NPU-Model-Deploy
   tags: [ascend, npu, pytorch, modelscope, timm, image-classification, cv, inference, accuracy-comparison]
 ---
+> ⚠️ **文档长度警告**：本 SKILL.md 共 808 行，超过精简约定（800 行），建议后续拆分为多个子文档以降低加载成本。详见 #110。
+
+
 
 # ModelScope CV 模型昇腾 NPU 部署 Skill
 

@@ -19,3 +19,7 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# Additional
+*.pyc
+node_modules/

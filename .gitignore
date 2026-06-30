@@ -20,6 +20,9 @@ venv/
 .idea/
 .vscode/
 
-# Additional
-*.pyc
-node_modules/
+# Code intelligence index
+.codegraph/
+
+# Experience data (runtime)
+.mofix/
+logs/

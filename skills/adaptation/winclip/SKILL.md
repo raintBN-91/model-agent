@@ -1,5 +1,5 @@
 ---
-name: winclip
+name: winclip-ascend
 description: >
   WinCLIP (CVPR'23) 零样本异常检测模型在华为昇腾 NPU 上的适配、优化与验证全流程。
   支持 FP32/FP16 双精度推理、torch.compile 图优化、批量推理加速，单图吞吐 392 img/s，

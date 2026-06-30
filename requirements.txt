@@ -1,0 +1,24 @@
+# MoFix Backend — Python 3.10+
+
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-anthropic>=0.1.0
+langgraph>=0.2.0
+
+python-dotenv>=1.0.0
+structlog>=24.0.0
+
+# 华为云 LTS（可选，环境变量未配置时自动降级）
+huaweicloudsdklts>=3.1.0
+
+# MCP 传输层
+httpx>=0.28.0
+sse-starlette>=2.0.0
+
+# Claude Code SDK（可选）
+# claude-agent-sdk==0.1.53

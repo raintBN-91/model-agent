@@ -1,0 +1,6 @@
+[submodule "third-party/search-agent"]
+	path = third-party/search-agent
+	url = git@gitcode.com:MoFixGo/search-agent.git
+[submodule "third-party/model_eco_skills"]
+	path = third-party/model_eco_skills
+	url = git@gitcode.com:MoFixGo/model_eco_skills.git

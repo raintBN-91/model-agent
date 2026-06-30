@@ -1,0 +1,5782 @@
+[
+  {
+    "name": "sambert-hifigan-tts-npu",
+    "path": "skills\\contribution\\deployment\\sambert-hifigan-tts-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 99.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 346
+  },
+  {
+    "name": "convformer-npu",
+    "path": "skills\\deployment\\convformer-npu\\SKILL.md",
+    "description": "ConvFormer 系列图像分类模型的昇腾 NPU 统一部署与精度验证 Skill。支持 timm 库中 convformer_b36/m36/s18/s36 共 20 个变体模型的自动下载、NPU 推理、CPU/NPU 精度对比、README 生成和模型仓库发布。适用于华为昇腾 Ascend 910 NPU。",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 99.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 366
+  },
+  {
+    "name": "granite-speech-npu-deploy",
+    "path": "skills\\deployment\\granite-speech-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 99.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 429
+  },
+  {
+    "name": "levit-npu-deploy",
+    "path": "skills\\deployment\\levit-npu-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 99.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 293
+  },
+  {
+    "name": "mobilevit-npu-deploy",
+    "path": "skills\\deployment\\mobilevit-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 98.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 413
+  },
+  {
+    "name": "aimv2-adapt-npu",
+    "path": "skills\\deployment\\aimv2-adapt-npu\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 98.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.8,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 10.0
+    },
+    "line_count": 231
+  },
+  {
+    "name": "phi-npu",
+    "path": "skills\\deployment\\phi-npu\\SKILL.md",
+    "description": "Microsoft Phi 系列模型（phi-1、phi-1.5、phi-2）在昇腾 NPU 上的部署与验证。涵盖 vLLM-Ascend 服务启动、精度评测、性能基准测试及最佳实践。",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 98.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 327
+  },
+  {
+    "name": "convnext-npu",
+    "path": "skills\\deployment\\convnext-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 98.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.5
+    },
+    "line_count": 386
+  },
+  {
+    "name": "vit-base-patch16-224-in21k-npu",
+    "path": "skills\\deployment\\vit-base-patch16-224-in21k-npu\\SKILL.md",
+    "description": "Google ViT-Base-Patch16-224-IN21K Vision Transformer 在昇腾 NPU 上的推理适配与部署 Skill。涵盖环境准备、ModelScope 权重下载、transfer_to_npu 自动迁移、CPU/NPU 精度对比验证、性能基准测试的全流程。当用户提到 ViT 昇腾部署、Vit NPU 推理、视觉模型 NPU、google/vit-base-pa",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 98.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.5
+    },
+    "line_count": 339
+  },
+  {
+    "name": "twins-npu",
+    "path": "skills\\deployment\\twins-npu\\SKILL.md",
+    "description": "Twins 系列模型（SVT/PCPVT）昇腾 Ascend NPU 部署与精度验证 Skill",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.6,
+      "instruction_specificity": 9.7,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 10.0
+    },
+    "line_count": 214
+  },
+  {
+    "name": "\"ascendc-mssanitizer\"",
+    "path": "skills\\ascend\\verification\\ascendc-operator-mssanitizer\\SKILL.md",
+    "description": "\"Ascend C 算子 mssanitizer 内存检测分析技能。用于检测和分析算子内存问题：非法内存访问、非法释放、内存泄漏、UB地址越界，生成问题报告。自动识别算子工程类型（ops算子仓用GE IR模式，自定义算子用Python模式）。触发关键词：mssanitizer、内存检测、内存泄漏、非法访问、illegal free、内存错误。\"",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 506
+  },
+  {
+    "name": "dino-vits8-npu",
+    "path": "skills\\deployment\\dino-vits8-npu\\SKILL.md",
+    "description": "\"DINO ViT-S/8 自监督视觉 Transformer 模型在昇腾 NPU 上的完整推理部署与 CPU/NPU 精度验证 Skill。涵盖环境初始化、权重下载、transfer_to_npu 自动迁移、单图推理验证、随机/真实图像精度对比验收的完整可复现流程。可在任意 Ascend910 系列服务器上一键复现。适用于：DINO 昇腾部署、ViT-S/8 NPU 推理、DINOv1 适配验证",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 336
+  },
+  {
+    "name": "dm-nfnet-npu-deploy",
+    "path": "skills\\deployment\\dm-nfnet-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 475
+  },
+  {
+    "name": "pp-ocrv4-npu-deploy",
+    "path": "skills\\deployment\\pp-ocrv4-npu-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 535
+  },
+  {
+    "name": "tiny-vit-npu",
+    "path": "skills\\deployment\\tiny-vit-npu\\SKILL.md",
+    "description": "\"TinyViT 系列模型昇腾 Ascend910 NPU 自动化部署、推理与精度验证 Skill\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 384
+  },
+  {
+    "name": "trocr-npu-deploy",
+    "path": "skills\\deployment\\trocr-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 381
+  },
+  {
+    "name": "xcit-npu",
+    "path": "skills\\deployment\\xcit-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 321
+  },
+  {
+    "name": "efficientnet-b14-npu",
+    "path": "skills\\deployment\\efficientnet-b14-npu\\SKILL.md",
+    "description": "\"EfficientNet 系列 68 个模型 (EfficientNetV2/Lite/B0-B8/CondConv/NoisyStudent/Test) 在昇腾 NPU 上的批量部署、推理、CPU/NPU 精度验证与 GitCode 模型仓库发布。适用于：昇腾部署、NPU 批量推理、精度验证、模型仓库发布。触发词：EfficientNet NPU 部署、EfficientNet 昇腾推理、Ef",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.9,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 9.5
+    },
+    "line_count": 242
+  },
+  {
+    "name": "wav2vec2-urdu-npu-deploy",
+    "path": "skills\\deployment\\wav2vec2-large-xls-r-300m-urdu-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 294
+  },
+  {
+    "name": "pp-ocrv3-npu",
+    "path": "skills\\deployment\\pp-ocrv3-npu\\SKILL.md",
+    "description": "PP-OCRv3 多语言 OCR 模型昇腾 NPU 批量部署与验证",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.3,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.9,
+      "verifiability": 9.5
+    },
+    "line_count": 278
+  },
+  {
+    "name": "timm-mixnet-npu",
+    "path": "skills\\deployment\\timm-mixnet-npu\\SKILL.md",
+    "description": "\"timm MixNet 系列 3 个模型 (tf_mixnet_s/m/l.in1k) 在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证、终端截图生成与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：MixNet NPU 部署、timm mixnet 昇腾推理、精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.9,
+      "verifiability": 9.0
+    },
+    "line_count": 289
+  },
+  {
+    "name": "generative-recommendation-verification",
+    "path": "skills\\ascend\\other\\generative-recommendation-verification\\SKILL.md",
+    "description": "|",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 97.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 7.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 656
+  },
+  {
+    "name": "swin-transformer-npu",
+    "path": "skills\\deployment\\swin-transformer-npu\\SKILL.md",
+    "description": "\"Swin Transformer 系列图像分类模型 (tiny/small/s3/base/large, 224/384 输入) 在昇腾 NPU 上的完整部署、推理验证、CPU/NPU 精度对比、README 生成与模型仓库发布 Skill。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词：Swin Transformer NPU 部署、swin 昇腾推理、Swin Transform",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 9.0
+    },
+    "line_count": 267
+  },
+  {
+    "name": "tinynet-npu",
+    "path": "skills\\deployment\\tinynet-npu-skill\\SKILL.md",
+    "description": "\"TinyNet (tinynet_e/d/c/b/a) 图像分类模型在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：TinyNet NPU 部署、tinynet 昇腾推理、TinyNet 精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 97.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.7,
+      "verifiability": 9.0
+    },
+    "line_count": 251
+  },
+  {
+    "name": "cubeai-vit-classification-npu-deploy",
+    "path": "skills\\deployment\\cubeai-vit-classification-npu-deploy\\SKILL.md",
+    "description": "CubeAI 智立方 ViT 图像分类模型系列在昇腾 NPU 上的完整部署、推理、CPU/NPU 精度对比、终端截图生成、README 编写与 GitCode 模型仓库发布。支持 11 个 ViT 图像分类模型的串行适配和验证（CPU/NPU 误差 < 1%）。",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.3,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 306
+  },
+  {
+    "name": "batch21-spnasnet100-npu-deploy",
+    "path": "skills\\deployment\\batch21-spnasnet100-npu\\SKILL.md",
+    "description": "\"SPNASNet_100 (spnasnet_100.rmsp_in1k) 图像分类模型在昇腾 NPU 上的自动部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词：SPNASNet NPU 部署、spnasnet 昇腾推理、SPNASNet 精度对比、npu-smi、ascend 部署。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 316
+  },
+  {
+    "name": "git-npu-deploy",
+    "path": "skills\\deployment\\git-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 402
+  },
+  {
+    "name": "kotoba-whisper-npu-deploy",
+    "path": "skills\\deployment\\kotoba-whisper-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 481
+  },
+  {
+    "name": "mms-tts-npu-deploy",
+    "path": "skills\\deployment\\mms-tts-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 387
+  },
+  {
+    "name": "qwen3-asr-npu-deploy",
+    "path": "skills\\deployment\\qwen3-asr-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 423
+  },
+  {
+    "name": "siglip-npu-deploy",
+    "path": "skills\\deployment\\siglip-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 471
+  },
+  {
+    "name": "vtp-small-f16d64-npu-deploy",
+    "path": "skills\\deployment\\vtp-small-f16d64-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 715
+  },
+  {
+    "name": "whisper-medium-npu-deploy",
+    "path": "skills\\deployment\\whisper-medium-npu\\SKILL.md",
+    "description": "\"whisper-medium（OpenAI ~769M 语音识别 ASR 模型）在昇腾 NPU 上的完整部署与推理验证。涵盖环境准备、模型下载、NPU 推理部署、CPU/NPU 精度对比验证、性能基准测试的全流程。适用于：NPU 部署、昇腾推理、ASR 精度验证、Whisper 性能评测。触发词：whisper-medium NPU 部署、whisper 昇腾推理、whisper-medium ",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 397
+  },
+  {
+    "name": "convnext-test-npu-deploy",
+    "path": "skills\\deployment\\convnext-test-npu\\SKILL.md",
+    "description": "\"ConvNeXt 系列测试模型 (test_convnext.r160_in1k / test_convnext2.r160_in1k / test_convnext3.r160_in1k) 在昇腾 NPU 上的自动部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词：ConvNeXt NPU 部署、convnext 昇腾推理、ConvN",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 8.5
+    },
+    "line_count": 277
+  },
+  {
+    "name": "openjourney-npu-deploy",
+    "path": "skills\\deployment\\openjourney-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 413
+  },
+  {
+    "name": "selecsls-npu",
+    "path": "skills\\deployment\\selecsls-npu\\SKILL.md",
+    "description": "\"SelecSLS 系列图像分类模型 (selecsls60b/selecsls60/selecsls42b) 在昇腾 NPU 上的自动部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词：SelecSLS NPU 部署、selecsls 昇腾推理、SelecSLS 精度对比、npu-smi、ascend 部署。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 8.5
+    },
+    "line_count": 274
+  },
+  {
+    "name": "whisper-large-v3-npu",
+    "path": "skills\\deployment\\whisper-large-v3-npu\\SKILL.md",
+    "description": "\"OpenAI Whisper Large V3 语音识别模型在昇腾 NPU (Ascend 910B4) 上的适配、推理部署与精度验证 Skill。涵盖环境准备、模型权重获取、NPU 推理部署、精度评测（<1% 误差）、性能基准测试的全流程。适用于将 whisper-large-v3 部署到华为昇腾 NPU 上进行自动语音识别 (ASR) 和语音翻译任务。触发词：whisper NPU 部署、w",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 96.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 294
+  },
+  {
+    "name": "sk-resnet-npu",
+    "path": "skills\\deployment\\sk-resnet-npu\\SKILL.md",
+    "description": "SK-ResNet models in 昇腾 NPU deployment, including SKResNeXt50, SKResNet34, and SKResNet18. Automates NPU adaptation, CPU/NPU inference, accuracy comparison, terminal screenshot generation, and GitCode ",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 8.5
+    },
+    "line_count": 246
+  },
+  {
+    "name": "xcit-npu-deploy",
+    "path": "skills\\deployment\\xcit-npu-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.9,
+      "verifiability": 8.5
+    },
+    "line_count": 287
+  },
+  {
+    "name": "vgg-npu-deploy",
+    "path": "skills\\deployment\\vgg-npu\\SKILL.md",
+    "description": "\"VGG 系列 7 个模型 (vgg19/vgg16/vgg13/vgg11 及 BN 变体) 在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：VGG NPU 部署、vgg 昇腾推理、精度对比、npu-smi、timm。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 8.5
+    },
+    "line_count": 269
+  },
+  {
+    "name": "wav2vec2-large-xlsr-53-greek-npu",
+    "path": "skills\\deployment\\wav2vec2-large-xlsr-53-greek\\SKILL.md",
+    "description": "\"wav2vec2-large-xlsr-53-greek 希腊语语音识别模型在昇腾 NPU 上的自动迁移部署、CPU/NPU 推理精度验证与适配。适用于：昇腾部署、NPU 推理、语音识别 ASR、精度验证。触发词：wav2vec2 希腊语 NPU 部署、wav2vec2-large-xlsr-53-greek 昇腾推理、精度对比、transfer_to_npu。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 8.5
+    },
+    "line_count": 273
+  },
+  {
+    "name": "dinov2-npu-deploy",
+    "path": "skills\\deployment\\dinov2-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 312
+  },
+  {
+    "name": "semnasnet-npu",
+    "path": "skills\\deployment\\semnasnet-npu-skill\\SKILL.md",
+    "description": "\"SEMNASNet (semnasnet_100/semnasnet_075) 图像分类模型在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：SEMNASNet NPU 部署、semnasnet 昇腾推理、SEMNASNet 精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.6,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 8.5
+    },
+    "line_count": 206
+  },
+  {
+    "name": "volo-npu-deploy",
+    "path": "skills\\deployment\\volo-npu\\SKILL.md",
+    "description": "\"VOLO (Vision Outlooker) 系列 11 个模型 (volo_d1~volo_d5) 在昇腾 NPU 上的完整部署、推理验证、CPU/NPU 精度对比与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：VOLO NPU 部署、volo 昇腾推理、精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.8,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 8.5
+    },
+    "line_count": 235
+  },
+  {
+    "name": "acestep-v15-xl-npu-deploy",
+    "path": "skills\\deployment\\acestep-v15-xl-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 458
+  },
+  {
+    "name": "aimv2-npu-deploy",
+    "path": "skills\\deployment\\aimv2-npu\\SKILL.md",
+    "description": "\"AIMv2 (Apple Intelligence Foundation Model v2) 多模态视觉模型在昇腾 NPU 上的完整部署 Skill，覆盖 12 个变体（large/huge/1B/3B × 224/336/448）在全分辨率下的权重转换、FP16 推理、性能基准测试和精度验证。当用户提到 AIMv2 部署昇腾、Apple AIMv2 NPU 推理、aimv2 适配、视觉 emb",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 552
+  },
+  {
+    "name": "convnext_base.clip_laion2b-npu",
+    "path": "skills\\deployment\\convnext_base.clip_laion2b-npu\\SKILL.md",
+    "description": "\"ConvNeXt Base (CLIP LAION-2B) 在昇腾 Ascend910B4 NPU 上的推理部署、CPU/NPU 精度验证与性能基准测试。适用于：昇腾部署、NPU 推理、精度验证、性能基准、模型评测。触发词：ConvNeXt CLIP NPU 部署、convnext_base.clip_laion2b 昇腾推理、ConvNeXt 精度对比、npu-smi、ascend 部署、CL",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 345
+  },
+  {
+    "name": "detr-npu-deploy",
+    "path": "skills\\deployment\\detr-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 324
+  },
+  {
+    "name": "neutts-nano-npu-deploy",
+    "path": "skills\\deployment\\neutts-nano-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 308
+  },
+  {
+    "name": "plant-classify-npu-deploy",
+    "path": "skills\\deployment\\plant-classify-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 347
+  },
+  {
+    "name": "sequencer2d-npu",
+    "path": "skills\\deployment\\sequencer2d-npu\\SKILL.md",
+    "description": "\"Sequencer2D 系列 3 个模型 (sequencer2d_s/m/l) 在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：Sequencer2D NPU 部署、sequencer2d 昇腾推理、精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.8,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 8.5
+    },
+    "line_count": 231
+  },
+  {
+    "name": "speaker-diarization-npu-deploy",
+    "path": "skills\\deployment\\speaker-diarization-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 302
+  },
+  {
+    "name": "vit_base_patch16_224-dino-npu-deploy",
+    "path": "skills\\deployment\\vit_base_patch16_224-dino-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 353
+  },
+  {
+    "name": "voice-activity-detection-npu",
+    "path": "skills\\deployment\\voice-activity-detection-npu\\SKILL.md",
+    "description": "\"pyannote/segmentation (PyanNet) 语音活动检测模型在华为昇腾 NPU 上的完整部署、推理、CPU/NPU 精度对比与 VAD 管线处理。适用于：NPU 部署、昇腾推理、精度验证、语音端点检测。触发词：VAD 语音活动检测 NPU、pyannote segmentation 昇腾、voice activity detection npu 部署、pyannote 精度对",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 443
+  },
+  {
+    "name": "wav2vec2-indonesian-javanese-sundanese-npu",
+    "path": "skills\\deployment\\wav2vec2-indonesian-javanese-sundanese-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 357
+  },
+  {
+    "name": "xception-npu",
+    "path": "skills\\deployment\\xception-npu-deployment\\SKILL.md",
+    "description": "\"Xception 模型在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：Xception NPU 部署、昇腾推理、精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 95.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 327
+  },
+  {
+    "name": "paraformer-npu-deploy",
+    "path": "skills\\deployment\\paraformer-npu\\SKILL.md",
+    "description": "\"FunASR Paraformer 三款中文语音识别模型 (ASR / ASR+VAD+Punc / ASR+VAD+Punc+SPK) 在昇腾 NPU 上的端到端部署、推理验证、精度对比与性能 Benchmark Skill。涵盖环境准备、依赖安装、NPU 适配（ASR 主模型移至 NPU，VAD/Punc/SPK 子模型留在 CPU）、推理验证、精度对比（NPU vs CPU 100% 一致",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 364
+  },
+  {
+    "name": "swinv2-npu-skill",
+    "path": "skills\\deployment\\swinv2-npu-skill\\SKILL.md",
+    "description": "SwinV2 Transformer models in 昇腾 NPU deployment covering environment setup, model inference, CPU/NPU precision comparison, README generation, screenshot generation, GitCode model repo publishing, and b",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 7.3,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.7,
+      "verifiability": 10.0
+    },
+    "line_count": 248
+  },
+  {
+    "name": "vit_small_patch16_dinov3.lvd1689m-npu",
+    "path": "skills\\deployment\\vit_small_patch16_dinov3.lvd1689m-npu\\SKILL.md",
+    "description": "\"DINOv3 ViT-Small (vit_small_patch16_dinov3.lvd1689m) 图像特征提取模型在昇腾 Ascend910B4 NPU 上的推理适配 Skill。覆盖环境准备、依赖安装、模型加载、NPU 推理验证、CPU/NPU 精度对比（cos > 0.999）、性能基准测试（batch size sweep）全流程。当用户提到 vit_small_patch16_d",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 318
+  },
+  {
+    "name": "modelscope-npu-deploy",
+    "path": "skills\\contribution\\deployment\\modelscope-npu-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 807
+  },
+  {
+    "name": "timm-se-npu-batch24",
+    "path": "skills\\deployment\\timm-se-npu-batch24\\SKILL.md",
+    "description": "timm SE 系列图像分类模型（ResNet、SENet、HaloNet、BoTNet）昇腾 NPU 适配、推理测试、精度对比、文档生成与模型仓库发布的统一部署 Skill。支持的模型包括 seresnet50、seresnet33ts、seresnet152d、senet154、sehalonet33ts、sebotnet33ts 等 9 个 SE 架构变体。在适配 timm SE 系列模型时",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.8,
+      "instruction_specificity": 9.3,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 8.5
+    },
+    "line_count": 232
+  },
+  {
+    "name": "webssl-mae-npu-deploy",
+    "path": "skills\\deployment\\webssl-mae-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 388
+  },
+  {
+    "name": "atc-model-converter",
+    "path": "skills\\ascend\\deployment\\atc-model-converter\\SKILL.md",
+    "description": "Complete toolkit for Huawei Ascend NPU model conversion and end-to-end inference adaptation. Workflow 1 auto-discovers input shapes and parameters from user source code. Workflow 2 exports PyTorch mod",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.8,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 678
+  },
+  {
+    "name": "pypto-op-develop",
+    "path": "skills\\ascend\\verification\\pypto-op-develop\\SKILL.md",
+    "description": "\"当需要编写 PyPTO 算子实现时使用此 skill。基于需求规格、设计方案和参考实现，生成完整可运行的 PyPTO 算子实现与配套测试、文档。Triggers: 实现算子、写 kernel、编写实现、写 impl、算子编码、开始编码、code the op、写 test、生成测试、写实现代码、op develop、kernel 实现。\"",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 94.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.3,
+      "resource_integration": 9.5,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 8.9,
+      "verifiability": 9.0
+    },
+    "line_count": 288
+  },
+  {
+    "name": "reader-lm-npu-deploy",
+    "path": "skills\\deployment\\reader-lm-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.4,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 392
+  },
+  {
+    "name": "swin-batch-npu",
+    "path": "skills\\deployment\\swin-batch-npu\\SKILL.md",
+    "description": "Swin Transformer 系列在 昇腾 NPU 部署 — 集成 ModelScope 权重下载、CPU/NPU 推理、精度对比、README 文档生成、终端截图生成与 GitCode 模型仓库发布的统一部署 Skill。支持 19 个 Swin Transformer 变体（tiny/small/base/large，in1k/in22k/384分辨率）。在适配 Swin Transfor",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 94.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 7.7,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.0
+    },
+    "line_count": 300
+  },
+  {
+    "name": "rapidocr-npu",
+    "path": "skills\\adaptation\\rapidocr-npu\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 93.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 364
+  },
+  {
+    "name": "granite-4.1-npu-deploy",
+    "path": "skills\\deployment\\granite-4.1-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 93.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 487
+  },
+  {
+    "name": "phikon-v2-npu-deploy",
+    "path": "skills\\deployment\\phikon-v2-npu\\SKILL.md",
+    "description": "\"Owkin phikon-v2 (DINOv2 ViT-L/16) 病理学基础模型（303M 参数）在昇腾 NPU 上的自动推理部署与精度验证。涵盖环境准备、模型权重下载、NPU 推理验证、CPU/NPU 精度对比、性能基准测试全流程。适用于：NPU 部署、昇腾推理、精度验证、病理模型部署。触发词：phikon-v2 NPU 部署、phikon-v2 昇腾推理、phikon-v2 精度对比、Ow",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 93.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 537
+  },
+  {
+    "name": "vtp-npu-adapation",
+    "path": "skills\\deployment\\vtp-npu-adapation\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 93.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 383
+  },
+  {
+    "name": "wavyfusion-npu-deploy",
+    "path": "skills\\deployment\\wavyfusion-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 93.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 300
+  },
+  {
+    "name": "xcit-models-npu-deployment",
+    "path": "skills\\deployment\\xcit-models-npu-deployment\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 93.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 493
+  },
+  {
+    "name": "hccl-test",
+    "path": "skills\\ascend\\verification\\hccl-test\\SKILL.md",
+    "description": "HCCL (Huawei Collective Communication Library) performance testing for Ascend NPU clusters. Use for testing distributed communication bandwidth, verifying HCCL functionality, and benchmarking collecti",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 93.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.9,
+      "boundary_coverage": 9.6,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.1,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 9.5
+    },
+    "line_count": 422
+  },
+  {
+    "name": "timm-npu-adapt",
+    "path": "skills\\deployment\\timm-npu-adapt\\SKILL.md",
+    "description": "将 HuggingFace timm 视觉分类模型适配到华为昇腾 NPU 的一站式流程。支持推理精度验证、性能基准测试和完整部署。已验证 MobileNetV4、VOLO、ResNeXt、SE-ResNet、CaiT、XCiT 等 10 个视觉模型。",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 93.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.9,
+      "instruction_specificity": 9.3,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 8.0
+    },
+    "line_count": 236
+  },
+  {
+    "name": "ai-for-science-deepfri",
+    "path": "skills\\ascend\\verification\\deepfri\\SKILL.md",
+    "description": "DeepFRI 的 TensorFlow 到 PyTorch 转换与昇腾 NPU 迁移 Skill，适用于蛋白质功能预测场景下的 TF 模型分析、PyTorch 重写、权重逐层映射、NPU 推理与精度验证，尤其适合需要在 Ascend 上运行 DeepFRI CNN 或 GCN 路径时使用。",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 93.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.8,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 341
+  },
+  {
+    "name": "qwen-asr-npu-deploy",
+    "path": "skills\\contribution\\deployment\\qwen-asr-npu-deploy\\SKILL.md",
+    "description": "Ascend NPU deployment skill for Qwen3-ASR speech recognition models. Automates the complete pipeline of adapting, verifying, and deploying Qwen3-ASR (0.6B/1.7B) on Huawei Ascend NPUs via vLLM-Ascend. ",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 93.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.5,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.5,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 551
+  },
+  {
+    "name": "c-radio-v2-npu",
+    "path": "skills\\deployment\\c-radio-v2-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 348
+  },
+  {
+    "name": "c-radio-v4-npu",
+    "path": "skills\\deployment\\c-radio-v4-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 424
+  },
+  {
+    "name": "kani-tts-400m-npu",
+    "path": "skills\\deployment\\kani-tts-400m-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 313
+  },
+  {
+    "name": "moss-tts-npu-deployment",
+    "path": "skills\\deployment\\moss-tts-npu-deployment\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 321
+  },
+  {
+    "name": "soprano-80m-npu-deploy",
+    "path": "skills\\deployment\\soprano-80m-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 331
+  },
+  {
+    "name": "model-agent-pr-submit",
+    "path": "skills\\documentation\\pr-submit\\SKILL.md",
+    "description": ">",
+    "category": "documentation",
+    "tier": 2,
+    "total_score": 92.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 312
+  },
+  {
+    "name": "chronos-2-npu",
+    "path": "skills\\adaptation\\chronos-2-npu\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 92.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.4,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 8.5
+    },
+    "line_count": 264
+  },
+  {
+    "name": "ascendc-operator-precision-eval",
+    "path": "skills\\ascend\\verification\\ascendc-operator-precision-eval\\SKILL.md",
+    "description": "\"AscendC算子精度评估。对已编译安装的算子生成全面的精度测试用例集（≥30例），运行并生成精度验证报告。关键词：精度测试、precision evaluation、精度报告、accuracy、误差分析。执行完成后 MUST 在当前对话中展示总览、失败摘要与关键发现，不得仅附报告路径。\"",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 92.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 362
+  },
+  {
+    "name": "cosyvoice-npu-deploy",
+    "path": "skills\\contribution\\deployment\\cosyvoice-npu-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 4.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 365
+  },
+  {
+    "name": "senet-npu",
+    "path": "skills\\deployment\\senet-npu\\SKILL.md",
+    "description": "\"SE-Net 系列 9 个模型 (SE-ResNet/SENet154/SE-HaLO-Net/SE-BotNet) 在昇腾 NPU 上的部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证。触发词：SE-Net NPU 部署、senet 昇腾推理、精度对比、npu-smi。\"",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 92.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 9.9,
+      "checkpoint_design": 9.5,
+      "instruction_specificity": 9.3,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.3,
+      "verifiability": 8.0
+    },
+    "line_count": 196
+  },
+  {
+    "name": "npu-adapter-reviewer",
+    "path": "skills\\ascend\\optimization\\adapt-agent\\SKILL.md",
+    "description": "GPU代码到昇腾NPU适配审查专家。当用户需要将GPU上的代码（特别是深度学习、模型推理相关）迁移到华为昇腾NPU时，必须使用此skill进行全面审查。此skill能识别GPU到NPU迁移的堵点、编写适配脚本、生成验证方案，并输出完整的Markdown审查报告。触发场景包括：用户提到\"NPU适配\"、\"昇腾迁移\"、\"GPU转NPU\"、\"Ascend\"、\"CANN\"、\"模型迁移\"、\"算子适配\"等关键词",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 92.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 9.6,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 489
+  },
+  {
+    "name": "ai-for-science-proteinbert",
+    "path": "skills\\ascend\\deployment\\proteinbert\\SKILL.md",
+    "description": "ProteinBERT 昇腾 NPU 部署与迁移 Skill，适用于将 TensorFlow 或 Keras 版 ProteinBERT 转成基于 PyTorch 与 torch_npu 的实现，覆盖权重转换、embedding 提取、微调训练、注意力可视化和 GPU 与 NPU 精度验证。",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 91.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 3.9,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 10.0
+    },
+    "line_count": 237
+  },
+  {
+    "name": "pypto-op-perf-tune",
+    "path": "skills\\ascend\\optimization\\pypto-op-perf-tune\\SKILL.md",
+    "description": "PyPTO 算子性能分析和自动调优技能。用于对生成及新开发的算子进行性能分析及自动调优，包括算子用例执行及精度校验、性能数据采集及分析、分步骤性能调优和生成性能分析报告。当用户需要分析 PyPTO 算子性能、进行性能调优、生成性能报告时使用此技能。触发词：算子性能调优、性能分析、自动调优、性能优化、泳道图分析。",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 91.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 4.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 654
+  },
+  {
+    "name": "model-infer-graph-mode",
+    "path": "skills\\ascend\\optimization\\model-infer-graph-mode\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理图模式适配技能。将模型适配到 torch.compile 图模式以加速推理性能。触发场景：npugraph_ex 或 GE 图模式适配、torch.compile 在昇腾 NPU 上的使用、图中断（Graph Break）修复、aclgraph 图编译问题。LLM 模型的图模式适配优先阅读 LLM 模型改造指南。",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 91.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 398
+  },
+  {
+    "name": "efficientnet-npu-skill",
+    "path": "skills\\deployment\\efficientnet-npu-skill\\SKILL.md",
+    "description": "EfficientNet 系列 68 个 timm 图像分类模型在昇腾 Ascend NPU 上的部署 Skill，用于 NPU 推理、CPU/NPU 精度验证、批量运行、README 生成和 GitCode 模型仓库发布。用户提出 EfficientNet、Ascend 验证、NPU 推理、CPU/NPU 精度对比或批量适配时必须使用。",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 91.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.7,
+      "boundary_coverage": 9.1,
+      "checkpoint_design": 8.8,
+      "instruction_specificity": 8.5,
+      "resource_integration": 9.6,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 8.8,
+      "verifiability": 9.5
+    },
+    "line_count": 125
+  },
+  {
+    "name": "simple-vector-triton-gpu-to-npu",
+    "path": "skills\\ascend\\optimization\\simple-vector-triton-gpu-to-npu\\SKILL.md",
+    "description": "将简单Vector类型Triton算子从GPU迁移到昇腾NPU。当用户需要迁移Triton代码到NPU、提到GPU到NPU迁移、Triton迁移、昇腾适配时使用。注意：无法自动迁移存在编译问题的算子。",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 91.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 638
+  },
+  {
+    "name": "msprof-optimizer",
+    "path": "skills\\optimization\\msprof-optimizer\\SKILL.md",
+    "description": "利用 msprof（函数级）和 msprof op（算子级）等 profiling 工具对昇腾 NPU 上的模型进行系统性性能分析、瓶颈定位与针对性调优。覆盖从全模型 Profiling、热点算子识别、算子级深度分析到优化迭代验证的完整闭环。",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 91.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.4,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 549
+  },
+  {
+    "name": "tilelang-review",
+    "path": "skills\\ascend\\verification\\tilelang-review\\SKILL.md",
+    "description": "检查代码格式是否符合 CI 规则。适用于 TileLang NPU kernel 开发时的代码规范检查和格式化。自动检测并安装缺失工具（ruff、clang-format），先运行检查生成报告，使用醒目方式询问用户后，仅在用户同意时执行修复。工作流程：检测环境→自动安装缺失工具→运行检查→生成报告→醒目询问→用户确认→执行修复。使用此技能当：用户要求\"格式检查\"、\"格式化代码\"、\"代码格式化\"、\"",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 91.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 8.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.5,
+      "verifiability": 9.0
+    },
+    "line_count": 550
+  },
+  {
+    "name": "winclip-ascend",
+    "path": "skills\\adaptation\\winclip\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 91.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 611
+  },
+  {
+    "name": "outetts-npu-deploy",
+    "path": "skills\\deployment\\outetts-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 91.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 381
+  },
+  {
+    "name": "wav2vec2-xlsr-53-npu-deploy",
+    "path": "skills\\deployment\\wav2vec2-xlsr-53-npu-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 91.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 395
+  },
+  {
+    "name": "diffusers-ascend-adaptation",
+    "path": "skills\\adaptation\\diffusers-ascend-adaptation\\SKILL.md",
+    "description": "Adaptation and verification skill for Diffusers-based image/video generation models (e.g., FLUX, Stable Diffusion) on Huawei Ascend NPU. Use when users want to run a Diffusers pipeline on Ascend NPU, ",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 90.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 368
+  },
+  {
+    "name": "efficientnet-npu-adapt",
+    "path": "skills\\deployment\\efficientnet-npu-adapt\\SKILL.md",
+    "description": "将 PyTorch Vision 的 EfficientNet 系列图像分类模型（B0-B6）适配到华为昇腾 NPU 的一站式流程。支持模型推理、精度验证（CPU vs NPU）和性能基准测试。已验证 7 个模型，所有模型精度误差 < 0.005。",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 90.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.9,
+      "verifiability": 7.0
+    },
+    "line_count": 284
+  },
+  {
+    "name": "catlass-operator-dev",
+    "path": "skills\\ascend\\optimization\\catlass-operator-dev\\SKILL.md",
+    "description": "\"Catlass 算子端到端开发编排器。基于 ascend-kernel（csrc/ops），串联 catlass 设计、catlass-operator-code-gen 与 ascendc 子 skill，完成从工程初始化到文档、精度、性能的闭环。关键词：Catlass、端到端、ascend-kernel、算子开发、工作流编排。\"",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 90.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 8.8,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 3.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 367
+  },
+  {
+    "name": "vllm-ascend-troubleshooter",
+    "path": "skills\\deployment\\vllm-ascend-troubleshooter\\SKILL.md",
+    "description": "Troubleshoot vLLM-Ascend deployment, model loading, inference API, CANN/torch-npu, Ascend NPU visibility, ACLGraph/eager fallback, quantization, tensor parallel, multimodal, KV cache, memory, and perf",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 90.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 7.7,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 461
+  },
+  {
+    "name": "git-commit-author-fix",
+    "path": "skills\\documentation\\git-commit-author-fix\\SKILL.md",
+    "description": ">",
+    "category": "documentation",
+    "tier": 2,
+    "total_score": 90.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 6.5,
+      "verifiability": 7.5
+    },
+    "line_count": 344
+  },
+  {
+    "name": "tfjs-pytorch-npu-migration",
+    "path": "skills\\adaptation\\tfjs-pytorch-npu-migration\\SKILL.md",
+    "description": "将 TensorFlow.js (TF.js) 模型转换为 PyTorch 并在华为昇腾 (Ascend) NPU 上完成推理验证与发布的端到端 Skill。适用于非 transformers 架构的小型模型（如 CNN 音频分类器、图像分类器）从 TF.js 生态迁移到 PyTorch + torch_npu 的场景。涵盖权重解析与维度映射、PyTorch 模型重建、NPU 功能/性能验证、以及",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 90.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.4,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 412
+  },
+  {
+    "name": "model-infer-prefetch",
+    "path": "skills\\ascend\\optimization\\model-infer-prefetch\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理权重预取优化技能。为模型添加 torch_npu.npu_prefetch 特性以优化推理性能。触发场景：profiling 显示 MatMul/QBMM/GMM 算子存在 memory-bound 热点、需要为模型添加权重预取、将 prefetch 模式迁移到新模型。",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 90.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 6.8
+    },
+    "line_count": 516
+  },
+  {
+    "name": "ai-for-science-boltz2",
+    "path": "skills\\ascend\\adaptation\\boltz2\\SKILL.md",
+    "description": "Boltz2 蛋白质结构预测模型的昇腾 NPU 迁移与复现 Skill，适用于在华为 Ascend 910、910B、910C 上准备权重、适配 Lightning 和 CUDA only kernel、完成 Boltz2 端到端结构预测推理，并沉淀可复现的环境与验证命令。",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 89.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 463
+  },
+  {
+    "name": "infinity-instruct-baai-npu",
+    "path": "skills\\deployment\\infinity-instruct-baai-npu\\SKILL.md",
+    "description": "\"BAAI Infinity-Instruct 系列模型在华为昇腾 Ascend NPU 上的适配部署技能。覆盖 7 个 BAAI Infinity-Instruct/Infinity-Preference 系列大语言模型在 Ascend 910B NPU 上的完整适配流程：环境检查、推理部署、精度验证、性能基准测试。触发词：Infinity-Instruct、Infinity-Preferenc",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 89.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.3,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 381
+  },
+  {
+    "name": "ascend-model-verification",
+    "path": "skills\\ascend\\adaptation\\ascend-model-verification\\SKILL.md",
+    "description": "昇腾模型适配验证 (Ascend Model Adaptation Verification) - 自动化验证华为昇腾设备上 vLLM-Ascend 模型部署、精度与性能的一站式工具。当用户提及在昇腾 NPU (Atlas 800 A2/A3) 上部署大语言模型、验证模型精度、运行性能基准测试、生成验证报告、或需要一键式模型适配验证时，使用此 Skill。它封装了完整验证流水线：环境检查、模型服务",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 89.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.2,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 8.7,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 318
+  },
+  {
+    "name": "ascendc-registry-invoke-to-direct-invoke",
+    "path": "skills\\ascend\\optimization\\ascendc-registry-invoke-to-direct-invoke\\SKILL.md",
+    "description": "当用户想把自定义算子工程中的 kernel 模板改造成 `<<<>>>` kernel 直调形式，或从自定义算子工程中抽取某个 kernel 模板并转换成 `<<<>>>` 直调方式时使用。触发：用户提到\"自定义算子转直调\"、\"从算子工程抽 kernel\"、\"kernel 模板改 `<<<>>>`\"等。不适用于从零开发新算子",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 88.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.0,
+      "resource_integration": 3.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 6.2
+    },
+    "line_count": 992
+  },
+  {
+    "name": "model-infer-runtime-debug",
+    "path": "skills\\ascend\\optimization\\model-infer-runtime-debug\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理运行时错误诊断与修复技能。系统化排查模型加载、初始化、推理执行全链路的运行时错误，包括 aicore timeout、HCCL 通信错误、OOM、算子约束违反、推理卡住等。触发场景：NPU 运行时错误（RuntimeError、aicore timeout 507014、HCCL timeout、device synchronize 失败、kern",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 88.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.8,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 505
+  },
+  {
+    "name": "mms-300m-1130-forced-aligner-npu",
+    "path": "skills\\deployment\\mms-300m-1130-forced-aligner-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 88.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 634
+  },
+  {
+    "name": "wide-resnet-npu-deploy",
+    "path": "skills\\deployment\\wide-resnet-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 88.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.8,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 9.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.9,
+      "verifiability": 9.0
+    },
+    "line_count": 289
+  },
+  {
+    "name": "ascendc-operator-dev",
+    "path": "skills\\ascend\\verification\\ascendc-operator-dev\\SKILL.md",
+    "description": "\"AscendC算子端到端开发编排器。当用户需要开发新算子、实现自定义算子、或完成从需求到测试的完整流程时使用。关键词：算子开发、operator development、端到端、完整流程、工作流编排、新建算子。\"",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 87.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.5,
+      "resource_integration": 3.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 6.5
+    },
+    "line_count": 477
+  },
+  {
+    "name": "ai-for-science-boltzgen",
+    "path": "skills\\ascend\\verification\\boltzgen\\SKILL.md",
+    "description": "BoltzGen 昇腾 NPU 迁移与复现 Skill，适用于在华为 Ascend NPU 上部署 BoltzGen 生成式蛋白设计与逆折叠流程，覆盖环境准备、权重缓存、cuEquivariance 兼容、源码适配和端到端推理验证。",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 87.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 9.9,
+      "resource_integration": 5.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 591
+  },
+  {
+    "name": "esm2-npu-deploy",
+    "path": "skills\\ascend\\deployment\\esm2-npu\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 87.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.2,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 9.3,
+      "resource_integration": 8.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.5
+    },
+    "line_count": 343
+  },
+  {
+    "name": "ascendc-operator-project-init",
+    "path": "skills\\ascend\\verification\\ascendc-operator-project-init\\SKILL.md",
+    "description": "\"初始化 AscendC 算子工程并创建可编译的算子骨架。触发场景：(1) 用户要求创建新算子；(2) 关键词：ascendc算子、新建算子、算子目录、算子初始化；(3) 需要基于 ascend-kernel 模板快速落地。本 skill 不只建目录，还输出“可继续开发”的标准文件与检查清单。\"",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 87.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 9.6,
+      "instruction_specificity": 9.7,
+      "resource_integration": 8.6,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 7.3
+    },
+    "line_count": 214
+  },
+  {
+    "name": "npu-adapt",
+    "path": "skills\\contribution\\adaptation\\npu-adapt-skill\\SKILL.md",
+    "description": "将 HuggingFace / ModelScope 图片分类模型适配为单卡昇腾 NPU 可运行的提交工程。当用户提到\"适配模型到昇腾NPU\"、\"NPU适配\"、\"把xxx模型放到NPU上跑\"、\"Ascend适配\"、或给出模型名要求做图片分类适配时，使用此Skill。执行完整流水线：模型预判、可用性检查、工程创建、环境检查、依赖、测试图、推理、精度验证、性能测试、README生成、截图、创建GitC",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 87.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 3.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 609
+  },
+  {
+    "name": "npu-engine-core-init-skill",
+    "path": "skills\\deployment\\npu-engine-core-init-skill\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 87.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.4,
+      "boundary_coverage": 9.9,
+      "checkpoint_design": 3.4,
+      "instruction_specificity": 9.5,
+      "resource_integration": 7.8,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.3,
+      "verifiability": 8.5
+    },
+    "line_count": 189
+  },
+  {
+    "name": "ai-for-science-tf-to-pytorch",
+    "path": "skills\\ascend\\deployment\\tf-to-pytorch\\SKILL.md",
+    "description": "TensorFlow 或 Keras 模型改写到 PyTorch 的通用 Skill，适用于在华为 Ascend NPU 或其他依赖 PyTorch 生态的平台上完成层级映射、权重转换、逐层数值验证和端到端精度对比，尤其适合 ProteinBERT、DeepFRI 这类科学模型的跨框架迁移。",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 87.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 378
+  },
+  {
+    "name": "ai-for-science-ascend-tf-community",
+    "path": "skills\\ascend\\verification\\ascend-tf-community\\SKILL.md",
+    "description": "昇腾 TensorFlow Community 迁移适配 Skill，适用于将基于 TensorFlow 2.x 的模型原生部署到华为 Ascend NPU，而不经过 TF 到 PyTorch 转换，覆盖 aarch64 源码编译 TF 2.6.5、tfplugin 安装、自动迁移工具使用、手动适配与精度验证。",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 86.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 6.4,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 369
+  },
+  {
+    "name": "model-training",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\references\\model-training\\SKILL.md",
+    "description": "Model training on Ascend NPU. Invoke when user wants to launch training script and monitor training progress.",
+    "category": "deployment",
+    "tier": 2,
+    "total_score": 86.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 7.6,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 8.9,
+      "verifiability": 7.0
+    },
+    "line_count": 208
+  },
+  {
+    "name": "ascendc-operator-performance-optim",
+    "path": "skills\\ascend\\optimization\\ascendc-operator-performance-optim\\SKILL.md",
+    "description": ">-",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 86.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 8.8,
+      "checkpoint_design": 8.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 5.9
+    },
+    "line_count": 444
+  },
+  {
+    "name": "model-infer-parallel-impl",
+    "path": "skills\\ascend\\verification\\model-infer-parallel-impl\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理并行切分实施技能。根据已确认的 parallel_config，实施模型代码的并行化改造，包括并行线性层替换、MoE 并行模式适配、通信组创建、Embedding/LMHead 并行、YAML 配置生成和权重转换。触发场景：model-infer-parallel-analysis 完成后需要实施改造、现有模型需要支持新的并行配置。",
+    "category": "verification",
+    "tier": 2,
+    "total_score": 85.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.8,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 417
+  },
+  {
+    "name": "tilelang-vector-ascend-ops-migration",
+    "path": "skills\\ascend\\optimization\\tilelang-vector-ascend-ops-migration\\SKILL.md",
+    "description": "",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 85.7,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 913
+  },
+  {
+    "name": "ascendc-operator-performance-eval",
+    "path": "skills\\ascend\\optimization\\ascendc-operator-performance-eval\\SKILL.md",
+    "description": ">-",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 85.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 8.0
+    },
+    "line_count": 343
+  },
+  {
+    "name": "ascend-model-migration",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\SKILL.md",
+    "description": "Ascend NPU model migration suite. Invoke when user wants to migrate/train models on Ascend NPU, setup environment, or deploy models from open-source repositories.",
+    "category": "adaptation",
+    "tier": 2,
+    "total_score": 85.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 6.8,
+      "checkpoint_design": 6.2,
+      "instruction_specificity": 9.3,
+      "resource_integration": 6.8,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.1,
+      "verifiability": 7.0
+    },
+    "line_count": 169
+  },
+  {
+    "name": "awesome-llm-model",
+    "path": "skills\\ascend\\quantization\\awesome-llm-model\\SKILL.md",
+    "description": "获取和管理LLM模型热度排行榜。当用户需要获取ModelScope或HuggingFace上的热门模型列表、查询模型的下载量/点赞数、生成模型排行榜、进行模型去重分析、或需要导出模型信息表格时使用此技能。适用于需要了解当前最热门LLM模型的场景，例如模型调研、模型选型、排行榜分析等。",
+    "category": "quantization",
+    "tier": 2,
+    "total_score": 85.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 9.6,
+      "checkpoint_design": 3.8,
+      "instruction_specificity": 8.9,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 7.5,
+      "verifiability": 6.5
+    },
+    "line_count": 230
+  },
+  {
+    "name": "model-infer-multi-stream",
+    "path": "skills\\ascend\\optimization\\model-infer-multi-stream\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理多流整网优化技能。用于分析和实施模型的多流优化、双流、stream overlap、控核与 TorchAir 多流改造。先做整网模块 DAG 与模块间并行性分析，再做每个模块的算子级分析、开发调试和验收。触发场景包括：多流优化、双流、stream overlap、控核、整网 DAG、模块拆解、NPU 多流、TorchAir 多流、limit_cor",
+    "category": "optimization",
+    "tier": 2,
+    "total_score": 85.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.6,
+      "instruction_specificity": 6.5,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 6.5
+    },
+    "line_count": 211
+  },
+  {
+    "name": "vllm-ascend-model-adapter",
+    "path": "skills\\ascend\\adaptation\\vllm-ascend-model-adapter\\SKILL.md",
+    "description": "AI-assisted model adaptation skill for running Hugging Face or local model checkpoints on Ascend NPU via vLLM-Ascend. Use when users want to adapt a new model to run on Ascend NPUs, add support for a ",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 84.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 8.6,
+      "instruction_specificity": 8.9,
+      "resource_integration": 5.5,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 9.4,
+      "verifiability": 5.0
+    },
+    "line_count": 211
+  },
+  {
+    "name": "ascendc-st-design",
+    "path": "skills\\ascend\\verification\\ascendc-st-design\\SKILL.md",
+    "description": "Ascend C 算子系统测试（ST）设计技能。基于 aclnn 接口文档，完成算子参数定义、测试因子提取、约束关系分析、测试用例生成（L0/L1）的完整流程。当需要以下任务时使用此技能：设计算子测试用例、生成ST用例。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 84.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.1,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 10.0,
+      "overall_architecture": 8.6,
+      "ascend_relevance": 10.0,
+      "verifiability": 10.0
+    },
+    "line_count": 403
+  },
+  {
+    "name": "ascend-affinity-operator",
+    "path": "skills\\ascend\\optimization\\ascend-affinity-operator\\SKILL.md",
+    "description": "华为昇腾 NPU 上 PyTorch 模型的推理阶段 Python 层亲和算子优化。通过替换为 torch_npu 融合算子提升推理速度。触发词：ascend-affinity-operator、Ascend 亲和算子、torch_npu 推理优化、NPU 推理性能、算子替换、model_files 优化。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 84.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 4.8,
+      "instruction_specificity": 8.9,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 7.0
+    },
+    "line_count": 228
+  },
+  {
+    "name": "mixed-precision-optimizer",
+    "path": "skills\\optimization\\mixed-precision-optimizer\\SKILL.md",
+    "description": "混合精度训练与推理优化。流程：精度基线确定 → AMP 策略选择 → Loss Scaling 调优 → 精度敏感算子排查 → 逐层精度验证 → 端到端性能收益确认。支持 Ascend NPU 的 O1/O2 混合精度模式以及自定义精度策略。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 84.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 546
+  },
+  {
+    "name": "vllm-ascend-backbone-extraction",
+    "path": "skills\\adaptation\\vllm-ascend-backbone-extraction\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 83.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.3,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.7,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.7,
+      "verifiability": 6.5
+    },
+    "line_count": 253
+  },
+  {
+    "name": "ai-for-science-ai4s-perf-tuning",
+    "path": "skills\\ascend\\optimization\\ai4s-perf-tuning\\SKILL.md",
+    "description": "AI for Science 场景下的昇腾 NPU 通用性能调优 Skill，覆盖流水优化（TASK_QUEUE_ENABLE）、CPU 绑核优化（CPU_AFFINITY_CONF）、高性能内存库 tcmalloc 替换等调度与 OS 级调优手段，以及基于毕昇编译器的 Python / PyTorch / torch_npu 编译优化（LTO + PGO），适用于 PyTorch 训练或推理场景",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 83.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.5,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 9.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 561
+  },
+  {
+    "name": "ops-profiling",
+    "path": "skills\\ascend\\optimization\\ops-profiling\\SKILL.md",
+    "description": "NPU 性能采集与分析，用于采集算子性能数据、定位性能瓶颈并给出优化建议。当用户在算子开发过程中提到\"上板性能\"、\"算子性能测试\"、\"硬件性能验证\"、\"NPU性能采集\"、\"NPU profiling\"等场景时触发。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 83.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 6.4,
+      "checkpoint_design": 7.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 8.4,
+      "verifiability": 6.5
+    },
+    "line_count": 284
+  },
+  {
+    "name": "pypto-precision-debug",
+    "path": "skills\\ascend\\optimization\\pypto-precision-debug\\SKILL.md",
+    "description": "PyPTO 算子精度问题排查技能。专注于用户代码层面的语法逻辑检查和规避方法尝试。当算子精度验证失败、输出结果异常、计算错误、数值偏差、或任何与精度相关的问题时使用此技能。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 83.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 6.0,
+      "verifiability": 7.0
+    },
+    "line_count": 462
+  },
+  {
+    "name": "ascendc-operator-compile-debug",
+    "path": "skills\\ascend\\verification\\ascendc-operator-compile-debug\\SKILL.md",
+    "description": "编译安装 AscendC 算子并执行精度测试。TRIGGER when: 算子代码生成完成后需要编译验证、安装 whl 包、运行精度测试，或编译/测试失败需要排查。关键词：build.sh、编译、安装、whl、pytest、精度测试、编译错误、NPU 测试。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 83.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.8,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 7.0,
+      "instruction_specificity": 9.4,
+      "resource_integration": 2.5,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.6,
+      "verifiability": 7.0
+    },
+    "line_count": 247
+  },
+  {
+    "name": "pypto-golden-generate",
+    "path": "skills\\ascend\\verification\\pypto-golden-generate\\SKILL.md",
+    "description": "\"当需要生成 golden 参考实现时使用此 skill。基于算子规格信息，生成纯 PyTorch golden 参考实现 `{op}_golden.py`，导出 `{op}_golden()` 函数，作为精度验证基准。Triggers: 生成 golden、生成参考实现、写 golden 函数、golden script、golden reference、reference implementa",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 83.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 8.9,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 3.9,
+      "verifiability": 7.5
+    },
+    "line_count": 291
+  },
+  {
+    "name": "model-infer-kvcache",
+    "path": "skills\\ascend\\optimization\\model-infer-kvcache\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理 KVCache 优化技能。分析和优化 LLM 文本推理模型中的 KVCache 实现，包括连续缓存、分页注意力（Paged Attention）配合 FA 融合算子、MLA 压缩缓存。触发场景包括：KVCache 管理实现、paged attention、KV 压缩、FA 融合算子、OOM/性能问题、block_table/slot_mappin",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 83.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.1,
+      "boundary_coverage": 6.4,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 9.9,
+      "resource_integration": 4.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 6.5
+    },
+    "line_count": 415
+  },
+  {
+    "name": "ascend-optimization",
+    "path": "skills\\ascend\\optimization\\ascend-optimization\\SKILL.md",
+    "description": "华为昇腾 Ascend 上通用 PyTorch 优化。用于任意仓库中的 torch_npu 亲和算子替换、推理瓶颈定位后的代码级优化、host-bound 场景的流水优化、Stream 级 TaskQueue 并行下发、CPU 绑核、内存分配器调优，以及同输入同精度的 baseline/perf 验证。优先适用于没有固定目录结构或专项验证脚本的通用仓库；当仓库已经具备 `model_files/`",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 83.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.5,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 7.5,
+      "instruction_specificity": 8.8,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.3,
+      "verifiability": 7.0
+    },
+    "line_count": 200
+  },
+  {
+    "name": "ascend-modelscope-mirror",
+    "path": "skills\\deployment\\ascend-modelscope-mirror\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 82.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.2,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 9.3,
+      "resource_integration": 4.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.8,
+      "verifiability": 6.0
+    },
+    "line_count": 276
+  },
+  {
+    "name": "ai-for-science-deepfri-tf-npu",
+    "path": "skills\\ascend\\optimization\\deepfri-tf-npu\\SKILL.md",
+    "description": "DeepFRI TensorFlow 原生昇腾 NPU 迁移 Skill，适用于不做 TF 到 PyTorch 转换、而是直接使用 TensorFlow 2.6.5 与 npu_device 在华为 Ascend 上运行 DeepFRI 的场景，覆盖源码编译、tfplugin 安装、代码适配、推理与 CPU 对比验证。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 82.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.7,
+      "boundary_coverage": 4.8,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 4.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 311
+  },
+  {
+    "name": "ascendc-docs-search",
+    "path": "skills\\ascend\\search\\ascendc-docs-search\\SKILL.md",
+    "description": "Ascend C 开发资源检索技能。通过本地 API 文档索引、示例代码映射和在线文档兜底搜索定位开发资料，优先查本地、缺失时再查在线。当需要查询 API 用法、示例代码、兼容性信息、官方资料入口或定位文档来源时使用。",
+    "category": "search",
+    "tier": 3,
+    "total_score": 82.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.3,
+      "checkpoint_design": 5.1,
+      "instruction_specificity": 8.9,
+      "resource_integration": 9.8,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.1,
+      "verifiability": 7.0
+    },
+    "line_count": 158
+  },
+  {
+    "name": "verl-async-dapo",
+    "path": "skills\\ascend\\optimization\\verl-async-dapo\\SKILL.md",
+    "description": "Verl 单异步 DAPO 训练配置生成器。触发场景：(1) 启动单异步 DAPO 训练 (2) 生成训练脚本 (3) 配置特性参数 (4) 训练前检查。**特性策略**：用户未指定时默认开启性能特性（flash_attn/dynamic_batch/remove_padding/gradient_checkpointing），显存特性（offload/recompute）默认关闭。OOM 时自动",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 82.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.8,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 8.7,
+      "instruction_specificity": 9.1,
+      "resource_integration": 10.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 3.5,
+      "verifiability": 7.0
+    },
+    "line_count": 218
+  },
+  {
+    "name": "model-infer-migrator",
+    "path": "skills\\ascend\\optimization\\model-infer-migrator\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理适配与部署基线技能。从 HF 链接或本地模型代码出发，按 cann-recipes-infer 仓库规范适配到 ModelRunner 推理框架，输出可运行的标准模型目录和性能基线数据。触发场景：新模型适配到昇腾 NPU 推理框架、已有模型的部署基线采集、模型迁移和初始跑通验证。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 82.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 7.8,
+      "instruction_specificity": 8.1,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 5.0
+    },
+    "line_count": 226
+  },
+  {
+    "name": "triton-operator-env-config",
+    "path": "skills\\ascend\\verification\\triton-operator-env-config\\SKILL.md",
+    "description": "在 Ascend 昇腾平台上校验并构建triton算子开发所需环境,包括CANN、Python/torch/torch_npu/triton-ascend依赖和PATH环境变量等设置。当用户需要配置triton算子开发环境、检查CANN/torch/triton-ascend安装、验证环境是否可用时使用。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 82.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 8.1,
+      "checkpoint_design": 4.9,
+      "instruction_specificity": 7.3,
+      "resource_integration": 5.6,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 8.9,
+      "verifiability": 7.5
+    },
+    "line_count": 140
+  },
+  {
+    "name": "memory-optimizer",
+    "path": "skills\\optimization\\memory-optimizer\\SKILL.md",
+    "description": "NPU 显存优化。流程：显存 Profiling 采集基线 → 识别显存热点 → 选择优化策略（激活重计算/梯度累积/显存卸载/混合精度/张量压缩）→ 实施优化 → 端到端验证 → 迭代。覆盖训练和推理场景。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 82.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 483
+  },
+  {
+    "name": "vllm-ascend-acl-graph-warmup",
+    "path": "skills\\optimization\\vllm-ascend-acl-graph-warmup\\SKILL.md",
+    "description": ">",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 81.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.2,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 9.8,
+      "instruction_specificity": 9.0,
+      "resource_integration": 5.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 6.0
+    },
+    "line_count": 232
+  },
+  {
+    "name": "distributed-optimizer",
+    "path": "skills\\optimization\\distributed-optimizer\\SKILL.md",
+    "description": "多 NPU 分布式训练与推理优化。流程：分析通信模式 → 选择并行策略（数据/模型/流水线/张量并行）→ HCCL 通信调优 → 计算-通信重叠 → 端到端扩展效率验证。覆盖 Ascend HCCL 特性与多卡场景。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 81.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 497
+  },
+  {
+    "name": "ascend-cuda-compat-check",
+    "path": "skills\\adaptation\\ascend-cuda-compat-check\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 81.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.2,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 6.8,
+      "instruction_specificity": 8.2,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 4.5
+    },
+    "line_count": 234
+  },
+  {
+    "name": "uv-torch-adaptation",
+    "path": "skills\\ascend\\adaptation\\uv-torch-adaptation\\SKILL.md",
+    "description": "Multi-hardware adaptation for PyTorch (Ascend NPU & NVIDIA CUDA) using uv. Use when configuring or troubleshooting pyproject.toml and env for cross-platform GPU/NPU. Short triggers: \"uv适配\", \"torch适配\",",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 81.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.4,
+      "boundary_coverage": 7.3,
+      "checkpoint_design": 5.9,
+      "instruction_specificity": 8.9,
+      "resource_integration": 6.2,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 8.9,
+      "verifiability": 5.5
+    },
+    "line_count": 142
+  },
+  {
+    "name": "model-infer-optimize",
+    "path": "skills\\ascend\\optimization\\model-infer-optimize\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理性能端到端优化技能。编排分析、实施、验证三类 subagent，按阶段执行推理性能优化，每阶段验证达标后再进入下一阶段。触发场景：优化模型的 NPU 推理性能、端到端推理优化、全流程 NPU 推理适配。不适用于训练优化、非 PyTorch 框架、非昇腾平台。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 81.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.4,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 7.5,
+      "resource_integration": 6.5,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 10.0,
+      "verifiability": 5.8
+    },
+    "line_count": 497
+  },
+  {
+    "name": "ascendc-operator-precision-debug",
+    "path": "skills\\ascend\\verification\\ascendc-operator-precision-debug\\SKILL.md",
+    "description": "\"AscendC 算子精度问题调试与根因定位。当算子精度测试失败（allclose 不通过、结果偏差、输出全零/NaN 等）时使用。流程：误差分布分析 → 代码易错点审查 → 实验隔离 → printf/DumpTensor 插桩 → 修复验证。关键词：精度调试、精度问题、结果不一致、误差定位、allclose 失败、输出偏差、NaN、全零、precision debug。\"",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 80.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 4.7,
+      "instruction_specificity": 6.2,
+      "resource_integration": 5.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 6.4
+    },
+    "line_count": 215
+  },
+  {
+    "name": "ascendc-operator-code-gen",
+    "path": "skills\\ascend\\optimization\\ascendc-operator-code-gen\\SKILL.md",
+    "description": "根据设计文档生成 AscendC 算子完整代码实现并完成框架适配。TRIGGER when: 设计文档已完成，需要生成 op_host/op_kernel 代码、注册到 PyTorch 框架、编译测试。关键词：代码生成、op_host、op_kernel、tiling、kernel、框架适配、算子注册。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 80.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 3.9,
+      "instruction_specificity": 9.0,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 6.2
+    },
+    "line_count": 238
+  },
+  {
+    "name": "ascendc-precision-debug",
+    "path": "skills\\ascend\\verification\\ascendc-precision-debug\\SKILL.md",
+    "description": "Ascend C 算子精度调试技能，提供精度问题诊断和解决方法。触发：输出异常（全为0、随机值、未初始化）、精度验证失败（rtol/atol 不达标）、FP16 精度差于预期、Cast 后数据错误、需要排查流水线同步（EnQue/DeQue）或 DataCopy 对齐问题。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 80.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.7,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 6.4,
+      "resource_integration": 7.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 6.8,
+      "verifiability": 6.3
+    },
+    "line_count": 263
+  },
+  {
+    "name": "adapter-check-principle",
+    "path": "skills\\ascend\\adaptation\\adapter-check-principle\\SKILL.md",
+    "description": "梳理模型适配框架检查的逻辑和原则。当用户需要了解适配框架检测的规则、关键词定义、训练/推理框架分类时使用此skill。",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 80.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.9,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 5.0
+    },
+    "line_count": 315
+  },
+  {
+    "name": "agent-profiling",
+    "path": "skills\\ascend\\optimization\\ascend-profiling\\SKILL.md",
+    "description": "华为昇腾 NPU 性能分析（Profiling）工具使用指南。包含 L0/L1/L2 三级 profiling 采集代码模板、三种解析方案（CSV / SQLite cluster.db / Chrome trace JSON）、auto-tuning 闭环流程。触发词：profiling、性能分析、算子耗时、NPU 性能诊断、torch_npu profiler、cluster.db、auto-",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 79.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.1,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 9.9,
+      "resource_integration": 5.5,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 329
+  },
+  {
+    "name": "model-migration",
+    "path": "skills\\ascend\\adaptation\\model-migration\\SKILL.md",
+    "description": "Model code migration for Ascend NPU. Invoke when user needs to clone open-source repo and apply NPU adaptation patches.",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 79.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 4.8,
+      "checkpoint_design": 7.5,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 4.5
+    },
+    "line_count": 204
+  },
+  {
+    "name": "ai-for-science-goedel-prover",
+    "path": "skills\\ascend\\verification\\goedel-prover\\SKILL.md",
+    "description": "Goedel-Prover 昇腾 NPU 迁移 Skill，适用于将基于 vLLM 的 Lean 4 自动定理证明模型从 CUDA 迁移到华为 Ascend 910 系列，覆盖环境搭建、vLLM-Ascend 安装、Lean 4 构建和推理验证全流程。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 79.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 8.8,
+      "checkpoint_design": 5.8,
+      "instruction_specificity": 9.1,
+      "resource_integration": 4.1,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 9.6,
+      "verifiability": 7.0
+    },
+    "line_count": 233
+  },
+  {
+    "name": "vllm-ascend-dtype-selection",
+    "path": "skills\\adaptation\\vllm-ascend-dtype-selection\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 79.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.9,
+      "boundary_coverage": 6.4,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 4.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.7,
+      "verifiability": 7.5
+    },
+    "line_count": 262
+  },
+  {
+    "name": "model-infer-parallel-analysis",
+    "path": "skills\\ascend\\optimization\\model-infer-parallel-analysis\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理并行策略分析技能。分析模型架构参数和昇腾硬件规格，推荐最优的 TP/EP/DP 并行配置（parallel_config）。触发场景：新模型需要确定并行策略、现有配置需要优化、部署卡数或硬件变更后需要重新评估。输出为结构化的 parallel_config 推荐及定量依据。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 78.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.1,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 7.8,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 8.5,
+      "verifiability": 5.9
+    },
+    "line_count": 511
+  },
+  {
+    "name": "issue_autoreply",
+    "path": "skills\\ascend\\verification\\issue_autoreply\\SKILL.md",
+    "description": "",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 78.7,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 9.7,
+      "boundary_coverage": 4.7,
+      "checkpoint_design": 4.8,
+      "instruction_specificity": 7.7,
+      "resource_integration": 9.2,
+      "overall_architecture": 9.6,
+      "ascend_relevance": 8.9,
+      "verifiability": 9.0
+    },
+    "line_count": 130
+  },
+  {
+    "name": "unittest-writer",
+    "path": "skills\\ascend\\common\\unittest-writer\\SKILL.md",
+    "description": "Python unittest 框架的专业测试用例编写助手。用于创建、编写和优化 Python 单元测试，包括测试用例结构、断言方法、测试组织、setUp/tearDown 模式以及命令行执行。当需要编写测试文件、创建测试代码、重构优化测试、调试失败测试时使用此技能。",
+    "category": "common",
+    "tier": 3,
+    "total_score": 78.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.4,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 9.5,
+      "resource_integration": 4.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 3.8,
+      "verifiability": 7.0
+    },
+    "line_count": 270
+  },
+  {
+    "name": "model-infer-superkernel",
+    "path": "skills\\ascend\\optimization\\model-infer-superkernel\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理 SuperKernel 适配技能。当用户需要启用 SuperKernel 算子二进制融合技术优化昇腾 NPU 推理性能时使用此技能。触发场景包括：用户询问 SuperKernel、算子融合、二进制融合、启用 superkernel、superkernel_scope、减少任务调度开销、优化 decode 性能等。SuperKernel 仅支持 g",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 78.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 6.0
+    },
+    "line_count": 354
+  },
+  {
+    "name": "model-infer-precision-debug",
+    "path": "skills\\ascend\\optimization\\model-infer-precision-debug\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理精度问题诊断技能。当前主要覆盖 KVCache / FlashAttention 相关精度问题，包括 Prefill/Decode 对齐、cache 更新错误、slot/block mapping 错误、attention 路径切换后的精度异常等。触发场景：优化改造后精度验证未通过、模型输出与基线存在显著偏差、Prefill 和 Decode 精度",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 78.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 8.0,
+      "instruction_specificity": 4.8,
+      "resource_integration": 4.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 8.4,
+      "verifiability": 5.3
+    },
+    "line_count": 288
+  },
+  {
+    "name": "data-pipeline-optimizer",
+    "path": "skills\\optimization\\data-pipeline-optimizer\\SKILL.md",
+    "description": "数据加载与预处理流水线优化。流程：数据加载 Profiling → 识别 I/O 瓶颈 → 多进程 Worker 调优 → 预处理加速 → 数据缓存/预取 → 端到端验证。覆盖 NPU 场景下 CPU-GPU 数据传输、数据增强和加载策略。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 78.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 6.0
+    },
+    "line_count": 556
+  },
+  {
+    "name": "ai-for-science-ai4s-profiling",
+    "path": "skills\\ascend\\optimization\\ai4s-profiling\\SKILL.md",
+    "description": "AI for Science 场景下的昇腾 NPU Profiling 采集与性能分析 Skill，用于在华为 Ascend NPU 上使用 torch_npu.profiler 采集 L0、L1、L2 级性能数据，分析训练或推理中的算子耗时、调用栈、内存与瓶颈，并指导后续调优。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 77.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.8,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 9.7,
+      "resource_integration": 5.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 5.0
+    },
+    "line_count": 482
+  },
+  {
+    "name": "vllm-ascend-native-deploy",
+    "path": "skills\\deployment\\vllm-ascend-native-deploy\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 77.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.3,
+      "boundary_coverage": 4.8,
+      "checkpoint_design": 7.8,
+      "instruction_specificity": 8.7,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.5,
+      "verifiability": 7.0
+    },
+    "line_count": 226
+  },
+  {
+    "name": "ascend-benchmark-runner",
+    "path": "skills\\verification\\ascend-benchmark-runner\\SKILL.md",
+    "description": ">",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 77.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 8.9,
+      "resource_integration": 2.5,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.9,
+      "verifiability": 7.0
+    },
+    "line_count": 278
+  },
+  {
+    "name": "auto-bug-fixer",
+    "path": "skills\\ascend\\common\\auto-bug-fixer\\SKILL.md",
+    "description": "Use when encountering bugs, test failures, or error logs that need root cause analysis and fix generation",
+    "category": "common",
+    "tier": 3,
+    "total_score": 77.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 9.2,
+      "checkpoint_design": 7.9,
+      "instruction_specificity": 7.3,
+      "resource_integration": 2.2,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 3.9,
+      "verifiability": 7.0
+    },
+    "line_count": 140
+  },
+  {
+    "name": "ascend-ai4s-precision-alignment",
+    "path": "skills\\ascend\\optimization\\ai4s-precision-alignment\\SKILL.md",
+    "description": "面向昇腾 NPU 的 AI4S 模型精度对齐与问题定位。用于比较 GPU 与昇腾或官方基线与昇腾之间的训练 loss、推理输出和任务指标，梳理模型特定的对齐要求，并在精度不一致时采集和分析定向 dump 证据。使用本 skill 时必须先确认官方 README、官方示例或 benchmark 是否已给出基线；若官方未提供，必须先询问用户 GPU 基线来源，禁止默认使用 CPU 结果作为最终对齐基线",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 77.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 6.5,
+      "checkpoint_design": 8.9,
+      "instruction_specificity": 3.5,
+      "resource_integration": 8.2,
+      "overall_architecture": 9.9,
+      "ascend_relevance": 9.0,
+      "verifiability": 6.5
+    },
+    "line_count": 143
+  },
+  {
+    "name": "uniasr-npu-adapt",
+    "path": "skills\\uniasr-npu-adapt\\SKILL.md",
+    "description": ">",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 77.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 8.2,
+      "resource_integration": 3.5,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.7,
+      "verifiability": 7.5
+    },
+    "line_count": 248
+  },
+  {
+    "name": "pytest-writer",
+    "path": "skills\\ascend\\common\\pytest-writer\\SKILL.md",
+    "description": "专业的pytest测试用例编写助手，用于创建、编写和优化Python测试用例。当需要编写测试文件、创建测试代码、重构优化测试、调试失败测试、使用fixtures、参数化测试、断言技巧、测试覆盖率分析时使用此技能。",
+    "category": "common",
+    "tier": 3,
+    "total_score": 77.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 5.2,
+      "verifiability": 7.5
+    },
+    "line_count": 257
+  },
+  {
+    "name": "tune-frontend",
+    "path": "skills\\ascend\\optimization\\pypto-op-perf-tune\\references\\tune-frontend\\SKILL.md",
+    "description": "PyPTO 算子开箱性能调优技能。主要关注代码级的调优、前端写法不同导致的性能差异，包括 loop 写法优化、TileShape 设置优化、数据操作优化等。当用户需要进行算子初始开发性能优化、开箱性能调优时使用此技能。触发词：开箱性能调优、代码级优化、loop 优化、TileShape 设置、前端优化。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 77.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 8.8,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 5.0,
+      "verifiability": 5.0
+    },
+    "line_count": 432
+  },
+  {
+    "name": "hardware-check-principle",
+    "path": "skills\\ascend\\adaptation\\hardware-check-principle\\SKILL.md",
+    "description": "梳理模型硬件适配检查的逻辑和原则。当用户需要了解硬件适配检测的规则、关键词定义、昇腾硬件型号分类时使用此skill。",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 77.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.7,
+      "verifiability": 3.8
+    },
+    "line_count": 256
+  },
+  {
+    "name": "vllm-ascend-perf-benchmark",
+    "path": "skills\\verification\\vllm-ascend-perf-benchmark\\SKILL.md",
+    "description": ">",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 76.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.2,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 5.5,
+      "instruction_specificity": 7.2,
+      "resource_integration": 5.9,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.3,
+      "verifiability": 7.5
+    },
+    "line_count": 197
+  },
+  {
+    "name": "vllm-ascend-consistency-check",
+    "path": "skills\\verification\\vllm-ascend-consistency-check\\SKILL.md",
+    "description": ">",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 76.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.3,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 8.3,
+      "instruction_specificity": 7.2,
+      "resource_integration": 5.0,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.2,
+      "verifiability": 7.5
+    },
+    "line_count": 183
+  },
+  {
+    "name": "patchcore-npu-inference",
+    "path": "models\\contribution\\patchcore-npu-inference\\skills\\patchcore-npu-inference\\SKILL.md",
+    "description": "对 MVTec-AD 数据集执行 PatchCore 异常检测的端到端推理（昇腾 800I A2 NPU 加速）。包含特征提取与记忆库构建（Coreset 采样）、异常评分与分割两个阶段，输出图像级和像素级 AUROC 指标以及端到端耗时，精度误差 < 1%（vs GPU/CPU 基线）。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 76.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.2,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 3.9,
+      "instruction_specificity": 7.4,
+      "resource_integration": 3.8,
+      "overall_architecture": 9.7,
+      "ascend_relevance": 8.9,
+      "verifiability": 7.0
+    },
+    "line_count": 137
+  },
+  {
+    "name": "ascendc-operator-doc-gen",
+    "path": "skills\\ascend\\verification\\ascendc-operator-doc-gen\\SKILL.md",
+    "description": "为AscendC算子生成PyTorch风格的接口文档（README.md）。触发场景：编译调试通过后需要生成接口文档，或用户提到\"生成算子文档\"、\"创建README\"、\"文档化算子\"、\"帮我写文档\"（算子上下文）、\"算子文档\"时使用。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 76.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.9,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 9.1,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.0
+    },
+    "line_count": 348
+  },
+  {
+    "name": "pypto-intent-understand",
+    "path": "skills\\ascend\\optimization\\pypto-intent-understand\\SKILL.md",
+    "description": "\"PyPTO 算子需求意图理解。将用户的自然语言算子描述转化为结构化需求文档。当用户描述要开发、实现、创建某个算子时触发，例如：'开发一个 sinh 算子'、'实现 GELU'、'参考 PyTorch 的 F.scaled_dot_product_attention'、'根据论文实现算子'、'创建自定义算子'\"",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 75.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 8.0,
+      "resource_integration": 4.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 5.0,
+      "verifiability": 5.6
+    },
+    "line_count": 593
+  },
+  {
+    "name": "ascend-inference-repos-copilot",
+    "path": "skills\\ascend\\deployment\\ascend-inference-repos-copilot\\SKILL.md",
+    "description": "昇腾（Ascend）推理生态开源代码仓库智能问答专家旨在为 vLLM、vLLM-Ascend、MindIE-LLM、MindIE-SD、MindIE-Motor、MindIE-Turbo 以及 msModelSlim (MindStudio-ModelSlim) 等仓库提供专家级且易于理解的解释。在处理昇腾（Ascend）推理生态相关项目的用户询问时，务必触发此技能（Skill），可解答使用方法、",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 75.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.1,
+      "boundary_coverage": 9.8,
+      "checkpoint_design": 7.4,
+      "instruction_specificity": 6.8,
+      "resource_integration": 2.4,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 9.2,
+      "verifiability": 6.5
+    },
+    "line_count": 187
+  },
+  {
+    "name": "flan-t5-ascend-npu-agent",
+    "path": "models\\Flan-T5\\SKILL.md",
+    "description": "Flan-T5 模型在华为昇腾 800I A2 NPU 上的适配与推理 Agent Skill。基于 transformers + torch_npu 原生推理，覆盖环境检查、权重加载、NPU 推理、精度验证、性能基准测试全流程。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 75.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.9,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 3.6,
+      "instruction_specificity": 9.1,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 7.0
+    },
+    "line_count": 214
+  },
+  {
+    "name": "ascend-smoke-validator",
+    "path": "skills\\verification\\ascend-smoke-validator\\SKILL.md",
+    "description": ">",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 74.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.1,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 8.6,
+      "ascend_relevance": 9.0,
+      "verifiability": 7.0
+    },
+    "line_count": 321
+  },
+  {
+    "name": "ascend-resource-scheduler",
+    "path": "skills\\deployment\\ascend-resource-scheduler\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 74.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.4,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 6.6,
+      "instruction_specificity": 8.2,
+      "resource_integration": 2.5,
+      "overall_architecture": 8.9,
+      "ascend_relevance": 9.4,
+      "verifiability": 7.0
+    },
+    "line_count": 209
+  },
+  {
+    "name": "tilelang-op-developer",
+    "path": "skills\\ascend\\optimization\\tilelang-op-developer\\SKILL.md",
+    "description": "\"基于设计文档生成 TileLang-Ascend 算子实现代码与测试。从 design.md 中提取关键信息，结合 examples/ 中的参考实现生成可运行代码。触发：实现算子、写 kernel、生成代码、算子编码、根据设计文档实现。\"",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 74.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.1,
+      "boundary_coverage": 6.4,
+      "checkpoint_design": 4.5,
+      "instruction_specificity": 9.2,
+      "resource_integration": 2.5,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 5.9,
+      "verifiability": 7.0
+    },
+    "line_count": 205
+  },
+  {
+    "name": "\"cann-operator-env-config\"",
+    "path": "skills\\ascend\\verification\\cann-operator-env-config\\SKILL.md",
+    "description": "\"提供昇腾NPU的CANN安装指导。当用户需要安装CANN、配置昇腾环境或解决安装问题时调用。\"",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 74.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.5,
+      "boundary_coverage": 5.3,
+      "checkpoint_design": 3.3,
+      "instruction_specificity": 9.5,
+      "resource_integration": 4.8,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.2,
+      "verifiability": 5.5
+    },
+    "line_count": 177
+  },
+  {
+    "name": "ascendc-operator-design",
+    "path": "skills\\ascend\\optimization\\ascendc-operator-design\\SKILL.md",
+    "description": "完成AscendC算子设计 - 帮助用户完成算子的架构设计、接口定义和性能规划。当用户提到算子设计、算子开发、tiling策略、内存规划、AscendC kernel设计、两级tiling、核间切分、核内切分时，使用此skill。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 74.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.2,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 8.0,
+      "instruction_specificity": 5.3,
+      "resource_integration": 5.5,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 9.7,
+      "verifiability": 5.6
+    },
+    "line_count": 258
+  },
+  {
+    "name": "ai-for-science-diffsbdd",
+    "path": "skills\\ascend\\other\\diffsbdd\\SKILL.md",
+    "description": "DiffSBDD 昇腾 NPU 迁移 Skill，适用于将基于等变扩散模型的结构化药物设计项目从 CUDA 迁移到华为 Ascend NPU，覆盖环境搭建、依赖安装、torch_scatter 源码编译、代码适配以及 de novo 推理验证。",
+    "category": "other",
+    "tier": 3,
+    "total_score": 74.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 3.5,
+      "checkpoint_design": 6.1,
+      "instruction_specificity": 8.5,
+      "resource_integration": 5.7,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.1,
+      "verifiability": 7.5
+    },
+    "line_count": 160
+  },
+  {
+    "name": "ascendc-code-review",
+    "path": "skills\\ascend\\optimization\\ascendc-code-review\\SKILL.md",
+    "description": "Ascend C 代码检视技能。基于假设检验方法论对代码进行安全规范检视。当用户提供代码片段和检视规则描述时，可使用此技能进行代码检视，使用时必须明确提供：代码片段和检视规则描述。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 73.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 4.4,
+      "checkpoint_design": 4.2,
+      "instruction_specificity": 6.0,
+      "resource_integration": 6.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.1,
+      "verifiability": 5.5
+    },
+    "line_count": 166
+  },
+  {
+    "name": "pypto-op-design",
+    "path": "skills\\ascend\\verification\\pypto-op-design\\SKILL.md",
+    "description": "\"当需要设计 PyPTO 算子实现方案时使用此 skill。基于算子规格与相关上下文，生成 DESIGN.md（含 API 映射、Tiling 策略、Loop 结构）。Triggers: 生成设计方案、生成 design、设计这个算子、写 DESIGN.md、算子设计、API 映射、Tiling 策略、tiling strategy、Loop 结构、数据切分、怎么切分数据、怎么做 tiling、设",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 73.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.7,
+      "boundary_coverage": 7.2,
+      "checkpoint_design": 10.0,
+      "instruction_specificity": 5.1,
+      "resource_integration": 5.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.5,
+      "verifiability": 5.0
+    },
+    "line_count": 309
+  },
+  {
+    "name": "ascend-vllm-env-config",
+    "path": "skills\\deployment\\ascend-vllm-env-config\\SKILL.md",
+    "description": ">",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 73.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 8.0,
+      "checkpoint_design": 3.8,
+      "instruction_specificity": 7.4,
+      "resource_integration": 5.1,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.6,
+      "verifiability": 4.5
+    },
+    "line_count": 233
+  },
+  {
+    "name": "npu-smi",
+    "path": "skills\\ascend\\deployment\\npu-smi\\SKILL.md",
+    "description": "Huawei Ascend NPU npu-smi command reference. Use for device queries (health, temperature, power, memory, processes, ECC), configuration (thresholds, modes, fan), firmware upgrades (MCU, bootloader, VR",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 73.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 6.4,
+      "checkpoint_design": 3.6,
+      "instruction_specificity": 8.5,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.4,
+      "verifiability": 4.0
+    },
+    "line_count": 213
+  },
+  {
+    "name": "ai-for-science-oligoformer",
+    "path": "skills\\ascend\\verification\\oligoformer\\SKILL.md",
+    "description": "OligoFormer 昇腾 NPU 迁移 Skill，适用于将基于 PyTorch Transformer 的 siRNA 效能预测模型迁移到华为 Ascend NPU，覆盖环境搭建、RNA-FM 依赖安装、代码适配、推理验证与可选训练流程。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 72.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.7,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 3.6,
+      "instruction_specificity": 8.5,
+      "resource_integration": 6.5,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 9.4,
+      "verifiability": 7.5
+    },
+    "line_count": 207
+  },
+  {
+    "name": "ascend-mmlab-install-suite",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\references\\ascend-mmlab-install-suite\\SKILL.md",
+    "description": "昇腾NPU环境安装OpenMMLab系列库套件（mmcv/mmdet/mmdet3d/detectron2），支持本地+远程混合开发模式",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 72.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 6.7,
+      "instruction_specificity": 7.7,
+      "resource_integration": 3.1,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 8.8,
+      "verifiability": 4.5
+    },
+    "line_count": 121
+  },
+  {
+    "name": "ascend-profiling-anomaly",
+    "path": "skills\\ascend\\verification\\ascend-profiling-anomaly\\SKILL.md",
+    "description": ">",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 72.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 6.0,
+      "instruction_specificity": 5.6,
+      "resource_integration": 6.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 10.0,
+      "verifiability": 2.3
+    },
+    "line_count": 416
+  },
+  {
+    "name": "npu-benchmark-guard",
+    "path": "skills\\verification\\npu-benchmark-guard\\SKILL.md",
+    "description": "Safely run vLLM bench latency and throughput benchmarks on Ascend NPU by cleaning up zombie processes, validating CLI arguments, waiting for ACL graph compilation, and parsing results. Use when the us",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 72.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 5.8,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 8.2,
+      "resource_integration": 2.3,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.0,
+      "verifiability": 7.0
+    },
+    "line_count": 154
+  },
+  {
+    "name": "ascend_model_verifier",
+    "path": "skills\\ascend\\deployment\\ascend_model_verifier\\SKILL.md",
+    "description": "",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 71.6,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 6.9,
+      "boundary_coverage": 6.0,
+      "checkpoint_design": 2.5,
+      "instruction_specificity": 5.8,
+      "resource_integration": 9.5,
+      "overall_architecture": 9.0,
+      "ascend_relevance": 8.7,
+      "verifiability": 9.8
+    },
+    "line_count": 101
+  },
+  {
+    "name": "tune-swimlane",
+    "path": "skills\\ascend\\optimization\\pypto-op-perf-tune\\references\\tune-swimlane\\SKILL.md",
+    "description": "PyPTO 算子深度性能调优技能。通过泳道图分析及调优性能，包括 Stitch 调优、TileShape 深度调优、合图调优、调度策略调优等。当用户需要进行深度性能调优、泳道图分析、Stitch 优化、合图优化时使用此技能。触发词：深度性能调优、泳道图分析、Stitch 调优、合图调优、调度优化。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 71.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.9,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 10.0,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.0,
+      "verifiability": 5.0
+    },
+    "line_count": 330
+  },
+  {
+    "name": "vector-triton-ascend-ops-optimizer",
+    "path": "skills\\ascend\\optimization\\vector-triton-ascend-ops-optimizer\\SKILL.md",
+    "description": "昇腾（Ascend） NPU 上 Triton 算子深度性能优化技能（Skill），致力于实现用户要求的 Triton 算子性能提升。核心技术包括但不限于 Unified Buffer (UB) 容量规划、多 Tokens 并行处理、MTE/Vector 流水并行、mask（掩码）优化等。当用户提及以下内容时，务必触发此技能（Skill）：昇腾（Ascend）NPU 上 Vector 类 Trit",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 71.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.7,
+      "boundary_coverage": 6.3,
+      "checkpoint_design": 2.8,
+      "instruction_specificity": 5.8,
+      "resource_integration": 3.7,
+      "overall_architecture": 9.6,
+      "ascend_relevance": 8.9,
+      "verifiability": 6.2
+    },
+    "line_count": 128
+  },
+  {
+    "name": "tilelang-op-design",
+    "path": "skills\\ascend\\verification\\tilelang-op-design\\SKILL.md",
+    "description": "\"根据算子需求生成 TileLang-Ascend 算子设计文档（design.md）。涵盖编程模式选型（Developer/Expert/混合）、API 映射、内存层级规划、Tiling 策略、循环结构、同步策略、验证方案等。触发：设计算子、生成 design.md、算子方案设计、新算子开发、算子实现方案。\"",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 71.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 4.8,
+      "checkpoint_design": 9.7,
+      "instruction_specificity": 4.8,
+      "resource_integration": 3.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 5.5,
+      "verifiability": 5.3
+    },
+    "line_count": 220
+  },
+  {
+    "name": "gitcode-repo-bootstrap",
+    "path": "skills\\deployment\\gitcode-repo-bootstrap\\SKILL.md",
+    "description": "Automatically create a GitCode repository, configure PAT-based remote, push code, and tag the repo with #+NPU. Use when the user asks to submit adaptation results to GitCode/AtomGit, publish a model c",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 71.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.3,
+      "boundary_coverage": 3.6,
+      "checkpoint_design": 5.2,
+      "instruction_specificity": 8.5,
+      "resource_integration": 3.1,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 9.1,
+      "verifiability": 6.0
+    },
+    "line_count": 170
+  },
+  {
+    "name": "ascend-docker",
+    "path": "skills\\ascend\\documentation\\ascend-docker\\SKILL.md",
+    "description": "Create Docker containers for Huawei Ascend NPU development with proper device mappings and volume mounts. Use when setting up Ascend development environments in Docker, running CANN applications in co",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 70.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.0,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 3.3,
+      "instruction_specificity": 8.5,
+      "resource_integration": 6.4,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 9.2,
+      "verifiability": 4.5
+    },
+    "line_count": 184
+  },
+  {
+    "name": "analyse-coverage",
+    "path": "skills\\ascend\\common\\analyse-coverage\\SKILL.md",
+    "description": "分析测试覆盖率盲区，生成覆盖率分析报告",
+    "category": "common",
+    "tier": 3,
+    "total_score": 70.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 5.8,
+      "checkpoint_design": 3.0,
+      "instruction_specificity": 7.2,
+      "resource_integration": 7.2,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.5,
+      "verifiability": 4.5
+    },
+    "line_count": 149
+  },
+  {
+    "name": "vllm-ascend-performance-optimization",
+    "path": "skills\\ascend\\deployment\\vllm-ascend-performance-optimization\\SKILL.md",
+    "description": "vLLM-Ascend performance tuning advisor for optimizing inference throughput and latency on Huawei Ascend hardware. Use when users want to optimize vLLM deployment on Ascend NPUs, improve model inferenc",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 70.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 3.2,
+      "checkpoint_design": 3.9,
+      "instruction_specificity": 6.9,
+      "resource_integration": 3.0,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 8.9,
+      "verifiability": 5.0
+    },
+    "line_count": 140
+  },
+  {
+    "name": "ascendc-operator-testcase-gen",
+    "path": "skills\\ascend\\verification\\ascendc-operator-testcase-gen\\SKILL.md",
+    "description": "完成AscendC算子验证用例生成 - 帮助用户完成testcase设计。当用户提到用例设计、泛化用例生成、算子标杆、UT用例、精度用例、性能用例时，使用此skill。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 70.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.6,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 3.3,
+      "instruction_specificity": 7.1,
+      "resource_integration": 4.0,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 8.7,
+      "verifiability": 6.2
+    },
+    "line_count": 181
+  },
+  {
+    "name": "yolov10-m-ascend-optimization",
+    "path": "models\\YOLOv10\\SKILL.md",
+    "description": "YOLOv10-M NPU optimization skill for Atlas 800I A2 (Ascend 910B)",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 70.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 3.5,
+      "instruction_specificity": 8.2,
+      "resource_integration": 2.5,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 9.4,
+      "verifiability": 7.0
+    },
+    "line_count": 205
+  },
+  {
+    "name": "ai-for-science-generator",
+    "path": "skills\\ascend\\adaptation\\generator\\SKILL.md",
+    "description": "GENERator DNA 序列生成模型的昇腾 NPU 迁移 Skill，适用于将基于 HuggingFace Transformers 的 Causal LM 从 CUDA 迁移到华为 Ascend NPU，覆盖环境搭建、依赖安装、代码适配、多进程处理和 sequence recovery 验证。",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 70.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.4,
+      "boundary_coverage": 5.5,
+      "checkpoint_design": 2.8,
+      "instruction_specificity": 8.2,
+      "resource_integration": 5.5,
+      "overall_architecture": 8.7,
+      "ascend_relevance": 8.8,
+      "verifiability": 7.0
+    },
+    "line_count": 127
+  },
+  {
+    "name": "ascend-delivery-pipeline",
+    "path": "skills\\documentation\\ascend-delivery-pipeline\\SKILL.md",
+    "description": ">",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 70.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.1,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 7.0,
+      "instruction_specificity": 8.5,
+      "resource_integration": 3.5,
+      "overall_architecture": 8.6,
+      "ascend_relevance": 10.0,
+      "verifiability": 5.0
+    },
+    "line_count": 315
+  },
+  {
+    "name": "\"mindspeed-fsdp2-migration-main\"",
+    "path": "skills\\ascend\\adaptation\\mindspeed-fsdp2-migration-main\\SKILL.md",
+    "description": "\"用于统筹 MindSpeed-MM FSDP2 端到端迁移。适用于需要协同模型、数据、配置与验证子流程迁移任意新模型时。\"",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 70.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 10.0,
+      "boundary_coverage": 9.5,
+      "checkpoint_design": 3.1,
+      "instruction_specificity": 3.5,
+      "resource_integration": 5.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 6.6,
+      "verifiability": 4.5
+    },
+    "line_count": 160
+  },
+  {
+    "name": "skill-auditor",
+    "path": "skills\\ascend\\common\\skill-auditor\\SKILL.md",
+    "description": "Comprehensive security auditor for AI agent skills, prompts, and instructions. Checks for typosquatting, dangerous permissions,",
+    "category": "common",
+    "tier": 3,
+    "total_score": 69.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.6,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 5.0,
+      "instruction_specificity": 6.9,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.2,
+      "verifiability": 6.5
+    },
+    "line_count": 260
+  },
+  {
+    "name": "ai-for-science-ai4s-basic",
+    "path": "skills\\ascend\\optimization\\ai4s-basic\\SKILL.md",
+    "description": "AI for Science 通用昇腾 NPU 模型迁移 Skill，适用于将基于 PyTorch、TensorFlow、vLLM 等框架的 CUDA 项目迁移到华为 Ascend NPU，覆盖环境检查、代码分析、自动迁移、手动适配、分布式改造、第三方库替换、验证与专属 skill 沉淀全流程。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 69.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 3.0,
+      "boundary_coverage": 10.0,
+      "checkpoint_design": 9.0,
+      "instruction_specificity": 5.0,
+      "resource_integration": 6.5,
+      "overall_architecture": 6.2,
+      "ascend_relevance": 10.0,
+      "verifiability": 7.5
+    },
+    "line_count": 558
+  },
+  {
+    "name": "ascend-mmcv-install",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\references\\ascend-mmlab-install-suite\\mmcv\\SKILL.md",
+    "description": "在昇腾NPU容器中编译安装mmcv-full，支持NPU算子。适用于需要mmcv作为依赖的其他OpenMMLab库安装前的前置步骤。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 69.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.2,
+      "boundary_coverage": 3.7,
+      "checkpoint_design": 5.6,
+      "instruction_specificity": 8.8,
+      "resource_integration": 2.1,
+      "overall_architecture": 9.1,
+      "ascend_relevance": 8.8,
+      "verifiability": 4.5
+    },
+    "line_count": 114
+  },
+  {
+    "name": "ascend-npu-driver-install",
+    "path": "skills\\ascend\\deployment\\ascend-npu-driver-install\\SKILL.md",
+    "description": "能完成昇腾NPU驱动和固件安装部署，实现安装包正则匹配提取、按需添加可执行权限、Python+Shell双重包校验、系统依赖先验后装、适配CentOS/RHEL/Ubuntu/Debian系统，适用于昇腾NPU驱动和固件安装部署。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 68.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.9,
+      "boundary_coverage": 3.2,
+      "checkpoint_design": 3.2,
+      "instruction_specificity": 7.2,
+      "resource_integration": 6.9,
+      "overall_architecture": 7.4,
+      "ascend_relevance": 8.5,
+      "verifiability": 8.0
+    },
+    "line_count": 73
+  },
+  {
+    "name": "RapidOCR",
+    "path": "models\\RapidOCR\\SKILL.md",
+    "description": "",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 68.8,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 8.7,
+      "boundary_coverage": 4.6,
+      "checkpoint_design": 5.7,
+      "instruction_specificity": 6.6,
+      "resource_integration": 2.1,
+      "overall_architecture": 9.4,
+      "ascend_relevance": 8.8,
+      "verifiability": 6.8
+    },
+    "line_count": 118
+  },
+  {
+    "name": "ops-simulator",
+    "path": "skills\\ascend\\verification\\ops-simulator\\SKILL.md",
+    "description": "NPU 仿真器技能。提供 CANN Simulator 的使用指导，包括精度仿真、性能仿真、流水线分析。当需要在无 NPU 硬件环境下验证算子功能、分析性能瓶颈、定位精度问题时使用。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 68.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.3,
+      "boundary_coverage": 5.7,
+      "checkpoint_design": 2.9,
+      "instruction_specificity": 6.0,
+      "resource_integration": 5.2,
+      "overall_architecture": 9.6,
+      "ascend_relevance": 8.9,
+      "verifiability": 6.2
+    },
+    "line_count": 141
+  },
+  {
+    "name": "ascend-mmdet3d-install",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\references\\ascend-mmlab-install-suite\\mmdet3d\\SKILL.md",
+    "description": "在昇腾NPU容器中安装mmdetection3d（含mmsegmentation依赖）。适用于3D目标检测模型的开发。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 68.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.5,
+      "boundary_coverage": 4.5,
+      "checkpoint_design": 3.6,
+      "instruction_specificity": 9.3,
+      "resource_integration": 2.0,
+      "overall_architecture": 9.0,
+      "ascend_relevance": 7.7,
+      "verifiability": 4.5
+    },
+    "line_count": 109
+  },
+  {
+    "name": "model-infer-fusion",
+    "path": "skills\\ascend\\optimization\\model-infer-fusion\\SKILL.md",
+    "description": "基于 PyTorch 框架的昇腾 NPU 模型推理融合算子优化技能。分析模型代码，识别可替换为 torch_npu 融合算子的计算模式，生成替换方案。触发场景：torch_npu 融合算子替换、MoE/Attention/FFN/Norm 等模块的推理算子适配、torch_npu API 使用咨询。基于仓库已有模型的融合算子经验，按计算语义推荐最佳方案。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 68.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.3,
+      "boundary_coverage": 7.0,
+      "checkpoint_design": 9.3,
+      "instruction_specificity": 4.2,
+      "resource_integration": 5.4,
+      "overall_architecture": 8.0,
+      "ascend_relevance": 9.2,
+      "verifiability": 5.0
+    },
+    "line_count": 185
+  },
+  {
+    "name": "ssh-dev-suite/long-task",
+    "path": "skills\\ascend\\common\\long-task\\SKILL.md",
+    "description": "长耗时任务管理，支持checkpoint记忆、agent休息与恢复",
+    "category": "common",
+    "tier": 3,
+    "total_score": 67.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.9,
+      "boundary_coverage": 5.3,
+      "checkpoint_design": 8.6,
+      "instruction_specificity": 8.0,
+      "resource_integration": 6.0,
+      "overall_architecture": 8.7,
+      "ascend_relevance": 2.7,
+      "verifiability": 5.5
+    },
+    "line_count": 109
+  },
+  {
+    "name": "tune-incore",
+    "path": "skills\\ascend\\optimization\\pypto-op-perf-tune\\references\\tune-incore\\SKILL.md",
+    "description": "PyPTO 算子核内性能调优技能。通过分析单 task 的实现指令及 operation，完成核内的性能调优，包括指令级优化、核内流水优化、特殊 Shape 处理等。当用户需要进行核内性能调优、单 task 耗时分析、指令级优化时使用此技能。触发词：核内性能调优、单 task 优化、指令级优化、核内流水、Operation 实现优化。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 67.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 4.5,
+      "instruction_specificity": 7.5,
+      "resource_integration": 2.5,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.8,
+      "verifiability": 4.7
+    },
+    "line_count": 202
+  },
+  {
+    "name": "vLLM-ascend_FAQ_Generator",
+    "path": "skills\\ascend\\optimization\\vllm-ascend_faq_generator\\SKILL.md",
+    "description": "为 vLLM-ascend 项目构建自动化工作流，处理已关闭的Issue并生成Debug FAQ。Use when users want to process closed issues from vLLM-ascend repository, generate debug FAQ, categorize issues, or analyze issue patterns.",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 67.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.7,
+      "boundary_coverage": 4.8,
+      "checkpoint_design": 2.9,
+      "instruction_specificity": 7.3,
+      "resource_integration": 2.2,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 8.9,
+      "verifiability": 3.5
+    },
+    "line_count": 135
+  },
+  {
+    "name": "code-comprehension",
+    "path": "skills\\ascend\\common\\code-comprehension\\SKILL.md",
+    "description": "在多个尺度上理解和总结代码功能，从函数级到模块级到系统级，帮助快速掌握陌生代码库。特别适用于大语言模型训练框架、分布式训练系统、深度学习框架等复杂代码库的分析。",
+    "category": "common",
+    "tier": 3,
+    "total_score": 67.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.7,
+      "boundary_coverage": 5.4,
+      "checkpoint_design": 6.4,
+      "instruction_specificity": 7.1,
+      "resource_integration": 2.4,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 6.2,
+      "verifiability": 3.2
+    },
+    "line_count": 187
+  },
+  {
+    "name": "power-load-forecast",
+    "path": "models\\contribution\\power-predict-agent\\skills\\power-load-forecast\\SKILL.md",
+    "description": "通过时序大模型对电力负荷进行推理预测，输出未来一天或多天的负荷预测结果。当用户要求推理明天的负荷预测结果、预测明天的负荷、或说\"帮我推一下明天的负荷预测\"时，应使用此技能。",
+    "category": "other",
+    "tier": 3,
+    "total_score": 67.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.0,
+      "boundary_coverage": 7.8,
+      "checkpoint_design": 3.3,
+      "instruction_specificity": 7.7,
+      "resource_integration": 4.8,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 3.2,
+      "verifiability": 3.3
+    },
+    "line_count": 184
+  },
+  {
+    "name": "ascend-history-to-skill",
+    "path": "skills\\ascend\\optimization\\ascend-history-to-skill\\SKILL.md",
+    "description": "从本机 Codex、Claude Code、OpenCode、Cursor 的历史记录中检索指定昇腾模型的适配、迁移、推理优化和性能验证记录，并基于已验证步骤生成或更新模型专属 skill。适用于用户要求“从历史里找某个 Ascend 模型的适配/优化记录”“把过去做过的昇腾迁移整理成 skill”“复用 Codex/Claude/Cursor/OpenCode 聊天记录形成可复现技能”时触发。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 67.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.5,
+      "boundary_coverage": 3.7,
+      "checkpoint_design": 5.6,
+      "instruction_specificity": 6.6,
+      "resource_integration": 6.0,
+      "overall_architecture": 8.1,
+      "ascend_relevance": 7.7,
+      "verifiability": 7.5
+    },
+    "line_count": 110
+  },
+  {
+    "name": "\"mindspeed-fsdp2-verification\"",
+    "path": "skills\\ascend\\verification\\mindspeed-fsdp2-verification\\SKILL.md",
+    "description": "\"用于执行 MindSpeed-MM FSDP2 迁移的功能与可靠性验收门禁。适用于模型/数据/配置改动后，验证一次分布式端到端成功并留存证据时。\"",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 65.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.5,
+      "boundary_coverage": 8.8,
+      "checkpoint_design": 6.5,
+      "instruction_specificity": 3.0,
+      "resource_integration": 4.4,
+      "overall_architecture": 9.0,
+      "ascend_relevance": 4.7,
+      "verifiability": 5.0
+    },
+    "line_count": 101
+  },
+  {
+    "name": "ascendc-env-check",
+    "path": "skills\\ascend\\verification\\ascendc-env-check\\SKILL.md",
+    "description": "Ascend C 算子开发环境检查技能。用于：(1) 通过 npu-smi 查询 NPU 设备信息（设备列表、状态、资源使用），(2) 检查 CANN 环境配置（CANN Toolkit、Ops、自定义算子包），(3) 验证开发依赖是否完整。触发关键词：环境检查、NPU设备、npu-smi、CANN安装、设备查询、资源监控、检查CANN环境变量。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 64.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 5.6,
+      "checkpoint_design": 2.2,
+      "instruction_specificity": 6.6,
+      "resource_integration": 6.9,
+      "overall_architecture": 8.0,
+      "ascend_relevance": 8.5,
+      "verifiability": 5.0
+    },
+    "line_count": 75
+  },
+  {
+    "name": "extract-vllm-backbone",
+    "path": "skills\\adaptation\\extract-vllm-backbone\\SKILL.md",
+    "description": "Extract the LLM backbone from a non-standard or multimodal model checkpoint so it can be served by vLLM. Use when vLLM fails to load a model due to unsupported architecture (e.g. spatiallm_llama, llav",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 64.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 4.9,
+      "checkpoint_design": 8.9,
+      "instruction_specificity": 7.8,
+      "resource_integration": 2.2,
+      "overall_architecture": 9.3,
+      "ascend_relevance": 4.4,
+      "verifiability": 4.0
+    },
+    "line_count": 141
+  },
+  {
+    "name": "catlass-operator-performance-optim",
+    "path": "skills\\ascend\\optimization\\catlass-operator-performance-optim\\SKILL.md",
+    "description": "指导 Catlass 算子性能调优。流程：阅读 catlass 优化指南、获取/更新 profiler 基线、按指南修改 tiling、重新编译、**强制产出并展示性能对比报告**、迭代对比。调优策略以 catlass 文档为准。条件不明则追问。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 64.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 5.7,
+      "checkpoint_design": 2.9,
+      "instruction_specificity": 3.9,
+      "resource_integration": 2.2,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 8.9,
+      "verifiability": 5.9
+    },
+    "line_count": 140
+  },
+  {
+    "name": "python-refactoring",
+    "path": "skills\\ascend\\common\\python-refactoring\\SKILL.md",
+    "description": "Python 代码重构技能，覆盖代码坏味道识别、设计模式应用、可读性改进和实战经验。当用户要求\"重构代码\"、\"refactor\"、\"代码优化\"、\"改善代码质量\"、\"code smell review\"、\"应用设计模式\"、\"提升可读性\"，或提交代码审查请求时使用此技能。支持在重构完成后输出结构化重构文档（\"输出重构文档\"、\"生成重构报告\"）。包含基于 vllm-ascend 仓库 20+ 个真实重构",
+    "category": "common",
+    "tier": 3,
+    "total_score": 64.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.9,
+      "boundary_coverage": 3.6,
+      "checkpoint_design": 7.2,
+      "instruction_specificity": 5.8,
+      "resource_integration": 5.3,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 4.6,
+      "verifiability": 4.5
+    },
+    "line_count": 170
+  },
+  {
+    "name": "ascend-mmdet-install",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\references\\ascend-mmlab-install-suite\\mmdet\\SKILL.md",
+    "description": "在昇腾NPU容器中安装mmdetection。适用于目标检测模型的开发。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 63.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.9,
+      "boundary_coverage": 3.4,
+      "checkpoint_design": 3.4,
+      "instruction_specificity": 8.4,
+      "resource_integration": 1.9,
+      "overall_architecture": 8.3,
+      "ascend_relevance": 7.6,
+      "verifiability": 4.5
+    },
+    "line_count": 89
+  },
+  {
+    "name": "triton-operator-dev",
+    "path": "skills\\ascend\\optimization\\triton-operator-dev\\SKILL.md",
+    "description": "昇腾 Triton 算子全流程开发编排。当用户需要从零开发 Triton 算子、进行端到端开发流程、或不确定该用哪个子 skill 时使用。自动编排：环境配置→需求设计→代码生成→静态检视→精度验证→性能评估→性能优化。关键词：全流程、开发编排、端到端、workflow orchestration。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 63.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.8,
+      "boundary_coverage": 4.4,
+      "checkpoint_design": 4.5,
+      "instruction_specificity": 4.3,
+      "resource_integration": 2.0,
+      "overall_architecture": 9.1,
+      "ascend_relevance": 7.2,
+      "verifiability": 5.9
+    },
+    "line_count": 105
+  },
+  {
+    "name": "msverl-daily-regression-triage",
+    "path": "skills\\ascend\\adaptation\\msverl-daily-regression-triage\\SKILL.md",
+    "description": "Triage a daily msverl regression run by reading the baseline comparison log, stopping on success, extracting the most relevant training failure evidence from the daily training log when needed, collec",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 63.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.6,
+      "boundary_coverage": 7.1,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 4.5,
+      "resource_integration": 9.3,
+      "overall_architecture": 7.2,
+      "ascend_relevance": 2.9,
+      "verifiability": 7.6
+    },
+    "line_count": 63
+  },
+  {
+    "name": "ascendc-whitebox-design",
+    "path": "skills\\ascend\\verification\\ascendc-whitebox-design\\SKILL.md",
+    "description": "Ascend C 算子白盒测试用例生成系统。分析算子源码提取参数维度，自动枚举参数组合，生成可执行的白盒测试用例。支持 low/medium/high 三档覆盖级别。触发场景：(1) \"为 X 算子生成白盒测试用例\" (2) \"算子白盒用例生成\" (3) \"generate whitebox test cases for operator\"。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 63.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.7,
+      "boundary_coverage": 2.5,
+      "checkpoint_design": 8.3,
+      "instruction_specificity": 4.3,
+      "resource_integration": 9.4,
+      "overall_architecture": 7.0,
+      "ascend_relevance": 6.1,
+      "verifiability": 8.9
+    },
+    "line_count": 83
+  },
+  {
+    "name": "pypto-precision-compare",
+    "path": "skills\\ascend\\verification\\pypto-precision-compare\\SKILL.md",
+    "description": "PyPTO 算子精度问题调试技能。提供两种精度对比方法：文件保存方法（使用 pypto.pass_verify_save 和 torch.save）和二分对比方法（使用检查点 tensor）。当需要调试 PyPTO 算子精度、定位精度差异来源、进行中间结果对比时使用此技能。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 63.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.4,
+      "boundary_coverage": 2.4,
+      "checkpoint_design": 8.2,
+      "instruction_specificity": 5.0,
+      "resource_integration": 6.9,
+      "overall_architecture": 7.6,
+      "ascend_relevance": 2.5,
+      "verifiability": 6.9
+    },
+    "line_count": 72
+  },
+  {
+    "name": "ascend-detectron2-install",
+    "path": "skills\\ascend\\deployment\\drivingsdk-ascend-model-migration\\references\\ascend-mmlab-install-suite\\detectron2\\SKILL.md",
+    "description": "在昇腾NPU容器中从源码安装detectron2。适用于实例分割、目标检测等模型的开发。",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 62.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.1,
+      "boundary_coverage": 3.1,
+      "checkpoint_design": 4.2,
+      "instruction_specificity": 7.4,
+      "resource_integration": 1.8,
+      "overall_architecture": 7.9,
+      "ascend_relevance": 8.5,
+      "verifiability": 5.0
+    },
+    "line_count": 68
+  },
+  {
+    "name": "run-mindspeed-llm-test",
+    "path": "skills\\ascend\\other\\run-mindspeed-llm-test\\SKILL.md",
+    "description": "运行MindSpeed-LLM项目的测试用例。当需要运行测试用例、扫描项目代码覆盖率时调用此技能",
+    "category": "other",
+    "tier": 3,
+    "total_score": 62.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 2.6,
+      "checkpoint_design": 2.4,
+      "instruction_specificity": 8.2,
+      "resource_integration": 1.9,
+      "overall_architecture": 8.3,
+      "ascend_relevance": 5.6,
+      "verifiability": 7.0
+    },
+    "line_count": 88
+  },
+  {
+    "name": "small_model_adapt",
+    "path": "small_model_adapt\\SKILL.md",
+    "description": "NPU 适配验证工具包——将任意 PyTorch/CV/音频/视频模型迁移到 Ascend NPU 并验证兼容性。当用户要求\"把模型跑到 NPU 上\"、\"NPU 适配\"、\"验证 NPU 兼容性\"、\"批量验证模型\"、模型在 NPU 上报错需要排查修复时使用此 skill。",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 61.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.1,
+      "boundary_coverage": 3.4,
+      "checkpoint_design": 2.4,
+      "instruction_specificity": 3.3,
+      "resource_integration": 6.9,
+      "overall_architecture": 8.3,
+      "ascend_relevance": 8.6,
+      "verifiability": 6.3
+    },
+    "line_count": 88
+  },
+  {
+    "name": "perf-analyzer",
+    "path": "skills\\ascend\\optimization\\perf-analyzer\\SKILL.md",
+    "description": "分析 PyPTO 算子的性能指标。当需要分析PyPTO算子的性能指标，从性能数据文件中提取关键指标，计算性能评级，或提供性能瓶颈分析和优化建议时使用此技能。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 61.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.5,
+      "boundary_coverage": 4.0,
+      "checkpoint_design": 4.0,
+      "instruction_specificity": 7.1,
+      "resource_integration": 5.9,
+      "overall_architecture": 9.8,
+      "ascend_relevance": 3.7,
+      "verifiability": 2.9
+    },
+    "line_count": 257
+  },
+  {
+    "name": "cv-ascend-adapt",
+    "path": "skills\\ascend\\adaptation\\cv-ascend-adapt\\SKILL.md",
+    "description": "面向开源 PyTorch CV 模型的昇腾 NPU 通用适配技能，用于训练、分布式训练、ONNX 到 OM 导出、推理一致性验证与问题排查。Use when users need Ascend migration checklists, HCCL/autocast/dtype compatibility fixes, or adaptation report generation without ",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 61.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 5.8,
+      "checkpoint_design": 3.4,
+      "instruction_specificity": 4.2,
+      "resource_integration": 6.9,
+      "overall_architecture": 7.3,
+      "ascend_relevance": 5.6,
+      "verifiability": 6.6
+    },
+    "line_count": 85
+  },
+  {
+    "name": "bigvgan-v2-npu",
+    "path": "skills\\deployment\\bigvgan-v2-npu\\SKILL.md",
+    "description": "Deploy BigVGAN v2 neural vocoder on Ascend NPU for mel-to-waveform inference. Covers model loading, NPU device detection, end-to-end audio synthesis, and performance benchmarking.",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 61.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.7,
+      "boundary_coverage": 5.0,
+      "checkpoint_design": 2.4,
+      "instruction_specificity": 6.2,
+      "resource_integration": 2.0,
+      "overall_architecture": 8.3,
+      "ascend_relevance": 8.6,
+      "verifiability": 5.0
+    },
+    "line_count": 91
+  },
+  {
+    "name": "auto-develop-test-gen",
+    "path": "skills\\ascend\\common\\auto-develop-test-gen\\SKILL.md",
+    "description": "开发者测试自动补全技能 - 为函数和类生成高质量单元测试，分析覆盖率盲区并生成高价值补充测试，提升有效覆盖率。",
+    "category": "common",
+    "tier": 3,
+    "total_score": 61.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.3,
+      "boundary_coverage": 7.8,
+      "checkpoint_design": 2.7,
+      "instruction_specificity": 3.9,
+      "resource_integration": 2.1,
+      "overall_architecture": 9.2,
+      "ascend_relevance": 2.8,
+      "verifiability": 4.5
+    },
+    "line_count": 122
+  },
+  {
+    "name": "ssh-dev-suite/debug",
+    "path": "skills\\ascend\\common\\debug\\SKILL.md",
+    "description": "结构化远程服务器问题排查流程，支持上下文感知的环境检查和容器内调试",
+    "category": "common",
+    "tier": 3,
+    "total_score": 61.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 8.1,
+      "checkpoint_design": 4.3,
+      "instruction_specificity": 5.0,
+      "resource_integration": 2.7,
+      "overall_architecture": 8.6,
+      "ascend_relevance": 4.5,
+      "verifiability": 4.5
+    },
+    "line_count": 80
+  },
+  {
+    "name": "triton-operator-code-gen",
+    "path": "skills\\ascend\\verification\\triton-operator-code-gen\\SKILL.md",
+    "description": "根据 Ascend NPU 算子设计文档（或直接需求）生成 Triton kernel 代码。当用户需要实现 Triton 算子、将设计文档转为可执行代码时使用。核心产出：kernel 代码 + 基本正确性测试。关键词：Triton kernel、算子实现、代码生成、code generation。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 61.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.1,
+      "boundary_coverage": 2.6,
+      "checkpoint_design": 6.4,
+      "instruction_specificity": 3.9,
+      "resource_integration": 3.5,
+      "overall_architecture": 8.8,
+      "ascend_relevance": 6.6,
+      "verifiability": 4.8
+    },
+    "line_count": 90
+  },
+  {
+    "name": "coverage",
+    "path": "skills\\ascend\\common\\coverage\\SKILL.md",
+    "description": "Use when working with coverage",
+    "category": "common",
+    "tier": 3,
+    "total_score": 60.9,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.2,
+      "boundary_coverage": 3.0,
+      "checkpoint_design": 2.7,
+      "instruction_specificity": 8.2,
+      "resource_integration": 4.5,
+      "overall_architecture": 9.3,
+      "ascend_relevance": 2.8,
+      "verifiability": 4.5
+    },
+    "line_count": 116
+  },
+  {
+    "name": "tilelang-programming-model-guide",
+    "path": "skills\\ascend\\optimization\\tilelang-programming-model-guide\\SKILL.md",
+    "description": "TileLang Ascend Developer/Expert 模式选择与 pass_configs 配置指南。当需要确定编程模式、配置 pass_configs、或在两种模式之间转换时触发。API 详情请参考 tilelang-api-best-practices skill。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 60.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.3,
+      "boundary_coverage": 3.5,
+      "checkpoint_design": 3.1,
+      "instruction_specificity": 6.8,
+      "resource_integration": 3.1,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 6.6,
+      "verifiability": 2.7
+    },
+    "line_count": 162
+  },
+  {
+    "name": "megatron-impact-mapper",
+    "path": "skills\\ascend\\adaptation\\megatron-impact-mapper\\SKILL.md",
+    "description": "Map migration-relevant Megatron changes onto the official MindSpeed repository by resolving branch alignment, locating affected subsystems, and identifying concrete adaptation points. Use when Codex h",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 59.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.2,
+      "boundary_coverage": 2.8,
+      "checkpoint_design": 2.5,
+      "instruction_specificity": 3.9,
+      "resource_integration": 8.0,
+      "overall_architecture": 7.9,
+      "ascend_relevance": 7.7,
+      "verifiability": 4.0
+    },
+    "line_count": 100
+  },
+  {
+    "name": "catlass-operator-code-gen",
+    "path": "skills\\ascend\\verification\\catlass-operator-code-gen\\SKILL.md",
+    "description": "根据CATLASS算子设计文档生成算子工程交付件",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 59.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.8,
+      "boundary_coverage": 3.0,
+      "checkpoint_design": 2.7,
+      "instruction_specificity": 3.5,
+      "resource_integration": 5.1,
+      "overall_architecture": 9.5,
+      "ascend_relevance": 5.3,
+      "verifiability": 5.3
+    },
+    "line_count": 123
+  },
+  {
+    "name": "\"mindspeed-fsdp2-data-migration\"",
+    "path": "skills\\ascend\\verification\\mindspeed-fsdp2-data-migration\\SKILL.md",
+    "description": "\"用于将数据预处理与数据加载契约迁移到 MindSpeed-MM FSDP2。适用于实现数据集注册、预处理复用、collate 行为与输入字段兼容时。\"",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 59.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.0,
+      "boundary_coverage": 8.6,
+      "checkpoint_design": 3.4,
+      "instruction_specificity": 3.4,
+      "resource_integration": 1.9,
+      "overall_architecture": 8.8,
+      "ascend_relevance": 3.6,
+      "verifiability": 3.0
+    },
+    "line_count": 90
+  },
+  {
+    "name": "pypto-api-explore",
+    "path": "skills\\ascend\\verification\\pypto-api-explore\\SKILL.md",
+    "description": "\"探索 PyPTO API，为算子开发提供 API 映射、约束检查和 Tiling 需求分析。当需要查找 PyPTO 是否支持某个操作、验证 API 约束、分析算子可行性时使用。Triggers: API 探索、查找 API、PyPTO 有没有 xxx、支持什么 dtype、约束是什么、tiling 怎么配、API 映射、可行性分析、这个算子能做吗。\"",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 59.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.1,
+      "boundary_coverage": 4.6,
+      "checkpoint_design": 5.3,
+      "instruction_specificity": 3.4,
+      "resource_integration": 5.4,
+      "overall_architecture": 10.0,
+      "ascend_relevance": 3.2,
+      "verifiability": 3.5
+    },
+    "line_count": 184
+  },
+  {
+    "name": "megatron-commit-tracker",
+    "path": "skills\\ascend\\other\\megatron-commit-tracker\\SKILL.md",
+    "description": "Track and normalize change requests against the official Megatron-LM repository by branch, PR, commit, commit range, or time window. Use when Codex needs to collect the exact upstream change set befor",
+    "category": "other",
+    "tier": 3,
+    "total_score": 57.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.7,
+      "boundary_coverage": 2.7,
+      "checkpoint_design": 4.5,
+      "instruction_specificity": 4.4,
+      "resource_integration": 8.0,
+      "overall_architecture": 8.3,
+      "ascend_relevance": 3.6,
+      "verifiability": 3.3
+    },
+    "line_count": 97
+  },
+  {
+    "name": "\"mindspeed-fsdp2-config-migration\"",
+    "path": "skills\\ascend\\verification\\mindspeed-fsdp2-config-migration\\SKILL.md",
+    "description": "\"用于将源训练设置映射到 MindSpeed-MM FSDP2 YAML 契约。适用于创建或修复 model_id/dataset_type/plugin 对齐、strict/extra 分层与分片配置时。\"",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 57.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.0,
+      "boundary_coverage": 8.7,
+      "checkpoint_design": 2.5,
+      "instruction_specificity": 3.4,
+      "resource_integration": 2.0,
+      "overall_architecture": 9.0,
+      "ascend_relevance": 3.2,
+      "verifiability": 2.5
+    },
+    "line_count": 99
+  },
+  {
+    "name": "ascendc-operator-code-review",
+    "path": "skills\\ascend\\verification\\ascendc-operator-code-review\\SKILL.md",
+    "description": "\"Ascend C 代码检视技能。基于假设检验方法论对代码进行安全规范检视。调用时必须明确提供：代码片段和检视规则描述。TRIGGER when: 用户要求代码检视、代码review、询问代码安全问题、检查编码规范、或需要检查特定代码问题（如内存泄漏、整数溢出、空指针等）。关键词：Ascend C、代码检视、代码review、安全规范、内存、指针、溢出、泄漏、编码规范。\"",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 57.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.0,
+      "boundary_coverage": 3.9,
+      "checkpoint_design": 3.8,
+      "instruction_specificity": 3.5,
+      "resource_integration": 5.2,
+      "overall_architecture": 9.1,
+      "ascend_relevance": 5.9,
+      "verifiability": 2.0
+    },
+    "line_count": 130
+  },
+  {
+    "name": "triton-operator-performance-eval",
+    "path": "skills\\ascend\\optimization\\triton-operator-performance-eval\\SKILL.md",
+    "description": "评估 Ascend NPU 上 Triton 算子性能。使用 msprof/msprof op 采集性能数据，诊断 Memory-Bound/Compute-Bound 瓶颈，测量硬件利用率，生成性能报告。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 57.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.3,
+      "boundary_coverage": 4.1,
+      "checkpoint_design": 3.3,
+      "instruction_specificity": 4.1,
+      "resource_integration": 4.9,
+      "overall_architecture": 7.8,
+      "ascend_relevance": 8.5,
+      "verifiability": 3.4
+    },
+    "line_count": 82
+  },
+  {
+    "name": "\"mindspeed-fsdp2-model-migration\"",
+    "path": "skills\\ascend\\verification\\mindspeed-fsdp2-model-migration\\SKILL.md",
+    "description": "\"用于模型侧迁移到 MindSpeed-MM FSDP2 注册与加载契约。适用于实现模型插件、加载签名兼容、token/embedding 更新与前向兼容时。\"",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 56.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.0,
+      "boundary_coverage": 7.4,
+      "checkpoint_design": 3.4,
+      "instruction_specificity": 3.4,
+      "resource_integration": 1.9,
+      "overall_architecture": 8.8,
+      "ascend_relevance": 3.6,
+      "verifiability": 2.0
+    },
+    "line_count": 90
+  },
+  {
+    "name": "catlass-operator-design",
+    "path": "skills\\ascend\\verification\\catlass-operator-design\\SKILL.md",
+    "description": "将用户基于CATLASS开发算子的需求转变为具体的设计文档",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 56.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 9.7,
+      "boundary_coverage": 3.1,
+      "checkpoint_design": 3.8,
+      "instruction_specificity": 3.9,
+      "resource_integration": 5.2,
+      "overall_architecture": 9.6,
+      "ascend_relevance": 2.9,
+      "verifiability": 2.0
+    },
+    "line_count": 132
+  },
+  {
+    "name": "triton-operator-precision-eval",
+    "path": "skills\\ascend\\optimization\\triton-operator-precision-eval\\SKILL.md",
+    "description": "Triton 算子精度评估。与 PyTorch 参考实现对比，自动计算误差指标，生成标准化精度报告。关键词：精度测试、precision evaluation、精度报告、accuracy verification。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 56.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.4,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 2.0,
+      "instruction_specificity": 4.8,
+      "resource_integration": 4.6,
+      "overall_architecture": 7.0,
+      "ascend_relevance": 3.4,
+      "verifiability": 7.2
+    },
+    "line_count": 53
+  },
+  {
+    "name": "quantify-agent",
+    "path": "skills\\ascend\\verification\\quantify-agent\\SKILL.md",
+    "description": "",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 55.5,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 5.3,
+      "boundary_coverage": 4.5,
+      "checkpoint_design": 3.0,
+      "instruction_specificity": 5.8,
+      "resource_integration": 1.8,
+      "overall_architecture": 7.2,
+      "ascend_relevance": 8.3,
+      "verifiability": 6.0
+    },
+    "line_count": 51
+  },
+  {
+    "name": "megatron-migration-generator",
+    "path": "skills\\ascend\\adaptation\\megatron-migration-generator\\SKILL.md",
+    "description": "Generate migration deliverables for bringing relevant Megatron changes into MindSpeed after branch alignment and impact mapping are complete. Use when Codex already has a confirmed MindSpeed-to-Megatr",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 55.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 8.4,
+      "boundary_coverage": 2.6,
+      "checkpoint_design": 2.4,
+      "instruction_specificity": 3.5,
+      "resource_integration": 6.9,
+      "overall_architecture": 8.2,
+      "ascend_relevance": 3.6,
+      "verifiability": 4.5
+    },
+    "line_count": 89
+  },
+  {
+    "name": "ascendc-direct-invoke-template",
+    "path": "skills\\ascend\\optimization\\ascendc-direct-invoke-template\\SKILL.md",
+    "description": "Kernel直调工程模板，用于创建 Ascend C Kernel 直调工程项目。提供经过验证的样例工程和清晰的修改指南。触发：当用户需要创建 Kernel 直调工程、学习 Ascend C 编程、快速原型验证、或提及\"Kernel直调\"、\"<<<>>>内核调用\"时使用本 skill。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 55.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.1,
+      "boundary_coverage": 2.2,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 4.6,
+      "resource_integration": 7.8,
+      "overall_architecture": 5.9,
+      "ascend_relevance": 6.9,
+      "verifiability": 6.7
+    },
+    "line_count": 58
+  },
+  {
+    "name": "flan-t5-base-npu",
+    "path": "skills\\contribution\\flan-t5-base-npu\\SKILL.md",
+    "description": "",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 55.0,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 2.3,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 5.0,
+      "resource_integration": 1.8,
+      "overall_architecture": 8.0,
+      "ascend_relevance": 8.4,
+      "verifiability": 6.8
+    },
+    "line_count": 61
+  },
+  {
+    "name": "triton-operator-performance-optim",
+    "path": "skills\\ascend\\optimization\\triton-operator-performance-optim\\SKILL.md",
+    "description": "优化 Ascend NPU 亲和的 Triton 算子性能。解决 UB 溢出、提高 Cube 利用率、Tiling 策略设计。关键词：性能优化、performance optimization、tiling、UB。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 54.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.6,
+      "boundary_coverage": 2.4,
+      "checkpoint_design": 3.2,
+      "instruction_specificity": 2.8,
+      "resource_integration": 4.9,
+      "overall_architecture": 7.7,
+      "ascend_relevance": 8.0,
+      "verifiability": 4.5
+    },
+    "line_count": 74
+  },
+  {
+    "name": "generate-unit-test",
+    "path": "skills\\ascend\\common\\generate-unit-test\\SKILL.md",
+    "description": "",
+    "category": "common",
+    "tier": 3,
+    "total_score": 54.1,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 7.8,
+      "boundary_coverage": 7.5,
+      "checkpoint_design": 2.5,
+      "instruction_specificity": 3.0,
+      "resource_integration": 2.0,
+      "overall_architecture": 8.9,
+      "ascend_relevance": 3.6,
+      "verifiability": 5.0
+    },
+    "line_count": 95
+  },
+  {
+    "name": "ssh-dev-suite/connect",
+    "path": "skills\\ascend\\common\\connect\\SKILL.md",
+    "description": "SSH连接管理、远程命令执行、文件传输、后台任务",
+    "category": "common",
+    "tier": 3,
+    "total_score": 54.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.2,
+      "boundary_coverage": 2.8,
+      "checkpoint_design": 1.9,
+      "instruction_specificity": 5.4,
+      "resource_integration": 9.2,
+      "overall_architecture": 6.7,
+      "ascend_relevance": 2.3,
+      "verifiability": 6.5
+    },
+    "line_count": 42
+  },
+  {
+    "name": "triton-operator-code-review",
+    "path": "skills\\ascend\\optimization\\triton-operator-code-review\\SKILL.md",
+    "description": "静态检视 Triton 算子代码质量（Host+Device 侧），面向 Ascend NPU。发现潜在 bug、API 误用和性能隐患。仅关注静态代码分析。关键词：code review、代码检视、静态分析。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 53.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.9,
+      "boundary_coverage": 3.2,
+      "checkpoint_design": 2.3,
+      "instruction_specificity": 2.0,
+      "resource_integration": 4.9,
+      "overall_architecture": 8.0,
+      "ascend_relevance": 8.5,
+      "verifiability": 4.5
+    },
+    "line_count": 76
+  },
+  {
+    "name": "ascendc-ut-develop",
+    "path": "skills\\ascend\\documentation\\ascendc-ut-develop\\SKILL.md",
+    "description": "Ascend C 算子 UT 开发与覆盖率增强技能。通过分析 op_host/op_api/op_kernel 的测试空白、生成或补充 UT 用例并定位未覆盖代码来提升覆盖率，支持 ops-math/ops-nn/ops-transformer/ops-cv。当用户提及 UT、单元测试、覆盖率、补测、未覆盖代码或需要新增/完善 UT 时使用，ST 测试不适用。",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 51.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.9,
+      "boundary_coverage": 2.4,
+      "checkpoint_design": 4.2,
+      "instruction_specificity": 3.5,
+      "resource_integration": 5.8,
+      "overall_architecture": 7.3,
+      "ascend_relevance": 7.0,
+      "verifiability": 2.8
+    },
+    "line_count": 70
+  },
+  {
+    "name": "repo-reader",
+    "path": "skills\\ascend\\common\\repo-reader\\SKILL.md",
+    "description": "从模型仓库链接读取 README 文档。当用户想要从模型仓库链接（如 https://ai.gitcode.com/Ascend-SACT/Qwen3.5-27B-A2-Vllm-Ascend）获取部署文档、使用说明或任何仓库内容时触发此 skill。使用此 skill 来获取仓库的 README、文档内容、部署命令等。",
+    "category": "common",
+    "tier": 3,
+    "total_score": 51.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.4,
+      "boundary_coverage": 3.0,
+      "checkpoint_design": 2.0,
+      "instruction_specificity": 6.2,
+      "resource_integration": 1.8,
+      "overall_architecture": 6.7,
+      "ascend_relevance": 6.4,
+      "verifiability": 3.5
+    },
+    "line_count": 54
+  },
+  {
+    "name": "ssh-dev-suite",
+    "path": "skills\\ascend\\common\\ssh-connection\\SKILL.md",
+    "description": "SSH远程开发套件，连接管理、命令执行、文件传输、部署、隧道、调试",
+    "category": "common",
+    "tier": 3,
+    "total_score": 50.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.2,
+      "boundary_coverage": 2.7,
+      "checkpoint_design": 2.9,
+      "instruction_specificity": 4.5,
+      "resource_integration": 6.2,
+      "overall_architecture": 6.6,
+      "ascend_relevance": 2.2,
+      "verifiability": 6.0
+    },
+    "line_count": 35
+  },
+  {
+    "name": "ascendc-runtime-debug",
+    "path": "skills\\ascend\\optimization\\ascendc-runtime-debug\\SKILL.md",
+    "description": "Ascend C 算子运行时错误调试技能。用于处理算子运行时问题：(1) aclnn 返回错误码（161xxx/361xxx/561xxx，包括环境配置、Tiling、Kernel 查找等错误），(2) 运行时异常（程序卡死、挂起、超时、内存越界），(3) 需要解析 plog 日志定位问题。触发关键词：运行时错误、错误码、卡死、挂起、超时、Tiling错误、Kernel查找失败、环境变量、plog",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 50.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.7,
+      "boundary_coverage": 8.2,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 2.9,
+      "resource_integration": 5.8,
+      "overall_architecture": 6.5,
+      "ascend_relevance": 6.4,
+      "verifiability": 2.3
+    },
+    "line_count": 58
+  },
+  {
+    "name": "megatron-change-analyzer",
+    "path": "skills\\ascend\\adaptation\\megatron-change-analyzer\\SKILL.md",
+    "description": "Analyze official Megatron-LM commits, PRs, and branch change sets to identify feature evolution, candidate breaking changes, and migration-relevant events. Use when Codex already has a normalized Mega",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 50.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.3,
+      "boundary_coverage": 2.7,
+      "checkpoint_design": 3.5,
+      "instruction_specificity": 3.8,
+      "resource_integration": 5.4,
+      "overall_architecture": 7.9,
+      "ascend_relevance": 3.2,
+      "verifiability": 2.5
+    },
+    "line_count": 99
+  },
+  {
+    "name": "ai4s-main",
+    "path": "skills\\ascend\\optimization\\ai4s-main\\SKILL.md",
+    "description": "AI for Science 昇腾 NPU 总入口 Skill，用于在用户只给出 AI for Science 需求、模型名、TensorFlow/Keras 项目、精度对齐、性能采集或性能调优诉求时，判断应该进入精度对齐、Profiling 采集、性能调优、模型迁移或 TF 框架路线，并分流到对应子 skill。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 50.5,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.8,
+      "boundary_coverage": 2.2,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 3.9,
+      "resource_integration": 1.8,
+      "overall_architecture": 5.2,
+      "ascend_relevance": 8.4,
+      "verifiability": 5.3
+    },
+    "line_count": 57
+  },
+  {
+    "name": "winclip-npu",
+    "path": "skills\\contribution\\winclip-npu\\SKILL.md",
+    "description": "",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 50.1,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 5.8,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 2.0,
+      "instruction_specificity": 3.0,
+      "resource_integration": 1.8,
+      "overall_architecture": 7.9,
+      "ascend_relevance": 7.4,
+      "verifiability": 5.6
+    },
+    "line_count": 55
+  },
+  {
+    "name": "swanlab-setup",
+    "path": "skills\\ascend\\documentation\\swanlab-setup\\SKILL.md",
+    "description": "SwanLab 实验追踪平台配置与登录管理。触发场景：(1) 配置 SwanLab 登录凭据 (2) 在容器内安装/登录 SwanLab (3) 为指定容器配置 SwanLab (4) 检查 SwanLab 连接状态。支持多种配置获取方式：环境变量、配置文件、交互式输入。可被其他 skill 通过 source scripts/functions.sh 调用。",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 50.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 2.4,
+      "checkpoint_design": 2.2,
+      "instruction_specificity": 4.7,
+      "resource_integration": 6.8,
+      "overall_architecture": 7.9,
+      "ascend_relevance": 2.5,
+      "verifiability": 3.4
+    },
+    "line_count": 70
+  },
+  {
+    "name": "blendmask-npu",
+    "path": "skills\\contribution\\blendmask-npu\\SKILL.md",
+    "description": "",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 49.6,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 6.3,
+      "boundary_coverage": 2.2,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 3.5,
+      "resource_integration": 1.8,
+      "overall_architecture": 8.1,
+      "ascend_relevance": 8.4,
+      "verifiability": 4.4
+    },
+    "line_count": 57
+  },
+  {
+    "name": "ascendc-task-focus",
+    "path": "skills\\ascend\\optimization\\ascendc-task-focus\\SKILL.md",
+    "description": "任务聚焦与注意力管理技能。通过创建和维护 todo.md 文件将全局目标保持在上下文末尾，避免长任务中\"迷失在中间\"问题。当出现以下情况时使用：(1) 任务需要超过 5 个步骤完成，(2) 任务复杂有多个子目标，(3) 长上下文对话需要保持焦点，(4) 多步骤开发任务（算子开发、代码重构、精度调试），(5) 用户明确要求制定计划。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 49.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 7.9,
+      "boundary_coverage": 2.5,
+      "checkpoint_design": 2.3,
+      "instruction_specificity": 3.8,
+      "resource_integration": 1.9,
+      "overall_architecture": 8.6,
+      "ascend_relevance": 3.0,
+      "verifiability": 2.5
+    },
+    "line_count": 78
+  },
+  {
+    "name": "ops-easyasc-dsl",
+    "path": "skills\\ascend\\common\\skill\\SKILL.md",
+    "description": "Use this skill when working in the ops-easyasc-dsl repository to drive the easyasc DSL to AscendC workflow under agent/. Restore archived runtime, docs, and examples with agent/scripts/init.sh before ",
+    "category": "common",
+    "tier": 3,
+    "total_score": 48.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.9,
+      "boundary_coverage": 2.3,
+      "checkpoint_design": 2.1,
+      "instruction_specificity": 5.2,
+      "resource_integration": 4.8,
+      "overall_architecture": 6.6,
+      "ascend_relevance": 4.4,
+      "verifiability": 2.7
+    },
+    "line_count": 63
+  },
+  {
+    "name": "ssh-dev-suite/tunnel",
+    "path": "skills\\ascend\\common\\ssh-connection\\references\\tunnel\\SKILL.md",
+    "description": "SSH通道管理，支持本地/远程端口转发、SOCKS代理、反向代理",
+    "category": "common",
+    "tier": 3,
+    "total_score": 46.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.7,
+      "boundary_coverage": 2.7,
+      "checkpoint_design": 1.8,
+      "instruction_specificity": 5.4,
+      "resource_integration": 5.7,
+      "overall_architecture": 6.0,
+      "ascend_relevance": 2.2,
+      "verifiability": 4.0
+    },
+    "line_count": 33
+  },
+  {
+    "name": "ascendc-npu-arch",
+    "path": "skills\\ascend\\quantization\\ascendc-npu-arch\\SKILL.md",
+    "description": "Ascend NPU 架构知识查询技能。通过芯片型号映射、架构代际划分和 arch35 特性说明，帮助判断目标平台能力、特性支持与条件编译策略。当需要确认芯片型号、NpuArch/SocVersion、架构差异、特性支持或编译分支条件时使用。",
+    "category": "quantization",
+    "tier": 3,
+    "total_score": 45.3,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.7,
+      "boundary_coverage": 3.8,
+      "checkpoint_design": 3.0,
+      "instruction_specificity": 2.4,
+      "resource_integration": 2.6,
+      "overall_architecture": 6.4,
+      "ascend_relevance": 8.4,
+      "verifiability": 1.5
+    },
+    "line_count": 55
+  },
+  {
+    "name": "ascendc-api-best-practices",
+    "path": "skills\\ascend\\optimization\\ascendc-api-best-practices\\SKILL.md",
+    "description": "Ascend C API 使用最佳实践。提供算术、归约、数据搬运、Buffer管理、精度转换等 API 的正确用法和限制说明。触发：用户询问具体 API 用法（如\"DataCopy 怎么用\"）、遇到 API 参数错误或限制报错（如 repeatTimes、对齐问题）、需要查看 API 最佳实践或避坑指南时。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 45.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.2,
+      "boundary_coverage": 3.1,
+      "checkpoint_design": 2.2,
+      "instruction_specificity": 2.4,
+      "resource_integration": 4.8,
+      "overall_architecture": 6.1,
+      "ascend_relevance": 4.5,
+      "verifiability": 5.0
+    },
+    "line_count": 68
+  },
+  {
+    "name": "tilelang-api-best-practices",
+    "path": "skills\\ascend\\optimization\\tilelang-api-best-practices\\SKILL.md",
+    "description": "TileLang Ascend API 使用最佳实践。提供内存分配、数据搬运、矩阵计算、归约、元素级运算、同步、调度原语等 API 的正确用法和最佳实践。触发：使用 TileLang API 编写 Ascend NPU kernel 时或遇到 API 相关问题时。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 45.2,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.9,
+      "boundary_coverage": 2.8,
+      "checkpoint_design": 2.6,
+      "instruction_specificity": 2.0,
+      "resource_integration": 5.0,
+      "overall_architecture": 8.0,
+      "ascend_relevance": 6.2,
+      "verifiability": 1.5
+    },
+    "line_count": 106
+  },
+  {
+    "name": "triton-operator-design",
+    "path": "skills\\ascend\\optimization\\triton-operator-design\\SKILL.md",
+    "description": "生成适用于 Ascend NPU 的 Triton 算子需求文档。当用户需要设计新的 Triton 算子、编写算子需求文档、进行算子性能优化设计时使用。核心产出：功能定义、API 接口、Tiling 策略、Kernel 实现方案。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 45.1,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.9,
+      "boundary_coverage": 2.1,
+      "checkpoint_design": 1.9,
+      "instruction_specificity": 2.8,
+      "resource_integration": 4.1,
+      "overall_architecture": 6.2,
+      "ascend_relevance": 4.8,
+      "verifiability": 3.5
+    },
+    "line_count": 45
+  },
+  {
+    "name": "ascendc-docs-gen",
+    "path": "skills\\ascend\\documentation\\ascendc-docs-gen\\SKILL.md",
+    "description": "Ascend C 算子文档写作参考。提供需求分析、详细设计、迭代计划、aclnnAPI接口文档、算子README的标准模板。当用户需要生成算子文档、aclnnAPI文档、算子README、参考文档模板或了解算子文档规范时触发此技能。",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 44.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 5.3,
+      "boundary_coverage": 2.2,
+      "checkpoint_design": 6.1,
+      "instruction_specificity": 2.4,
+      "resource_integration": 4.8,
+      "overall_architecture": 7.3,
+      "ascend_relevance": 3.9,
+      "verifiability": 1.5
+    },
+    "line_count": 56
+  },
+  {
+    "name": "patchcore-npu",
+    "path": "skills\\contribution\\patchcore-npu\\SKILL.md",
+    "description": "",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 44.1,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 4.8,
+      "boundary_coverage": 2.9,
+      "checkpoint_design": 1.9,
+      "instruction_specificity": 3.5,
+      "resource_integration": 1.7,
+      "overall_architecture": 6.5,
+      "ascend_relevance": 7.8,
+      "verifiability": 3.9
+    },
+    "line_count": 44
+  },
+  {
+    "name": "ascendc-regbase-best-practice",
+    "path": "skills\\ascend\\documentation\\ascendc-regbase-best-practice\\SKILL.md",
+    "description": "Use when a task has already been routed into the Ascend C regbase branch, or when the request explicitly mentions regbase 设计、regbase 开发、regbase 融合算子开发, and the work needs regbase-specific API guidance",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 43.8,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 2.1,
+      "checkpoint_design": 2.0,
+      "instruction_specificity": 3.2,
+      "resource_integration": 4.8,
+      "overall_architecture": 5.7,
+      "ascend_relevance": 5.3,
+      "verifiability": 2.0
+    },
+    "line_count": 50
+  },
+  {
+    "name": "courts_timesfm_infer",
+    "path": "models\\contribution\\power-predict-agent\\skills\\courts_timesfm_infer\\SKILL.md",
+    "description": "|",
+    "category": "other",
+    "tier": 3,
+    "total_score": 43.8,
+    "dimensions": {
+      "frontmatter": 7.5,
+      "workflow_clarity": 3.4,
+      "boundary_coverage": 7.3,
+      "checkpoint_design": 2.3,
+      "instruction_specificity": 3.0,
+      "resource_integration": 2.9,
+      "overall_architecture": 5.3,
+      "ascend_relevance": 6.0,
+      "verifiability": 2.6
+    },
+    "line_count": 77
+  },
+  {
+    "name": "ssh-dev-suite/deploy",
+    "path": "skills\\ascend\\common\\deploy\\SKILL.md",
+    "description": "本地项目部署到远程服务器，支持增量同步、部署钩子、回滚",
+    "category": "common",
+    "tier": 3,
+    "total_score": 43.7,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.7,
+      "boundary_coverage": 5.9,
+      "checkpoint_design": 2.8,
+      "instruction_specificity": 3.0,
+      "resource_integration": 4.3,
+      "overall_architecture": 5.9,
+      "ascend_relevance": 2.2,
+      "verifiability": 2.6
+    },
+    "line_count": 31
+  },
+  {
+    "name": "ops-precision-standard",
+    "path": "skills\\ascend\\verification\\ops-precision-standard\\SKILL.md",
+    "description": "算子精度标准。描述 Ascend C 算子各种 dtype 输出对应的精度比对标准（atol/rtol）。当需要（1）评估算子精度是否达标，（2）编写 ST 测试验证精度，（3）处理 FP16/FP32/BF16 等不同数据类型精度问题，（4）确认算子精度验收标准时触发。",
+    "category": "verification",
+    "tier": 3,
+    "total_score": 43.0,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 2.7,
+      "boundary_coverage": 1.8,
+      "checkpoint_design": 2.8,
+      "instruction_specificity": 2.4,
+      "resource_integration": 9.1,
+      "overall_architecture": 3.4,
+      "ascend_relevance": 2.7,
+      "verifiability": 8.0
+    },
+    "line_count": 27
+  },
+  {
+    "name": "yolov10-npu",
+    "path": "skills\\contribution\\yolov10-npu\\SKILL.md",
+    "description": "",
+    "category": "deployment",
+    "tier": 3,
+    "total_score": 41.2,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 6.0,
+      "boundary_coverage": 3.5,
+      "checkpoint_design": 1.8,
+      "instruction_specificity": 4.2,
+      "resource_integration": 1.7,
+      "overall_architecture": 5.3,
+      "ascend_relevance": 5.2,
+      "verifiability": 2.6
+    },
+    "line_count": 32
+  },
+  {
+    "name": "ascendc-tiling-design",
+    "path": "skills\\ascend\\optimization\\ascendc-tiling-design\\SKILL.md",
+    "description": "Ascend C 算子 Tiling 设计指南。提供算子分类体系和 Tiling 核心要素（多核切分、UB切分、Buffer规划、分支覆盖）的详细设计方法。触发：算子设计阶段、设计 Tiling 策略（多核切分/UB切分）、规划 Buffer 分配、查阅某类算子的 Tiling 方法论时。",
+    "category": "optimization",
+    "tier": 3,
+    "total_score": 38.6,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.0,
+      "boundary_coverage": 2.5,
+      "checkpoint_design": 2.3,
+      "instruction_specificity": 2.0,
+      "resource_integration": 4.9,
+      "overall_architecture": 6.3,
+      "ascend_relevance": 4.0,
+      "verifiability": 1.5
+    },
+    "line_count": 81
+  },
+  {
+    "name": "model-series-vendor-detector",
+    "path": "skills\\ascend\\adaptation\\model-series-vendor-detector\\SKILL.md",
+    "description": "根据模型名称识别其所属系列和开发供应商。当用户需要从模型名称判断模型属于什么系列（如GLM、Qwen3、DeepSeek、MiniCPM等）以及其开发商/供应商时使用此skill。",
+    "category": "adaptation",
+    "tier": 3,
+    "total_score": 37.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 4.2,
+      "boundary_coverage": 2.7,
+      "checkpoint_design": 2.5,
+      "instruction_specificity": 2.4,
+      "resource_integration": 2.0,
+      "overall_architecture": 6.6,
+      "ascend_relevance": 2.6,
+      "verifiability": 1.5
+    },
+    "line_count": 97
+  },
+  {
+    "name": "triton-operator-doc-gen",
+    "path": "skills\\ascend\\documentation\\triton-operator-doc-gen\\SKILL.md",
+    "description": "为昇腾 NPU Triton 算子生成标准化接口文档。当用户需要为算子创建 README、生成 API 文档、编写产品支持表、整理参数说明时使用。关键词：文档生成、doc generation、README、接口文档、API documentation。",
+    "category": "documentation",
+    "tier": 3,
+    "total_score": 31.4,
+    "dimensions": {
+      "frontmatter": 9.0,
+      "workflow_clarity": 3.6,
+      "boundary_coverage": 1.7,
+      "checkpoint_design": 1.7,
+      "instruction_specificity": 2.6,
+      "resource_integration": 2.4,
+      "overall_architecture": 3.3,
+      "ascend_relevance": 3.6,
+      "verifiability": 1.5
+    },
+    "line_count": 18
+  },
+  {
+    "name": "archived",
+    "path": "skills\\ascend\\other\\archived\\SKILL.md",
+    "description": "",
+    "category": "other",
+    "tier": 3,
+    "total_score": 22.4,
+    "dimensions": {
+      "frontmatter": 4.0,
+      "workflow_clarity": 2.2,
+      "boundary_coverage": 1.5,
+      "checkpoint_design": 1.5,
+      "instruction_specificity": 2.0,
+      "resource_integration": 1.5,
+      "overall_architecture": 2.4,
+      "ascend_relevance": 3.0,
+      "verifiability": 2.0
+    },
+    "line_count": 3
+  }
+]

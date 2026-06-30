@@ -1,6 +1,8 @@
-______________________________________________________________________
-
-## name: ascend description: Entry point for Ascend NPU inference toolchain. Use when running vLLM on Ascend/NPU, quantizing models with msmodelslim, or debugging NPU errors. argument-hint: "vllm issue / quantization / npu usage"
+---
+name: quantify-agent
+description: "Entry point for Ascend NPU inference toolchain. Use when running vLLM on Ascend/NPU, quantizing models with msmodelslim, or debugging NPU errors."
+argument-hint: "vllm issue / quantization / npu usage"
+---
 
 # Ascend Inference Toolchain
 
@@ -41,10 +43,10 @@ export ASCEND_RT_VISIBLE_DEVICES=0,1,2,3
 
 For detailed instructions on specific tools, refer to:
 
-- **vLLM-Ascend**: See [vllm-install.md](vllm-install.md) for installation and [vllm-run.md](vllm-run.md) for running and troubleshooting.
-- **msmodelslim**: See [msmodelslim.md](msmodelslim.md) for quantization protocols (includes end-to-end iterative workflow).
-- **Sensitivity Analysis**: See [sensitivity-analysis.md](sensitivity-analysis.md) for diagnosing and fixing quantization accuracy drops via layer sensitivity analysis.
-- **AISBench Evaluation**: See [ais_bench.md](ais_bench.md) for GSM8K accuracy and performance benchmarking against a running vLLM service.
+- **vLLM-Ascend**: See [vllm-install.md](references/vllm-install.md) for installation and [vllm-run.md](references/vllm-run.md) for running and troubleshooting.
+- **msmodelslim**: See [msmodelslim.md](references/msmodelslim.md) for quantization protocols (includes end-to-end iterative workflow).
+- **Sensitivity Analysis**: See [sensitivity-analysis.md](references/sensitivity-analysis.md) for diagnosing and fixing quantization accuracy drops via layer sensitivity analysis.
+- **AISBench Evaluation**: See [ais_bench.md](references/ais_bench.md) for GSM8K accuracy and performance benchmarking against a running vLLM service.
 
 ## Core Tips
 

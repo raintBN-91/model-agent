@@ -231,7 +231,7 @@
 | pypto-op-design                            | Verification  | ./ascend/verification/pypto-op-design        | PASS                  |
 | pypto-op-develop                           | Verification  | ./ascend/verification/pypto-op-develop       | PASS                  |
 | pypto-precision-compare                    | Verification  | ./ascend/verification/pypto-precision-compare | PASS                  |
-| ascend description: Entry point for Ascend NPU inference toolchain. Use when running vLLM on Ascend/NPU, quantizing models with msmodelslim, or debugging NPU errors. argument-hint: "vllm issue / quantization / npu usage" | Verification  | ./ascend/verification/quantify-agent         | PASS                  |
+| quantify-agent                            | Verification  | ./ascend/verification/quantify-agent         | PASS                  |
 | tilelang-op-design                         | Verification  | ./ascend/verification/tilelang-op-design     | PASS                  |
 | tilelang-review                            | Verification  | ./ascend/verification/tilelang-review        | PASS                  |
 | triton-operator-code-gen                   | Verification  | ./ascend/verification/triton-operator-code-gen | PASS                  |
@@ -289,8 +289,19 @@
 
 > 以下 Skills 来自社区开发者 Pull Request，经 ascend-darwin-skill 评测后收录。
 
-共 **0** 个 skill（待 PR 合入后更新）。
+共 **10** 个 skill（来自社区开发者 PR，经 ascend-darwin-skill 评测后收录）。
 
-| Agent 名称 | 类型 | 链接 | 验证 |
-| --------- | --- | --- | --- |
-| （暂无） | — | — | — |
+| Agent 名称                | 类型           | 链接                                                | 验证（skills-eval） |
+| ----------------------- | ------------ | --------------------------------------------------- | ----------------- |
+| npu-adapt-skill           | Adaptation    | ./contribution/adaptation/npu-adapt-skill            | PASS              |
+| blendmask-npu             | Optimization  | ./contribution/blendmask-npu                        | PASS              |
+| cosyvoice-npu-deploy      | Deployment    | ./contribution/deployment/cosyvoice-npu-deploy       | PASS              |
+| modelscope-npu-deploy     | Deployment    | ./contribution/deployment/modelscope-npu-deploy      | PASS              |
+| qwen-asr-npu-deploy       | Deployment    | ./contribution/deployment/qwen-asr-npu-deploy        | PASS              |
+| sambert-hifigan-tts-npu   | Deployment    | ./contribution/deployment/sambert-hifigan-tts-npu    | PASS              |
+| flan-t5-base-npu          | Optimization  | ./contribution/flan-t5-base-npu                     | PASS              |
+| patchcore-npu             | Optimization  | ./contribution/patchcore-npu                        | PASS              |
+| winclip-npu               | Optimization  | ./contribution/winclip-npu                          | PASS              |
+| yolov10-npu               | Optimization  | ./contribution/yolov10-npu                          | PASS              |
+
+**这一组里**：PASS 10 / FAIL 0。

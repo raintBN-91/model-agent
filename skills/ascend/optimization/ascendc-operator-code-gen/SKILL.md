@@ -1,6 +1,6 @@
 ---
 name: ascendc-operator-code-gen
-description: 根据设计文档生成 AscendC 算子完整代码实现并完成框架适配。TRIGGER when: 设计文档已完成，需要生成 op_host/op_kernel 代码、注册到 PyTorch 框架、编译测试。关键词：代码生成、op_host、op_kernel、tiling、kernel、框架适配、算子注册。
+description: "根据设计文档生成 AscendC 算子完整代码实现并完成框架适配。TRIGGER when: 设计文档已完成，需要生成 op_host/op_kernel 代码、注册到 PyTorch 框架、编译测试。关键词：代码生成、op_host、op_kernel、tiling、kernel、框架适配、算子注册。"
 ---
 
 # AscendC 算子代码生成与框架适配

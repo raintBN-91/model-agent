@@ -1,6 +1,6 @@
 ---
 name: uv-torch-adaptation
-description: Multi-hardware adaptation for PyTorch (Ascend NPU & NVIDIA CUDA) using uv. Use when configuring or troubleshooting pyproject.toml and env for cross-platform GPU/NPU. Short triggers: "uv适配", "torch适配", "按适配清单执行", "uv 昇腾+CUDA 适配", "昇腾NPU配置", "CUDA配置", "记录适配问题", "更新适配规则".
+description: "Multi-hardware adaptation for PyTorch (Ascend NPU & NVIDIA CUDA) using uv. Use when configuring or troubleshooting pyproject.toml and env for cross-platform GPU/NPU. Short triggers: \"uv适配\", \"torch适配\", \"按适配清单执行\", \"uv 昇腾+CUDA 适配\", \"昇腾NPU配置\", \"CUDA配置\", \"记录适配问题\", \"更新适配规则\"."
 license: Complete terms in LICENSE.txt
 ---
 

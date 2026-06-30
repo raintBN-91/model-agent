@@ -1,6 +1,6 @@
 ---
 name: ascendc-operator-compile-debug
-description: 编译安装 AscendC 算子并执行精度测试。TRIGGER when: 算子代码生成完成后需要编译验证、安装 whl 包、运行精度测试，或编译/测试失败需要排查。关键词：build.sh、编译、安装、whl、pytest、精度测试、编译错误、NPU 测试。
+description: "编译安装 AscendC 算子并执行精度测试。TRIGGER when: 算子代码生成完成后需要编译验证、安装 whl 包、运行精度测试，或编译/测试失败需要排查。关键词：build.sh、编译、安装、whl、pytest、精度测试、编译错误、NPU 测试。"
 ---
 
 # AscendC 算子编译安装与精度测试

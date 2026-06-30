@@ -1,6 +1,6 @@
 ---
 name: megatron-commit-tracker
-description: Track and normalize change requests against the official Megatron-LM repository by branch, PR, commit, commit range, or time window. Use when Codex needs to collect the exact upstream change set before deeper analysis, especially for branch-aware Megatron and MindSpeed migration work, daily/periodic tracking, or preparing inputs for change analysis and migration generation.
+description: Track and normalize change requests against the official Megatron-LM repository by branch, PR, commit, commit range, or time window. Use when Codex ne...
 ---
 
 # Megatron Commit Tracker

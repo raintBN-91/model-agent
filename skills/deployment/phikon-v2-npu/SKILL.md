@@ -1,6 +1,6 @@
 ---
 name: phikon-v2-npu-deploy
-description: "Owkin phikon-v2 (DINOv2 ViT-L/16) 病理学基础模型（303M 参数）在昇腾 NPU 上的自动推理部署与精度验证。涵盖环境准备、模型权重下载、NPU 推理验证、CPU/NPU 精度对比、性能基准测试全流程。适用于：NPU 部署、昇腾推理、精度验证、病理模型部署。触发词：phikon-v2 NPU 部署、phikon-v2 昇腾推理、phikon-v2 精度对比、Owkin 病理模型 NPU、DINOv2 病理 NPU。"
+description: "Owkin phikon-v2 (DINOv2 ViT-L/16) 病理学基础模型（303M 参数）在昇腾 NPU 上的自动推理部署与精度验证。涵盖环境准备、模型权重下载、NPU 推理验证、CPU/NPU 精度对比、性能基准测试全流程。适用于：NPU 部署、昇腾推理、精度验证、病理模型部署。触发词：..."
 ---
 
 # phikon-v2 病理学基础模型昇腾 NPU 部署 Skill

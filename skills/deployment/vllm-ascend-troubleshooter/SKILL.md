@@ -1,6 +1,6 @@
 ---
 name: vllm-ascend-troubleshooter
-description: Troubleshoot vLLM-Ascend deployment, model loading, inference API, CANN/torch-npu, Ascend NPU visibility, ACLGraph/eager fallback, quantization, tensor parallel, multimodal, KV cache, memory, and performance issues. Use when users provide startup commands, logs, model paths, environment info, npu-smi output, stack traces, or failed validation results for Ascend NPU inference.
+description: Troubleshoot vLLM-Ascend deployment, model loading, inference API, CANN/torch-npu, Ascend NPU visibility, ACLGraph/eager fallback, quantization, tenso...
 ---
 
 # vLLM-Ascend Troubleshooter

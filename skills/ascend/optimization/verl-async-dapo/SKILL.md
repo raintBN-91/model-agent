@@ -1,6 +1,6 @@
 ---
 name: verl-async-dapo
-description: Verl 单异步 DAPO 训练配置生成器。触发场景：(1) 启动单异步 DAPO 训练 (2) 生成训练脚本 (3) 配置特性参数 (4) 训练前检查。**特性策略**：用户未指定时默认开启性能特性（flash_attn/dynamic_batch/remove_padding/gradient_checkpointing），显存特性（offload/recompute）默认关闭。OOM 时自动追加显存特性重试。**训练监控**：启动后输出 SwanLab 链接供用户自行查看，仅在错误时通知用户。**依赖 skill**：SwanLab 配置通过 swanlab-setup skill 提供。
+description: Verl 单异步 DAPO 训练配置生成器。触发场景：(1) 启动单异步 DAPO 训练 (2) 生成训练脚本 (3) 配置特性参数 (4) 训练前检查。**特性策略**：用户未指定时默认开启性能特性（flash_attn/dynamic_batch/remove_padding/gradient_...
 ---
 
 # Verl 单异步 DAPO 训练

@@ -1,6 +1,6 @@
 ---
 name: convnext-test-npu-deploy
-description: "ConvNeXt 系列测试模型 (test_convnext.r160_in1k / test_convnext2.r160_in1k / test_convnext3.r160_in1k) 在昇腾 NPU 上的自动部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词：ConvNeXt NPU 部署、convnext 昇腾推理、ConvNeXt 精度对比、npu-smi、ascend 部署。"
+description: "ConvNeXt 系列测试模型 (test_convnext.r160_in1k / test_convnext2.r160_in1k / test_convnext3.r160_in1k) 在昇腾 NPU 上的自动部署、推理、CPU/NPU 精度验证与模型仓库发布。适用于：昇腾部署、NPU 推理、..."
 ---
 
 # ConvNeXt 测试模型昇腾 NPU 部署 Skill

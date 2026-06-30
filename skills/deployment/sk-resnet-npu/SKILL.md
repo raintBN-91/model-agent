@@ -1,6 +1,6 @@
 ---
 name: sk-resnet-npu
-description: SK-ResNet models in 昇腾 NPU deployment, including SKResNeXt50, SKResNet34, and SKResNet18. Automates NPU adaptation, CPU/NPU inference, accuracy comparison, terminal screenshot generation, and GitCode model repository publishing for Selective Kernel Network models on Ascend910 NPU.
+description: SK-ResNet models in 昇腾 NPU deployment, including SKResNeXt50, SKResNet34, and SKResNet18. Automates NPU adaptation, CPU/NPU inference, accuracy compar...
 ---
 
 # SK-ResNet 昇腾 NPU 部署 Skill

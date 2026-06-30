@@ -1,6 +1,6 @@
 ---
 name: infinity-instruct-baai-npu
-description: "BAAI Infinity-Instruct 系列模型在华为昇腾 Ascend NPU 上的适配部署技能。覆盖 7 个 BAAI Infinity-Instruct/Infinity-Preference 系列大语言模型在 Ascend 910B NPU 上的完整适配流程：环境检查、推理部署、精度验证、性能基准测试。触发词：Infinity-Instruct、Infinity-Preference、BAAI 智源、Infinity-Instruct-3M、BAAI 系列模型 NPU 部署、BAAI NPU 适配。"
+description: "BAAI Infinity-Instruct 系列模型在华为昇腾 Ascend NPU 上的适配部署技能。覆盖 7 个 BAAI Infinity-Instruct/Infinity-Preference 系列大语言模型在 Ascend 910B NPU 上的完整适配流程：环境检查、推理部署、精度验..."
 ---
 
 # BAAI Infinity-Instruct 系列模型 Ascend NPU 适配部署

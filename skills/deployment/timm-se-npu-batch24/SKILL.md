@@ -1,6 +1,6 @@
 ---
 name: timm-se-npu-batch24
-description: timm SE 系列图像分类模型（ResNet、SENet、HaloNet、BoTNet）昇腾 NPU 适配、推理测试、精度对比、文档生成与模型仓库发布的统一部署 Skill。支持的模型包括 seresnet50、seresnet33ts、seresnet152d、senet154、sehalonet33ts、sebotnet33ts 等 9 个 SE 架构变体。在适配 timm SE 系列模型时，必须触发此 Skill。
+description: timm SE 系列图像分类模型（ResNet、SENet、HaloNet、BoTNet）昇腾 NPU 适配、推理测试、精度对比、文档生成与模型仓库发布的统一部署 Skill。支持的模型包括 seresnet50、seresnet33ts、seresnet152d、senet154、sehalone...
 ---
 
 # timm SE 系列模型 NPU 部署 Skill

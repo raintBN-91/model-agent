@@ -1,6 +1,6 @@
 ---
 name: dino-vits8-npu
-description: "DINO ViT-S/8 自监督视觉 Transformer 模型在昇腾 NPU 上的完整推理部署与 CPU/NPU 精度验证 Skill。涵盖环境初始化、权重下载、transfer_to_npu 自动迁移、单图推理验证、随机/真实图像精度对比验收的完整可复现流程。可在任意 Ascend910 系列服务器上一键复现。适用于：DINO 昇腾部署、ViT-S/8 NPU 推理、DINOv1 适配验证、自监督视觉模型 NPU 部署、精度对比。触发词：DINO NPU 部署、dino-vits8 昇腾推理、ViT-S/8 精度对比、dino_deitsmall8 NPU、DINO 自监督模型 昇腾。"
+description: "DINO ViT-S/8 自监督视觉 Transformer 模型在昇腾 NPU 上的完整推理部署与 CPU/NPU 精度验证 Skill。涵盖环境初始化、权重下载、transfer_to_npu 自动迁移、单图推理验证、随机/真实图像精度对比验收的完整可复现流程。可在任意 Ascend910 系列..."
 ---
 
 # DINO ViT-S/8 昇腾 NPU 部署与推理验证 Skill

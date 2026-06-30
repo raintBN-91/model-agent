@@ -1,6 +1,6 @@
 ---
 name: hccl-test
-description: HCCL (Huawei Collective Communication Library) performance testing for Ascend NPU clusters. Use for testing distributed communication bandwidth, verifying HCCL functionality, and benchmarking collective operations like AllReduce, AllGather. Covers MPI installation, multi-node pre-flight checks (SSH/CANN version/NPU health), and production testing workflows.
+description: HCCL (Huawei Collective Communication Library) performance testing for Ascend NPU clusters. Use for testing distributed communication bandwidth, verif...
 keywords:
     - hccl
     - 性能测试

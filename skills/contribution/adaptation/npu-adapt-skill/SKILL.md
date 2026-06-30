@@ -1,6 +1,6 @@
 ---
 name: npu-adapt
-description: 将 HuggingFace / ModelScope 图片分类模型适配为单卡昇腾 NPU 可运行的提交工程。当用户提到"适配模型到昇腾NPU"、"NPU适配"、"把xxx模型放到NPU上跑"、"Ascend适配"、或给出模型名要求做图片分类适配时，使用此Skill。执行完整流水线：模型预判、可用性检查、工程创建、环境检查、依赖、测试图、推理、精度验证、性能测试、README生成、截图、创建GitCode仓库、推送、生成竞赛提交信息。适用于 timm/*、google/*、facebook/*、microsoft/* 等标准图片分类模型，明确拒绝 DINO/MAE/CLIP/embedding/backbone/OCR/检测/分割/生成/多模态模型。
+description: 将 HuggingFace / ModelScope 图片分类模型适配为单卡昇腾 NPU 可运行的提交工程。当用户提到"适配模型到昇腾NPU"、"NPU适配"、"把xxx模型放到NPU上跑"、"Ascend适配"、或给出模型名要求做图片分类适配时，使用此Skill。执行完整流水线：模型预判、可用性检...
 ---
 
 # 昇腾 NPU 图片分类模型适配

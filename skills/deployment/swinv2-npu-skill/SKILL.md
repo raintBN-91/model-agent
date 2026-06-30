@@ -1,6 +1,6 @@
 ---
 name: swinv2-npu-skill
-description: SwinV2 Transformer models in 昇腾 NPU deployment covering environment setup, model inference, CPU/NPU precision comparison, README generation, screenshot generation, GitCode model repo publishing, and batch processing for all 15 SwinV2 variants from the timm model zoo.
+description: SwinV2 Transformer models in 昇腾 NPU deployment covering environment setup, model inference, CPU/NPU precision comparison, README generation, screensho...
 keywords:
   - swinv2
   - npu

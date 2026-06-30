@@ -1,6 +1,6 @@
 ---
 name: gitcode-repo-bootstrap
-description: Automatically create a GitCode repository, configure PAT-based remote, push code, and tag the repo with #+NPU. Use when the user asks to submit adaptation results to GitCode/AtomGit, publish a model card, or push deliverables to a remote repository for community review.
+description: Automatically create a GitCode repository, configure PAT-based remote, push code, and tag the repo with #+NPU. Use when the user asks to submit adapta...
 ---
 
 # GitCode Repo Bootstrap Skill

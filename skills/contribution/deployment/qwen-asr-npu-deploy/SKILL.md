@@ -1,6 +1,6 @@
 ---
 name: qwen-asr-npu-deploy
-description: Ascend NPU deployment skill for Qwen3-ASR speech recognition models. Automates the complete pipeline of adapting, verifying, and deploying Qwen3-ASR (0.6B/1.7B) on Huawei Ascend NPUs via vLLM-Ascend. Covers environment setup, vllm-ascend compatibility patching, model loading validation, CPU-vs-NPU precision comparison, performance benchmarking, and documentation generation. Use when users need to deploy ASR models on Ascend NPU, validate transcription accuracy against CPU baseline, or troubleshoot multimodal model loading issues on vLLM-Ascend.
+description: Ascend NPU deployment skill for Qwen3-ASR speech recognition models. Automates the complete pipeline of adapting, verifying, and deploying Qwen3-ASR (...
 ---
 
 # Qwen3-ASR Ascend NPU 部署验证 Skill

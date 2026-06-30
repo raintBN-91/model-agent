@@ -1,6 +1,6 @@
 ---
 name: vit_small_patch16_dinov3.lvd1689m-npu
-description: "DINOv3 ViT-Small (vit_small_patch16_dinov3.lvd1689m) 图像特征提取模型在昇腾 Ascend910B4 NPU 上的推理适配 Skill。覆盖环境准备、依赖安装、模型加载、NPU 推理验证、CPU/NPU 精度对比（cos > 0.999）、性能基准测试（batch size sweep）全流程。当用户提到 vit_small_patch16_dinov3、DINOv3 NPU、ViT-Small 昇腾、timm 模型 NPU 推理时触发。"
+description: "DINOv3 ViT-Small (vit_small_patch16_dinov3.lvd1689m) 图像特征提取模型在昇腾 Ascend910B4 NPU 上的推理适配 Skill。覆盖环境准备、依赖安装、模型加载、NPU 推理验证、CPU/NPU 精度对比（cos > 0.999）、性能基准..."
 ---
 
 # vit_small_patch16_dinov3.lvd1689m — Ascend NPU 推理适配 Skill

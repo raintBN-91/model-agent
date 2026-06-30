@@ -1,6 +1,6 @@
 ---
 name: vllm-ascend-performance-optimization
-description: vLLM-Ascend performance tuning advisor for optimizing inference throughput and latency on Huawei Ascend hardware. Use when users want to optimize vLLM deployment on Ascend NPUs, improve model inference performance, reduce token latency, or maximize throughput on Ascend hardware. Triggers for queries like "optimize vLLM on Ascend", "improve inference performance on NPU", "tune vLLM-Ascend for better throughput", "reduce TPOT latency on Ascend hardware", or when users share vLLM startup scripts and want optimization recommendations.
+description: vLLM-Ascend performance tuning advisor for optimizing inference throughput and latency on Huawei Ascend hardware. Use when users want to optimize vLLM...
 ---
 
 # vLLM-Ascend Performance Optimization Advisor

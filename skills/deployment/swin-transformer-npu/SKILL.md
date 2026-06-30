@@ -1,6 +1,6 @@
 ---
 name: swin-transformer-npu
-description: "Swin Transformer 系列图像分类模型 (tiny/small/s3/base/large, 224/384 输入) 在昇腾 NPU 上的完整部署、推理验证、CPU/NPU 精度对比、README 生成与模型仓库发布 Skill。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词：Swin Transformer NPU 部署、swin 昇腾推理、Swin Transformer 精度对比、npu-smi、ascend 部署。"
+description: "Swin Transformer 系列图像分类模型 (tiny/small/s3/base/large, 224/384 输入) 在昇腾 NPU 上的完整部署、推理验证、CPU/NPU 精度对比、README 生成与模型仓库发布 Skill。适用于：昇腾部署、NPU 推理、精度验证、模型发布。触发词..."
 ---
 
 # Swin Transformer 系列模型昇腾 NPU 部署 Skill

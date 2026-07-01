@@ -77,29 +77,16 @@
 Claude Code
 
 ```bash
-# 注册 marketplace（首次）
-/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin.git
-# 安装 model-agent插件
+/plugin marketplace add https://gitcode.com/Ascend/model-agent.git
 /plugin install ascend-model-agent-plugin@ascend-model-agent-plugin
-
-# 激活插件（加载 Skills/Agents/Hooks）
 /reload-plugins
-
-# 触发初始化：以下任一方式均可
-# 方式 a：新开会话（推荐，自然触发 SessionStart）
-# 方式 b：在当前会话中执行 /clear（会清空当前对话历史）
 ```
 
-AtomCode 
+AtomCode
 
 ```bash
-# 注册 marketplace（首次）
-/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin
-
-# 安装 model-agent插件
+/plugin marketplace add https://gitcode.com/Ascend/model-agent.git
 /plugin install ascend-model-agent-plugin@ascend-model-agent-plugin
-
-# 安装完成后，建议用以下命令确认状态：
 /plugin list
 ```
 
@@ -135,17 +122,17 @@ model-agent/
 ├── skills/                      # 技能库（11 分类、301 主 SKILL.md，含嵌套共 339）
 │   ├── skills.md                # 分类导航与统计
 │   ├── tiers.json               # Tier1(27) / Tier2(121) / Tier3(148) 三级注册
-│   ├── adaptation/              # 模型适配（45）
-│   ├── common/                  # 通用工具（19）
-│   ├── deployment/              # 模型部署（114）
-│   ├── documentation/           # 文档生成（10）
+│   ├── adaptation/              # 模型适配（30）
+│   ├── common/                  # 通用工具（23）
+│   ├── deployment/              # 模型部署（136）
+│   ├── documentation/           # 文档生成（14）
 │   ├── examples/                # 跨分类使用案例
-│   ├── optimization/            # 性能优化（89）
-│   ├── other/                   # 其他（5）
+│   ├── optimization/            # 性能优化（91）
+│   ├── other/                   # 其他（6）
 │   ├── pta/                     # PTA Pipeline 智能体（6）
 │   ├── quantization/            # 模型量化（2）
 │   ├── search/                  # 知识检索（1）
-│   └── verification/            # 部署验证（10）
+│   └── verification/            # 质量验证（67）
 ├── ascend-skills-eval/          # Skills 结构评测工具（九维打分、报告与成果卡）
 ├── docker/                      # Docker 构建配置（A2/A3）
 ├── docs/                        # 文档与图片资源

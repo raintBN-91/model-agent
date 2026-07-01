@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ascend-model-agent-plugin",
+  "description": "昇腾模型全流程Agent — 301+ Skills + 14 命令，一站式 Claude Code CLI 集成",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Ascend",
+    "email": "ascend@example.com"
+  },
+  "plugins": [
+    {
+      "name": "ascend-model-agent-plugin",
+      "displayName": "Ascend Model Agent",
+      "source": "./",
+      "description": "昇腾模型全流程Agent — 301+ Skills + 14 命令(workflow/verify/adapt/optimize/quantify/commit/search/ai4s/pta/deploy/doc/claude/experience/learn)。支持本地服务器部署。",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ascend Model Agent Team"
+      },
+      "license": "MIT",
+      "homepage": "https://gitcode.com/Ascend/model-agent",
+      "keywords": ["ascend", "npu", "model-adaptation", "workflow", "ai4s", "pytorch-ascend", "vllm-ascend", "cann"],
+      "category": "AI/ML",
+      "defaultEnabled": true
+    }
+  ]
+}

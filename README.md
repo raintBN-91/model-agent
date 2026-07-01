@@ -77,29 +77,16 @@
 Claude Code
 
 ```bash
-# 注册 marketplace（首次）
-/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin.git
-# 安装 model-agent插件
+/plugin marketplace add https://gitcode.com/Ascend/model-agent.git
 /plugin install ascend-model-agent-plugin@ascend-model-agent-plugin
-
-# 激活插件（加载 Skills/Agents/Hooks）
 /reload-plugins
-
-# 触发初始化：以下任一方式均可
-# 方式 a：新开会话（推荐，自然触发 SessionStart）
-# 方式 b：在当前会话中执行 /clear（会清空当前对话历史）
 ```
 
-AtomCode 
+AtomCode
 
 ```bash
-# 注册 marketplace（首次）
-/plugin marketplace add https://gitcode.com/gmq123/ascend-model-agent-plugin
-
-# 安装 model-agent插件
+/plugin marketplace add https://gitcode.com/Ascend/model-agent.git
 /plugin install ascend-model-agent-plugin@ascend-model-agent-plugin
-
-# 安装完成后，建议用以下命令确认状态：
 /plugin list
 ```
 

@@ -23,10 +23,33 @@ from typing import Any
 # ── 内置 Tier 1 技能（v0.3.0）─────────────────────────────────────────
 
 DEFAULT_TIER1_SKILLS: set[str] = {
-    "adapt-agent", "verify-agent", "optimizer-agent", "quantify-agent",
-    "ai4s-main", "ai4s-basic", "ai4s-perf-tuning", "ai4s-precision-alignment",
-    "ai4s-profiling", "ascend-optimization", "ascend-affinity-operator",
-    "ascend-history-to-skill", "gitcode-publish",
+    "verify-agent-plus",
+    "optimizer-agent-plus",
+    "adapt-agent",
+    "verify-agent",
+    "optimizer-agent",
+    "quantify-agent",
+    "ai4s-main",
+    "ai4s-basic",
+    "ascend-ai4s-precision-alignment",
+    "ai-for-science-ai4s-profiling",
+    "ai-for-science-ai4s-perf-tuning",
+    "ai-for-science-boltz2",
+    "ai-for-science-boltzgen",
+    "ai-for-science-deepfri",
+    "ai-for-science-deepfri-tf-npu",
+    "ai-for-science-diffsbdd",
+    "ai-for-science-generator",
+    "ai-for-science-goedel-prover",
+    "ai-for-science-oligoformer",
+    "ai-for-science-proteinbert",
+    "ai-for-science-ascend-tf-community",
+    "ai-for-science-tf-to-pytorch",
+    "ascend-affinity-operator",
+    "ascend-optimization",
+    "ascend-history-to-skill",
+    "gitcode-publish",
+    "small_model_adapt",
 }
 
 
@@ -153,13 +176,17 @@ class SkillRegistry:
                 self._all[name] = (desc, 2)
 
     def _load_builtin_tier1(self) -> None:
-        """扫描 skills/ 目录，内置技能全部注入 Tier 1。"""
+        """扫描 skills/ 目录，仅将显式内置技能注入 Tier 1。"""
         registry = _scan_skills_dir(_SKILLS_DIR)
-        for name, desc in registry.items():
-            if name not in self._all:
+        for name in sorted(DEFAULT_TIER1_SKILLS):
+            desc = registry.get(name)
+            if not desc:
+                continue
+            current = self._all.get(name)
+            if current is None:
                 self._tier1[name] = desc
                 self._all[name] = (desc, 1)
-            elif self._all[name][1] > 1:
+            elif current[1] > 1:
                 # 同名但当前在低 tier，提升到 Tier 1
                 self._tier1[name] = desc
                 # 从低 tier 移除

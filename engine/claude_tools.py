@@ -45,7 +45,7 @@ _DEFAULT_DOWNLOAD_PATH_HINT = "\n\n注意：如果任务中需要下载文件，
 
 # 匹配包含 UserWarning、warnings.warn 的行并删除
 _FILTER_LINE_RE = re.compile(
-    r"^.*(?:UserWarning|warnings\.warn).*\n?",
+    r"^.*(?:UserWarning|warnings\.warn|^\s*error:).*\n?",
     re.MULTILINE | re.IGNORECASE,
 )
 

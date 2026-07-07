@@ -90,9 +90,12 @@ def _clamp_score(v: float) -> float:
 def _render_script_path() -> Path:
     current = Path(__file__).resolve()
     for parent in [current.parent, *current.parents]:
-        candidate = parent / "skills" / "skills-eval" / "scripts" / "render-card.mjs"
-        if candidate.exists():
-            return candidate
+        for candidate in (
+            parent / "skills" / "skills-eval" / "scripts" / "render-card.mjs",
+            parent / "ascend-skills-eval" / "skills" / "skills-eval" / "scripts" / "render-card.mjs",
+        ):
+            if candidate.exists():
+                return candidate
     raise FileNotFoundError("cannot locate render-card.mjs")
 
 
@@ -171,9 +174,12 @@ def _validate_repo_url(repo_url: str) -> str:
 
 
 def _pick_repo_file(repo_dir: Path, skill_path: str | None) -> Path:
+    repo_root = repo_dir.resolve()
     if skill_path:
-        specified = (repo_dir / skill_path).resolve()
-        if not str(specified).startswith(str(repo_dir.resolve())):
+        specified = (repo_root / skill_path).resolve()
+        try:
+            specified.relative_to(repo_root)
+        except ValueError:
             raise HTTPException(status_code=400, detail="skill_path is invalid")
         if not specified.exists() or not specified.is_file():
             raise HTTPException(status_code=400, detail=f"specified file not found: {skill_path}")

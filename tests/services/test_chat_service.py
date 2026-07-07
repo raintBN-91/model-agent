@@ -112,7 +112,9 @@ class TestExtractStreamConfig:
         request = MagicMock()
         request.c_id = None
         config, kwargs = _extract_stream_config(request)
-        assert config is None
+        assert config is not None
+        assert config["configurable"]["thread_id"].startswith("default-")
+        assert kwargs["config"] == config
 
     def test_with_c_id(self):
         from app.services.chat_service import _extract_stream_config
@@ -121,6 +123,7 @@ class TestExtractStreamConfig:
         request.c_id = "session-1"
         config, kwargs = _extract_stream_config(request)
         assert config == {"configurable": {"thread_id": "session-1"}}
+        assert kwargs["config"] == config
 
 
 class TestExecuteCommand:

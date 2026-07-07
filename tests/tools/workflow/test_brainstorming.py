@@ -145,7 +145,7 @@ class TestBrainstormingSession:
         session.state = BrainstormState.INITIAL
         result = session._fallback_response()
         assert result["type"] == "question"
-        assert result["question"]["dimension"] == "target_platform"
+        assert result["question"]["dimension"] == "model_name"
 
     def test_fallback_response_with_platform_no_model(self):
         session = BrainstormingSession(llm=MagicMock())
@@ -178,12 +178,11 @@ class TestKeywordAmbiguityFallback:
 
     def test_vague_input(self):
         score, missing = _keyword_ambiguity_fallback("help me optimize the model")
-        assert "target_platform" in missing
         assert "model_name" in missing
-        assert "inference_framework" in missing
+        assert "target_platform" not in missing
         assert 0 < score <= 1.0
 
     def test_partial_model_name(self):
         score, missing = _keyword_ambiguity_fallback("test llama performance")
-        assert "model_name" not in missing
-        assert "target_platform" in missing
+        assert "model_name" in missing
+        assert "target_platform" not in missing

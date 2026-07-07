@@ -1,0 +1,25 @@
+name: Sync from GitCode
+
+on:
+  schedule:
+    - cron: '37 18 * * *'  # 每天 02:37 CST (18:37 UTC)
+  workflow_dispatch:       # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout mirror repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Sync from GitCode
+        run: |
+          git remote add gitcode "https://raintBN:${GITCODE_TOKEN}@gitcode.com/Ascend/model-agent.git"
+          git fetch gitcode --prune --tags
+          git push origin --all --force
+          git push origin --tags --force
+        env:
+          GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
